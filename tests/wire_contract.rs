@@ -2,9 +2,9 @@
 
 use serde_json::{Value, json};
 use wal2json_events::{
-    Action, ChangeV1, Column, ColumnArrays, MessageV2, OldKeys, ParseError, PrimaryKeyV1,
-    TransactionV1, parse_v1, parse_v1_lines, parse_v1_slice, parse_v2, parse_v2_lines,
-    parse_v2_slice,
+    Action, ChangeV1, Column, ColumnArrays, LogicalMessageV2, MessageV2, OldKeys, ParseError,
+    PrimaryKeyV1, TransactionBoundary, TransactionV1, parse_v1, parse_v1_lines, parse_v1_slice,
+    parse_v2, parse_v2_lines, parse_v2_slice,
 };
 
 const V1_FIXTURE: &str = include_str!("fixtures/wal2json-v1.json");
@@ -755,4 +755,165 @@ fn bytes_parse_the_same_as_text() {
         parse_v1_slice(V1_FIXTURE.as_bytes()).unwrap(),
         parse_v1(V1_FIXTURE).unwrap()
     );
+}
+
+/// The constructors are the only way to build these outside the crate, so they carry the weight of
+/// `#[non_exhaustive]`.
+#[test]
+fn constructors_start_from_absent_fields() {
+    let boundary = TransactionBoundary::new();
+    assert_eq!(boundary.xid, None);
+    assert_eq!(boundary.nextlsn, None);
+    assert_eq!(boundary, TransactionBoundary::default());
+    assert_eq!(
+        serde_json::to_string(&MessageV2::Begin(boundary)).unwrap(),
+        r#"{"action":"B"}"#
+    );
+
+    let message = LogicalMessageV2::new(true, "myapp", "hello");
+    assert!(message.transactional);
+    assert_eq!(message.prefix, "myapp");
+    assert_eq!(message.xid, None);
+    assert_eq!(
+        serde_json::to_string(&MessageV2::Message(message)).unwrap(),
+        r#"{"action":"M","transactional":true,"prefix":"myapp","content":"hello"}"#
+    );
+}
+
+/// The nested wire types are reachable through serde on their own, and validate there too.
+#[test]
+fn the_serde_path_validates_nested_types() {
+    let keys: PrimaryKeyV1 =
+        serde_json::from_str(r#"{"pknames":["id"],"pktypes":["integer"]}"#).unwrap();
+    assert_eq!(keys.pknames, ["id"]);
+
+    let err =
+        serde_json::from_str::<PrimaryKeyV1>(r#"{"pknames":["id","code"],"pktypes":["integer"]}"#)
+            .unwrap_err();
+    assert!(err.to_string().contains("pknames"), "got: {err}");
+
+    let transaction: TransactionV1 = serde_json::from_str(r#"{"xid":749,"change":[]}"#).unwrap();
+    assert_eq!(transaction.xid, Some(749));
+
+    let err = serde_json::from_str::<TransactionV1>(
+        r#"{"change":[{"kind":"insert","table":"t","columnnames":["a"],"columnvalues":[]}]}"#,
+    )
+    .unwrap_err();
+    assert!(err.to_string().contains("columnvalues"), "got: {err}");
+}
+
+#[test]
+fn a_v1_message_change_has_no_table_or_schema() {
+    let json =
+        r#"{"change":[{"kind":"message","transactional":false,"prefix":"p","content":"c"}]}"#;
+    let change = &parse_v1(json).unwrap().change[0];
+
+    assert_eq!(change.table(), None);
+    assert_eq!(change.schema(), None);
+}
+
+/// Every field a v1 kind requires, and the error that names it.
+#[test]
+fn v1_changes_report_each_missing_field() {
+    let cases = [
+        (
+            "table",
+            r#"{"change":[{"kind":"insert","columnnames":["a"],"columnvalues":[1]}]}"#,
+        ),
+        (
+            "columnnames",
+            r#"{"change":[{"kind":"insert","table":"t","columnvalues":[1]}]}"#,
+        ),
+        (
+            "columnvalues",
+            r#"{"change":[{"kind":"insert","table":"t","columnnames":["a"]}]}"#,
+        ),
+        (
+            "oldkeys",
+            r#"{"change":[{"kind":"update","table":"t","columnnames":[],"columnvalues":[]}]}"#,
+        ),
+        ("oldkeys", r#"{"change":[{"kind":"delete","table":"t"}]}"#),
+        (
+            "transactional",
+            r#"{"change":[{"kind":"message","prefix":"p","content":"c"}]}"#,
+        ),
+        (
+            "prefix",
+            r#"{"change":[{"kind":"message","transactional":true,"content":"c"}]}"#,
+        ),
+        (
+            "content",
+            r#"{"change":[{"kind":"message","transactional":true,"prefix":"p"}]}"#,
+        ),
+    ];
+    for (expected, json) in cases {
+        match parse_v1(json).unwrap_err() {
+            ParseError::MissingField { field, .. } => assert_eq!(field, expected, "for {json}"),
+            other => panic!("expected a missing field for {json}, got {other:?}"),
+        }
+    }
+}
+
+#[test]
+fn malformed_bytes_are_reported_as_json_errors() {
+    assert!(matches!(
+        parse_v2_slice(br#"{"action":"#).unwrap_err(),
+        ParseError::Json(_)
+    ));
+    assert!(matches!(
+        parse_v1_slice(b"not json at all").unwrap_err(),
+        ParseError::Json(_)
+    ));
+}
+
+#[test]
+fn the_serde_path_validates_old_keys() {
+    let err =
+        serde_json::from_str::<OldKeys>(r#"{"keynames":["a","b"],"keyvalues":[1]}"#).unwrap_err();
+
+    assert!(err.to_string().contains("keynames"), "got: {err}");
+}
+
+/// Update and delete validate the same fields as insert, on their own code path.
+#[test]
+fn v1_update_and_delete_validate_their_own_fields() {
+    let missing_table = [
+        r#"{"change":[{"kind":"update","columnnames":[],"columnvalues":[],"oldkeys":{"keynames":[],"keyvalues":[]}}]}"#,
+        r#"{"change":[{"kind":"delete","oldkeys":{"keynames":[],"keyvalues":[]}}]}"#,
+    ];
+    for json in missing_table {
+        assert!(
+            matches!(
+                parse_v1(json).unwrap_err(),
+                ParseError::MissingField { field: "table", .. }
+            ),
+            "for {json}"
+        );
+    }
+
+    let mismatched = [
+        r#"{"change":[{"kind":"update","table":"t","columnnames":["a"],"columnvalues":[]}]}"#,
+        r#"{"change":[{"kind":"update","table":"t","columnnames":[],"columnvalues":[],"pk":{"pknames":["a","b"],"pktypes":["integer"]}}]}"#,
+        r#"{"change":[{"kind":"delete","table":"t","pk":{"pknames":["a","b"],"pktypes":["integer"]}}]}"#,
+    ];
+    for json in mismatched {
+        assert!(
+            matches!(
+                parse_v1(json).unwrap_err(),
+                ParseError::LengthMismatch { .. }
+            ),
+            "for {json}"
+        );
+    }
+}
+
+/// Serde reaches every public type directly, and a shape it cannot deserialize must be an error
+/// rather than a panic.
+#[test]
+fn the_serde_path_rejects_unusable_shapes() {
+    assert!(serde_json::from_str::<OldKeys>("[]").is_err());
+    assert!(serde_json::from_str::<PrimaryKeyV1>("[]").is_err());
+    assert!(serde_json::from_str::<ChangeV1>("{}").is_err());
+    assert!(serde_json::from_str::<MessageV2>("{}").is_err());
+    assert!(serde_json::from_str::<TransactionV1>("[]").is_err());
 }
