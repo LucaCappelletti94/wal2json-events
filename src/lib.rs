@@ -150,6 +150,18 @@ pub struct Column {
 
 impl Column {
     /// A column with only its name set. Every other field defaults to absent and is public.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use wal2json_events::Column;
+    ///
+    /// let mut column = Column::new("id");
+    /// column.type_name = Some("integer".to_owned());
+    /// column.value = Some(serde_json::json!(7));
+    ///
+    /// assert_eq!(column.name, "id");
+    /// ```
     #[must_use]
     pub fn new(name: impl Into<String>) -> Self {
         Self {
@@ -338,6 +350,29 @@ impl LogicalMessageV2 {
 }
 
 /// A single wal2json v2 message, one JSON object per line.
+///
+/// The enum is exhaustive, so a `match` needs no catch-all arm and the compiler will point here if
+/// a wal2json release ever adds an action letter.
+///
+/// # Examples
+///
+/// ```
+/// use wal2json_events::{MessageV2, parse_v2};
+///
+/// let message = parse_v2(r#"{"action":"C","xid":749}"#)?;
+///
+/// // Every row action carries the same payload, so one arm can cover all three.
+/// let subject = match message {
+///     MessageV2::Begin(_) => "transaction start".to_owned(),
+///     MessageV2::Commit(_) => "transaction commit".to_owned(),
+///     MessageV2::Insert(row) | MessageV2::Update(row) | MessageV2::Delete(row) => row.table,
+///     MessageV2::Truncate(truncate) => truncate.table,
+///     MessageV2::Message(logical) => logical.prefix,
+/// };
+///
+/// assert_eq!(subject, "transaction commit");
+/// # Ok::<(), wal2json_events::ParseError>(())
+/// ```
 #[derive(Debug, Clone, PartialEq, Serialize)]
 #[serde(tag = "action")]
 pub enum MessageV2 {
@@ -542,6 +577,20 @@ impl ColumnArrays {
     /// The two arrays wal2json always emits, built from name and value pairs so that they cannot
     /// disagree in length. The optional companion arrays default to absent and are public, so
     /// setting one is the caller's responsibility to keep co-indexed.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use wal2json_events::ColumnArrays;
+    ///
+    /// let mut columns = ColumnArrays::new([
+    ///     ("id".to_owned(), serde_json::json!(7)),
+    ///     ("email".to_owned(), serde_json::json!("a@b.c")),
+    /// ]);
+    /// columns.columntypes = Some(vec!["integer".to_owned(), "text".to_owned()]);
+    ///
+    /// assert_eq!(columns.columnnames.len(), columns.columnvalues.len());
+    /// ```
     #[must_use]
     pub fn new(entries: impl IntoIterator<Item = (String, Value)>) -> Self {
         let (columnnames, columnvalues) = entries.into_iter().unzip();
@@ -991,6 +1040,21 @@ impl<'de> Deserialize<'de> for TransactionV1 {
 /// Returns [`ParseError::Json`] on malformed JSON, and [`ParseError::MissingField`] on a row or
 /// truncate action without a `table`, or a message action without `transactional`, `prefix` or
 /// `content`.
+///
+/// # Examples
+///
+/// ```
+/// use wal2json_events::{MessageV2, parse_v2};
+///
+/// let line = r#"{"action":"D","schema":"public","table":"users","identity":[{"name":"id","type":"integer","value":1}]}"#;
+///
+/// let MessageV2::Delete(row) = parse_v2(line)? else {
+///     panic!("expected a delete");
+/// };
+/// assert_eq!(row.table, "users");
+/// assert_eq!(row.identity.unwrap()[0].name, "id");
+/// # Ok::<(), wal2json_events::ParseError>(())
+/// ```
 pub fn parse_v2(line: &str) -> Result<MessageV2, ParseError> {
     serde_json::from_str::<MessageV2Wire>(line)?.into_model()
 }
@@ -1002,6 +1066,21 @@ pub fn parse_v2(line: &str) -> Result<MessageV2, ParseError> {
 /// Returns [`ParseError::Json`] on malformed JSON, [`ParseError::MissingField`] on a change without
 /// a field its kind requires, and [`ParseError::LengthMismatch`] on co-indexed arrays that disagree
 /// in length.
+///
+/// # Examples
+///
+/// ```
+/// use wal2json_events::{ChangeV1, parse_v1};
+///
+/// let json = r#"{"change":[{"kind":"delete","schema":"public","table":"users",
+///     "oldkeys":{"keynames":["id"],"keytypes":["integer"],"keyvalues":[7]}}]}"#;
+///
+/// let ChangeV1::Delete { oldkeys, .. } = &parse_v1(json)?.change[0] else {
+///     panic!("expected a delete");
+/// };
+/// assert_eq!(oldkeys.keynames, ["id"]);
+/// # Ok::<(), wal2json_events::ParseError>(())
+/// ```
 pub fn parse_v1(json: &str) -> Result<TransactionV1, ParseError> {
     serde_json::from_str::<TransactionV1Wire>(json)?.into_model()
 }
@@ -1012,6 +1091,17 @@ pub fn parse_v1(json: &str) -> Result<TransactionV1, ParseError> {
 /// # Errors
 ///
 /// The same as [`parse_v2`].
+///
+/// # Examples
+///
+/// ```
+/// use wal2json_events::parse_v2_slice;
+///
+/// let line: &[u8] = br#"{"action":"T","schema":"public","table":"users"}"#;
+///
+/// assert_eq!(parse_v2_slice(line)?.table(), Some("users"));
+/// # Ok::<(), wal2json_events::ParseError>(())
+/// ```
 pub fn parse_v2_slice(line: &[u8]) -> Result<MessageV2, ParseError> {
     serde_json::from_slice::<MessageV2Wire>(line)?.into_model()
 }
@@ -1021,6 +1111,17 @@ pub fn parse_v2_slice(line: &[u8]) -> Result<MessageV2, ParseError> {
 /// # Errors
 ///
 /// The same as [`parse_v1`].
+///
+/// # Examples
+///
+/// ```
+/// use wal2json_events::parse_v1_slice;
+///
+/// let json: &[u8] = br#"{"xid":749,"change":[]}"#;
+///
+/// assert_eq!(parse_v1_slice(json)?.xid, Some(749));
+/// # Ok::<(), wal2json_events::ParseError>(())
+/// ```
 pub fn parse_v1_slice(json: &[u8]) -> Result<TransactionV1, ParseError> {
     serde_json::from_slice::<TransactionV1Wire>(json)?.into_model()
 }
@@ -1030,6 +1131,19 @@ pub fn parse_v1_slice(json: &[u8]) -> Result<TransactionV1, ParseError> {
 /// Blank lines are skipped, so a trailing newline is not an error. Each message is a separate
 /// result, so one unparseable line does not end the iteration. This assumes wal2json's default
 /// output: under `pretty-print` a message spans several lines and this is the wrong tool.
+///
+/// # Examples
+///
+/// ```
+/// use wal2json_events::parse_v2_lines;
+///
+/// let stream = "{\"action\":\"B\"}\n{\"action\":\"nonsense\"}\n{\"action\":\"C\"}\n";
+/// let results: Vec<_> = parse_v2_lines(stream).collect();
+///
+/// // The bad line is one error among three results, not the end of the stream.
+/// assert_eq!(results.len(), 3);
+/// assert!(results[0].is_ok() && results[1].is_err() && results[2].is_ok());
+/// ```
 pub fn parse_v2_lines(stream: &str) -> impl Iterator<Item = Result<MessageV2, ParseError>> {
     stream
         .lines()
@@ -1040,6 +1154,20 @@ pub fn parse_v2_lines(stream: &str) -> impl Iterator<Item = Result<MessageV2, Pa
 /// Parse every transaction of a wal2json v1 stream, which carries one transaction per line.
 ///
 /// Blank lines are skipped and each transaction is a separate result, as in [`parse_v2_lines`].
+///
+/// # Examples
+///
+/// ```
+/// use wal2json_events::parse_v1_lines;
+///
+/// let stream = "{\"xid\":1,\"change\":[]}\n{\"xid\":2,\"change\":[]}\n";
+/// let ids: Vec<_> = parse_v1_lines(stream)
+///     .map(|transaction| transaction.map(|transaction| transaction.xid))
+///     .collect::<Result<_, _>>()?;
+///
+/// assert_eq!(ids, [Some(1), Some(2)]);
+/// # Ok::<(), wal2json_events::ParseError>(())
+/// ```
 pub fn parse_v1_lines(stream: &str) -> impl Iterator<Item = Result<TransactionV1, ParseError>> {
     stream
         .lines()
