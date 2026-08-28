@@ -9,7 +9,7 @@ use serde_json::Value;
 use crate::error::ParseError;
 
 /// wal2json v2 action, one variant per wire letter.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]
 pub enum Action {
     /// Begin transaction, wire letter `B`.
     #[serde(rename = "B")]
@@ -46,7 +46,7 @@ where
 
 /// wal2json v2 column. Everything but `name` is option-gated or action-specific, hence optional.
 #[non_exhaustive]
-#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize)]
 pub struct Column {
     /// Column name.
     pub name: String,
@@ -109,7 +109,7 @@ impl Column {
 
 /// Transaction boundary payload, carried by the v2 `B` and `C` actions.
 #[non_exhaustive]
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 pub struct TransactionBoundary {
     /// Transaction id, under `include-xids=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -150,7 +150,7 @@ impl Default for TransactionBoundary {
 
 /// wal2json v2 row change, carried by the `I`, `U` and `D` actions.
 #[non_exhaustive]
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 pub struct RowV2 {
     /// Transaction id, under `include-xids=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -200,7 +200,7 @@ impl RowV2 {
 
 /// wal2json v2 truncation, one message per truncated table.
 #[non_exhaustive]
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 pub struct TruncateV2 {
     /// Transaction id, under `include-xids=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -241,7 +241,7 @@ impl TruncateV2 {
 /// For a non-transactional message wal2json writes `xid`, `timestamp` and `origin` as explicit
 /// nulls. They parse to `None` and serialize back as absent, which `transactional: false` implies.
 #[non_exhaustive]
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 pub struct LogicalMessageV2 {
     /// Transaction id, under `include-xids=true` and only when transactional.
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -302,7 +302,7 @@ impl LogicalMessageV2 {
 /// assert_eq!(subject, "transaction commit");
 /// # Ok::<(), wal2json_events::ParseError>(())
 /// ```
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 #[serde(tag = "action")]
 pub enum MessageV2 {
     /// Transaction start, emitted under `include-transaction=true`.

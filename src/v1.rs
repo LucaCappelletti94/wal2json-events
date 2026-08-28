@@ -15,7 +15,7 @@ use crate::error::{ParseError, check_len};
 ///
 /// No `Deserialize` impl: the fields are inlined into the change object, so it has no wire form.
 #[non_exhaustive]
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 pub struct ColumnArrays {
     /// Column names, in tuple order.
     pub columnnames: Vec<String>,
@@ -99,7 +99,7 @@ impl ColumnArrays {
 /// Old key information identifying the row in v1 update and delete changes. Co-indexed on
 /// `keynames`, which [`parse_v1`] enforces.
 #[non_exhaustive]
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 pub struct OldKeys {
     /// Identity column names.
     pub keynames: Vec<String>,
@@ -164,7 +164,7 @@ impl<'de> Deserialize<'de> for OldKeys {
 
 /// Primary key information of a v1 change, under `include-pk=true`.
 #[non_exhaustive]
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 pub struct PrimaryKeyV1 {
     /// Primary key column names.
     pub pknames: Vec<String>,
@@ -212,7 +212,7 @@ impl<'de> Deserialize<'de> for PrimaryKeyV1 {
 }
 
 /// A single change inside a wal2json v1 transaction.
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 #[serde(tag = "kind")]
 pub enum ChangeV1 {
     /// Row insert.
@@ -427,7 +427,7 @@ impl<'de> Deserialize<'de> for ChangeV1 {
 
 /// A wal2json v1 transaction, one JSON object per transaction.
 #[non_exhaustive]
-#[derive(Debug, Clone, PartialEq, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize)]
 pub struct TransactionV1 {
     /// Transaction id, under `include-xids=true`.
     #[serde(skip_serializing_if = "Option::is_none")]

@@ -3,8 +3,8 @@
 use serde_json::{Value, json};
 use wal2json_events::{
     Action, ChangeV1, Column, ColumnArrays, LogicalMessageV2, MessageV2, OldKeys, ParseError,
-    PrimaryKeyV1, TransactionBoundary, TransactionV1, parse_v1, parse_v1_lines, parse_v1_slice,
-    parse_v2, parse_v2_lines, parse_v2_slice,
+    PrimaryKeyV1, RowV2, TransactionBoundary, TransactionV1, TruncateV2, parse_v1, parse_v1_lines,
+    parse_v1_slice, parse_v2, parse_v2_lines, parse_v2_slice,
 };
 
 const V1_FIXTURE: &str = include_str!("fixtures/wal2json-v1.json");
@@ -916,4 +916,55 @@ fn the_serde_path_rejects_unusable_shapes() {
     assert!(serde_json::from_str::<ChangeV1>("{}").is_err());
     assert!(serde_json::from_str::<MessageV2>("{}").is_err());
     assert!(serde_json::from_str::<TransactionV1>("[]").is_err());
+}
+
+/// `Eq` and `Hash` are part of the public API, so a field type lacking either would break this
+/// rather than silently narrowing what callers can do. Hashing and comparing whole parsed values
+/// exercises the derived impls of every nested type too.
+#[test]
+fn the_data_types_are_comparable_and_hashable() {
+    fn assert_bounds<T: Eq + std::hash::Hash>() {}
+    assert_bounds::<Action>();
+    assert_bounds::<Column>();
+    assert_bounds::<TransactionBoundary>();
+    assert_bounds::<RowV2>();
+    assert_bounds::<TruncateV2>();
+    assert_bounds::<LogicalMessageV2>();
+    assert_bounds::<MessageV2>();
+    assert_bounds::<ColumnArrays>();
+    assert_bounds::<OldKeys>();
+    assert_bounds::<PrimaryKeyV1>();
+    assert_bounds::<ChangeV1>();
+    assert_bounds::<TransactionV1>();
+
+    let v2 = [
+        r#"{"action":"B","xid":749}"#,
+        r#"{"action":"T","schema":"public","table":"t"}"#,
+        r#"{"action":"M","transactional":true,"prefix":"p","content":"c"}"#,
+        r#"{"action":"I","schema":"public","table":"t","columns":[{"name":"id","type":"integer","value":1},{"name":"n","value":null}],"pk":[{"name":"id","type":"integer"}]}"#,
+    ];
+    let mut messages = std::collections::HashSet::new();
+    for line in v2 {
+        let message = parse_v2(line).unwrap();
+        assert_eq!(message, message.clone());
+        assert!(
+            messages.insert(message.clone()),
+            "{line} hashed as a duplicate"
+        );
+        assert!(!messages.insert(message), "the same message hashed twice");
+    }
+    assert_eq!(messages.len(), v2.len());
+
+    let json = r#"{"xid":749,"change":[{"kind":"update","schema":"public","table":"t","columnnames":["id"],"columntypes":["integer"],"columntypeoids":[23],"columnpositions":[1],"columnoptionals":[false],"columndefaults":[null],"columnvalues":[1],"pk":{"pknames":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":["id"],"keytypes":["integer"],"keytypeoids":[23],"keyvalues":[1]}}]}"#;
+    let transaction = parse_v1(json).unwrap();
+    assert_eq!(transaction, transaction.clone());
+
+    let mut transactions = std::collections::HashSet::new();
+    assert!(transactions.insert(transaction.clone()));
+    assert!(!transactions.insert(transaction));
+
+    let actions: std::collections::HashSet<Action> = [Action::Begin, Action::Begin, Action::Commit]
+        .into_iter()
+        .collect();
+    assert_eq!(actions.len(), 2);
 }
