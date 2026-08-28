@@ -1,0 +1,10 @@
+# Both versions are pinned because the committed fixtures record what this exact pair emits, down
+# to type OIDs and the rendering of a default expression. Bump either one together with a fixture
+# regeneration. If a pin stops being available the build fails loudly, which beats a capture that
+# quietly changed underneath the corpus.
+FROM postgres:16.15-bookworm
+
+ARG WAL2JSON_VERSION
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends "postgresql-16-wal2json=${WAL2JSON_VERSION}" \
+ && rm -rf /var/lib/apt/lists/*

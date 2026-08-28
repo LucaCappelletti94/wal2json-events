@@ -1,0 +1,54 @@
+[package]
+name = "wal2json-events"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Typed model and parser for PostgreSQL wal2json logical decoding output, format versions 1 and 2"
+license = "MIT"
+repository = "https://github.com/LucaCappelletti94/wal2json-events"
+documentation = "https://docs.rs/wal2json-events"
+readme = "README.md"
+keywords = ["postgresql", "wal2json", "cdc", "logical-decoding"]
+categories = ["database", "parser-implementations", "no-std"]
+include = ["/src", "/tests", "/benches", "/README.md", "/LICENSE"]
+
+[features]
+# Forwards to serde_json so that PostgreSQL `numeric` values keep full precision.
+arbitrary_precision = ["serde_json/arbitrary_precision"]
+
+[dependencies]
+serde = { version = "1", default-features = false, features = ["alloc", "derive"] }
+# float_roundtrip: without it serde_json's fast float parser cannot read back the text it writes,
+# so a numeric column value shifts in its last bit across a parse and serialize cycle.
+serde_json = { version = "1", default-features = false, features = ["alloc", "float_roundtrip"] }
+thiserror = { version = "2", default-features = false }
+
+[dev-dependencies]
+bigdecimal = "0.4"
+chrono = "0.4"
+diesel = { version = "2", features = ["chrono", "numeric", "postgres"] }
+testcontainers = { version = "0.27", features = ["blocking"] }
+criterion = { version = "0.8.2", features = ["html_reports"] }
+
+[lints.rust]
+missing_docs = "deny"
+# deny rather than forbid, and alongside the stronger `forbid` in lib.rs. The library itself can
+# never opt back in, while the allocation-counting test, which needs a GlobalAlloc impl, can.
+unsafe_code = "deny"
+
+[lints.rustdoc]
+broken_intra_doc_links = "forbid"
+bare_urls = "forbid"
+invalid_codeblock_attributes = "forbid"
+invalid_html_tags = "forbid"
+missing_crate_level_docs = "forbid"
+unescaped_backticks = "forbid"
+redundant_explicit_links = "forbid"
+invalid_rust_codeblocks = "forbid"
+
+[lints.clippy]
+pedantic = { level = "deny", priority = -1 }
+
+[[bench]]
+name = "corpus"
+harness = false
