@@ -199,16 +199,15 @@ fn malformed_json_is_reported_as_such() {
         parse_v1("not json at all").unwrap_err(),
         ParseError::Json(_)
     ));
-    // A field of the wrong JSON type is serde's business, not a structural error.
+    // A wrong JSON type is serde's business, not a structural error.
     assert!(matches!(
         parse_v2(r#"{"action":"I","table":7}"#).unwrap_err(),
         ParseError::Json(_)
     ));
 }
 
-/// Validation lives in one place but has two entry points: the parse functions, which return a
-/// typed error, and the `Deserialize` impls, which serde requires to produce its own error type.
-/// Both must enforce the same rules.
+/// Validation has two entry points, the parse functions and the `Deserialize` impls, and serde
+/// forces the second to stringify. Both must enforce the same rules.
 #[test]
 fn the_serde_path_enforces_the_same_rules() {
     let err = serde_json::from_str::<MessageV2>(r#"{"action":"I"}"#).unwrap_err();
@@ -241,8 +240,8 @@ fn transaction_boundaries_carry_no_required_field() {
     }
 }
 
-/// The wire letters live in two places: the [`Action`] renames that drive deserialization, and the
-/// `MessageV2` variant tags that drive serialization. This pins them to each other.
+/// The wire letters live in two places, the [`Action`] renames and the `MessageV2` variant tags.
+/// This pins them together.
 #[test]
 fn every_action_serializes_back_to_its_wire_letter() {
     let cases = [
@@ -270,7 +269,7 @@ fn every_action_serializes_back_to_its_wire_letter() {
         );
         assert_eq!(reserialized, serde_json::from_str::<Value>(json).unwrap());
 
-        // The accessors answer for every action, including the ones that have no table.
+        // Including the actions with no table.
         assert_eq!(parsed.table(), table, "table() for {json}");
         assert_eq!(parsed.schema(), table.map(|_| "s"), "schema() for {json}");
     }
@@ -298,7 +297,7 @@ fn explicit_null_optional_fields_parse_as_none() {
     assert_eq!(row.xid, None);
 }
 
-// E1: a transaction carrying a logical message used to fail on the missing `schema` field.
+// Shapes that only some plugin configurations emit.
 
 #[test]
 fn v1_logical_message_change_parses() {
@@ -387,7 +386,7 @@ fn v2_null_column_default_stays_distinct_from_an_absent_one() {
     assert_eq!(columns[1].default, None, "include-default was off");
 }
 
-// E2: fields that only appear under a plugin option used to be dropped.
+// Option-gated fields.
 
 #[test]
 fn v2_transaction_boundaries_keep_their_fields() {
@@ -481,7 +480,7 @@ fn v1_transaction_keeps_its_option_driven_fields() {
     assert_eq!(serde_json::to_value(tx).unwrap(), expected);
 }
 
-// E3: co-indexed arrays of differing lengths used to parse as Ok.
+// Co-indexed array lengths.
 
 #[test]
 fn v1_mismatched_column_arrays_are_error() {
@@ -584,7 +583,7 @@ fn v1_mismatched_primary_key_arrays_are_error() {
 
 #[test]
 fn v1_empty_primary_key_types_are_accepted() {
-    // wal2json emits the pktypes key even under include-types=false, and then it is empty.
+    // include-types=false still emits the key, empty.
     let json = r#"{"change":[{"kind":"insert","table":"t","columnnames":["a"],"columnvalues":[1],"pk":{"pknames":["a"],"pktypes":[]}}]}"#;
     let tx = parse_v1(json).unwrap();
 
@@ -594,7 +593,7 @@ fn v1_empty_primary_key_types_are_accepted() {
     assert_eq!(pk.as_ref().unwrap().pktypes, [] as [String; 0]);
 }
 
-// E4: absent fields used to serialize as explicit nulls.
+// Serialization of absent fields.
 
 #[test]
 fn serialization_omits_absent_fields() {
@@ -620,7 +619,7 @@ fn serialization_omits_absent_fields() {
     );
 }
 
-// E5: PostgreSQL numeric precision beyond f64.
+// Numeric precision.
 
 const NUMERIC: &str = r#"{"action":"I","schema":"public","table":"t","columns":[{"name":"amount","type":"numeric","value":12345678901234567890.123456789}]}"#;
 
@@ -649,12 +648,9 @@ fn numeric_loses_precision_without_the_feature() {
     );
 }
 
-/// A value the crate handed back must not change when it is handed in again. The default
-/// `serde_json` float parser cannot read back the text `serde_json` itself writes, which shifts a
-/// `numeric` in its last bit, so the crate enables `float_roundtrip`. Dropping it fails this test.
-///
-/// This exact value came from a fuzz run: its shortest float text form reads back as a neighbouring
-/// float under the fast parser.
+/// A value handed back must not change when handed in again. The default `serde_json` float parser
+/// cannot read back its own output, shifting a `numeric` in its last bit, so the crate enables
+/// `float_roundtrip`. Dropping that feature fails this. The value is from a fuzz run.
 #[test]
 fn numeric_survives_a_round_trip() {
     let json = r#"{"action":"I","schema":"public","table":"t","columns":[{"name":"amount","type":"numeric","value":12345678902134567890.123456789}]}"#;
@@ -665,9 +661,8 @@ fn numeric_survives_a_round_trip() {
     assert_eq!(parsed, reparsed);
 }
 
-/// The enums are exhaustive on purpose, so a consumer can match every variant without a catch-all
-/// and hear from the compiler if a wal2json release ever adds an action letter. Marking any of them
-/// `#[non_exhaustive]` again would stop this test compiling, which is the point of it.
+/// Matching without a catch-all is the point of the enums being exhaustive. Marking any of them
+/// `#[non_exhaustive]` again stops this compiling.
 #[test]
 fn the_enums_can_be_matched_exhaustively() {
     fn letter(message: &MessageV2) -> &'static str {
@@ -714,8 +709,7 @@ fn the_enums_can_be_matched_exhaustively() {
     assert_eq!(kind(&message.change[0]), "message");
 }
 
-/// A wal2json stream is line delimited, so the crate walks it rather than making every caller
-/// write the same loop.
+/// A stream is line delimited, so the crate walks it instead of every caller writing the loop.
 #[test]
 fn a_stream_is_parsed_line_by_line() {
     let messages: Vec<MessageV2> = parse_v2_lines(V2_FIXTURE).map(Result::unwrap).collect();

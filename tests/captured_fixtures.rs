@@ -190,10 +190,8 @@ fn captured_v2_parses_to_complete_structures() {
     assert_eq!(actual, expected_v2());
 }
 
-/// The captured JSON, minus the transaction identifiers that wal2json writes as explicit nulls on
-/// a non-transactional message. Those parse to absent and serialize back as absent, because
-/// `transactional: false` already says they do not apply. A null `value` or `default` is data, and
-/// this leaves it alone.
+/// The captured JSON, minus the identifiers wal2json writes as explicit nulls on a non-transactional
+/// message, which parse and serialize as absent. A null `value` or `default` is data and stays.
 fn expected_wire(line: &str) -> Value {
     let mut value: Value = serde_json::from_str(line).unwrap();
     if let Value::Object(map) = &mut value {
@@ -204,8 +202,7 @@ fn expected_wire(line: &str) -> Value {
     value
 }
 
-/// Serializing a parsed event reproduces the captured JSON: no field is dropped on the way in and
-/// no null is invented on the way out.
+/// Nothing dropped on the way in, no null invented on the way out.
 #[test]
 fn captured_v1_reserializes_to_the_captured_json() {
     let parsed = parse_v1(V1_FIXTURE).unwrap();
@@ -229,8 +226,7 @@ fn captured_v2_reserializes_to_the_captured_json() {
     }
 }
 
-// The all-options corpus is captured with every wal2json option that adds a field to the output,
-// which is what makes the claim "every field wal2json can emit is modelled" testable.
+// Captured with every field-adding option, which is what makes the coverage claim testable.
 
 #[test]
 fn all_options_v1_reserializes_to_the_captured_json() {
@@ -258,8 +254,7 @@ fn all_options_v2_reserializes_to_the_captured_json() {
     }
 }
 
-// The tests below guard the corpus itself. Without them, a regeneration that quietly lost an
-// option would leave the reserialization tests passing against a weaker corpus.
+// These guard the corpus itself: a regeneration that lost an option would still reserialize.
 
 fn all_options_v2() -> Vec<MessageV2> {
     V2_ALL_OPTIONS
@@ -414,7 +409,7 @@ fn all_options_v1_corpus_exercises_every_kind_and_array() {
         .map(|l| parse_v1(l).unwrap())
         .collect();
 
-    // A non-transactional message arrives as a transaction carrying only that message.
+    // A non-transactional message is a transaction carrying only that message.
     assert!(
         transactions.iter().any(|tx| {
             tx.xid.is_none() && matches!(tx.change.as_slice(), [ChangeV1::Message { .. }])

@@ -1,4 +1,4 @@
-//! Allocation-count regression pin for `parse_v2`, isolated in its own binary for `#[global_allocator]`.
+//! Allocation-count pin for `parse_v2`, in its own binary for the `#[global_allocator]`.
 
 #![allow(missing_docs, unsafe_code)]
 
@@ -33,7 +33,7 @@ static COUNTING_ALLOC: CountingAlloc = CountingAlloc;
 
 fn start_measuring() {
     ALLOC_COUNT.store(0, Ordering::Relaxed);
-    // Relaxed: parse_v2 runs sequentially on this thread after the store.
+    // Relaxed: parse_v2 runs on this thread, after the store.
     MEASURING.store(true, Ordering::Relaxed);
 }
 
@@ -47,11 +47,11 @@ const FIXTURE: &str = r#"{"action":"I","schema":"public","table":"users","column
 #[test]
 fn parse_v2_allocation_count() {
     // schema, table, Vec<Column> store, col-0 name, col-0 type, col-1 name, col-1 type, "Alice" String.
-    // Review before raising. An intermediate Value parse roughly doubles this count, and an
-    // internally tagged enum deserialized directly by serde costs 12 because it buffers the map.
+    // Review before raising: an intermediate Value parse roughly doubles it, and letting serde
+    // deserialize the internally tagged enum directly costs 12, since it buffers the map.
     #[cfg(not(feature = "arbitrary_precision"))]
     const EXPECTED: usize = 8;
-    // arbitrary_precision stores every number as a String, which costs one allocation per number.
+    // arbitrary_precision keeps every number as a String, one allocation each.
     #[cfg(feature = "arbitrary_precision")]
     const EXPECTED: usize = 10;
 

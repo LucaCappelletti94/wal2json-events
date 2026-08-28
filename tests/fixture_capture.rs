@@ -1,6 +1,5 @@
 #![allow(missing_docs)]
-// Diesel's QueryableByName derive expands to `data: data`, and clippy reports that against the
-// field declaration below rather than against the generated code.
+// Diesel's QueryableByName derive expands to `data: data`, blamed on the field below.
 #![allow(clippy::redundant_field_names)]
 
 use std::fs;
@@ -53,13 +52,11 @@ diesel::table! {
     }
 }
 
-// The plugin version is pinned here and passed to the Dockerfile, so it lives in one place. The
-// image tag carries it too, because the build is skipped when the tag already exists: bumping the
-// version has to build a new image rather than reuse the last one.
+// Pinned once here and passed to the Dockerfile. The tag carries it because an existing tag skips
+// the build, so a bump must produce a new image.
 const WAL2JSON_VERSION: &str = "2.6-4.pgdg12+1";
 const PG_IMAGE: &str = "wal2json-events/postgres-wal2json";
-// Read at runtime rather than with include_str!, so the check compares against what is on disk
-// now instead of against a copy compiled in before the last regeneration.
+// Read at runtime, not include_str!, so the check sees the files as they are on disk.
 const V1_PATH: &str = "tests/fixtures/wal2json-v1.json";
 const V2_PATH: &str = "tests/fixtures/wal2json-v2.jsonl";
 const V1_ALL_PATH: &str = "tests/fixtures/wal2json-v1-all-options.jsonl";
@@ -217,8 +214,7 @@ fn write_all_options_changes(connection: &mut PgConnection) {
     let amount =
         BigDecimal::from_str("12345678901234567890.123456789").expect("valid numeric fixture");
 
-    // A non-transactional message arrives as its own wal2json object rather than inside a
-    // transaction. pg_logical_emit_message is an administrative function with no Diesel DSL form.
+    // A non-transactional message becomes its own wal2json object. No DSL form for this function.
     diesel::sql_query("SELECT pg_logical_emit_message(false, $1, 'non-transactional')")
         .bind::<diesel::sql_types::Text, _>(MESSAGE_PREFIX)
         .execute(connection)
@@ -249,7 +245,7 @@ fn write_all_options_changes(connection: &mut PgConnection) {
             // Diesel has no typed TRUNCATE statement.
             diesel::sql_query("TRUNCATE all_options_rows").execute(connection)?;
 
-            // See above: administrative function, no DSL form.
+            // No DSL form.
             diesel::sql_query("SELECT pg_logical_emit_message(true, $1, 'transactional')")
                 .bind::<diesel::sql_types::Text, _>(MESSAGE_PREFIX)
                 .execute(connection)?;
@@ -260,7 +256,7 @@ fn write_all_options_changes(connection: &mut PgConnection) {
 }
 
 fn drain_slot(connection: &mut PgConnection, slot: &str, format_version: &str) -> Vec<String> {
-    // Output plugin options are variadic arguments to a PostgreSQL administrative function.
+    // Plugin options are variadic arguments, so no DSL form.
     diesel::sql_query(
         "SELECT data FROM pg_logical_slot_get_changes(
              $1, NULL, NULL,
@@ -278,9 +274,8 @@ fn drain_slot(connection: &mut PgConnection, slot: &str, format_version: &str) -
     .collect()
 }
 
-/// Drains with every option that adds a field to the output, so the corpus exercises all of them.
-/// Repeats until the slot is empty, because the non-transactional message and the transaction do
-/// not necessarily arrive in the same batch.
+/// Drains with every field-adding option. Repeats until empty: the non-transactional message and
+/// the transaction need not arrive in one batch.
 fn drain_slot_all_options(
     connection: &mut PgConnection,
     slot: &str,
@@ -289,7 +284,7 @@ fn drain_slot_all_options(
     let mut lines = Vec::new();
 
     for _ in 0..4 {
-        // Output plugin options are variadic arguments to a PostgreSQL administrative function.
+        // Plugin options are variadic arguments, so no DSL form.
         let batch: Vec<String> = diesel::sql_query(
             "SELECT data FROM pg_logical_slot_get_changes(
                  $1, NULL, NULL,
@@ -323,15 +318,14 @@ fn drain_slot_all_options(
     lines
 }
 
-// The values a capture cannot reproduce, replaced by both the structural normalizer below and the
-// textual one used when writing, so that a written fixture is already normalized and regenerating
-// it twice produces the same bytes.
+// The values a capture cannot reproduce. Both normalizers below use these, so a written fixture is
+// already normalized and regenerating twice gives the same bytes.
 const XID: u32 = 1000;
 const TIMESTAMP: &str = "2026-08-28 00:00:00+00";
 const LSN: &str = "0/1000000";
 
-/// Replaces the values that change on every capture: transaction ids, commit timestamps and LSNs.
-/// An explicit null is left alone, because wal2json uses it to say the field does not apply.
+/// Replaces transaction ids, timestamps and LSNs. An explicit null stays: wal2json means "does not
+/// apply" by it.
 fn normalize_volatile(value: &mut Value) {
     match value {
         Value::Object(map) => {
@@ -356,18 +350,15 @@ fn normalize_volatile(value: &mut Value) {
     }
 }
 
-/// The captured line with those same values replaced, editing the four scalars in place rather
-/// than re-serializing, so wal2json's key order and the exact digits of a `numeric` literal
-/// survive into the committed fixture.
+/// The same, editing the four scalars in place rather than re-serializing, so key order and the
+/// digits of a `numeric` literal survive.
 fn with_placeholders(line: &str) -> String {
     let replaced = replace_scalar(line, "xid", &XID.to_string());
     let replaced = replace_scalar(&replaced, "timestamp", &format!("\"{TIMESTAMP}\""));
     let replaced = replace_scalar(&replaced, "lsn", &format!("\"{LSN}\""));
     let replaced = replace_scalar(&replaced, "nextlsn", &format!("\"{LSN}\""));
 
-    // The textual edit must have touched nothing else. Comparing the structural normalization of
-    // both sides proves it, and turns a substitution that could go wrong into one that cannot go
-    // wrong silently.
+    // Proves the textual edit touched nothing else, so it cannot go wrong silently.
     assert_eq!(
         normalized([line]),
         normalized([replaced.as_str()]),
@@ -377,9 +368,8 @@ fn with_placeholders(line: &str) -> String {
     replaced
 }
 
-/// Replaces the scalar value following every `"key":` occurrence. An explicit null is left alone.
-/// wal2json writes these four values as a bare number or as a string with no escapes, so finding
-/// the end of one needs no JSON parsing.
+/// Replaces the scalar after every `"key":`, leaving an explicit null alone. These four are a bare
+/// number or an escape-free string, so finding the end needs no JSON parsing.
 fn replace_scalar(line: &str, key: &str, replacement: &str) -> String {
     let needle = format!("\"{key}\":");
     let mut out = String::with_capacity(line.len());
@@ -428,8 +418,8 @@ struct Captured {
 }
 
 impl Captured {
-    /// What each fixture file should contain, given this capture. The per-run identifiers are
-    /// replaced, so a capture of an unchanged database writes byte-identical files.
+    /// What each fixture file should contain. Per-run identifiers are replaced, so an unchanged
+    /// database writes byte-identical files.
     fn files(&self) -> [(&'static str, String); 4] {
         fn contents(lines: &[String]) -> String {
             let replaced: Vec<String> = lines.iter().map(|line| with_placeholders(line)).collect();
@@ -459,8 +449,7 @@ fn capture() -> Captured {
     assert_eq!(v1.len(), 1, "expected one v1 transaction");
     assert_eq!(v2.len(), 8, "expected eight v2 changes");
 
-    // The all-options slots are created after the first transaction was drained, so they carry
-    // only the second one.
+    // Created after the first drain, so they carry only the second transaction.
     create_slot(&mut connection, "capture_v1_all");
     create_slot(&mut connection, "capture_v2_all");
     write_all_options_changes(&mut connection);
@@ -471,7 +460,7 @@ fn capture() -> Captured {
     assert!(!v1_all.is_empty(), "expected v1 all-options output");
     assert!(!v2_all.is_empty(), "expected v2 all-options output");
 
-    // Every captured line must parse, which is the part a committed fixture cannot prove alone.
+    // The part a committed fixture cannot prove about itself.
     parse_v1(&v1[0]).expect("parse live v1");
     for line in &v2 {
         parse_v2(line).expect("parse live v2 line");
@@ -491,8 +480,7 @@ fn capture() -> Captured {
     }
 }
 
-/// Checks the committed fixtures against a live server, writing nothing, so that a drift leaves
-/// the committed corpus in place to be inspected and diffed.
+/// Checks the committed fixtures against a live server. Writes nothing, so a drift stays visible.
 #[test]
 #[ignore = "captures from PostgreSQL using Docker"]
 fn capture_matches_committed_fixtures() {
@@ -508,8 +496,7 @@ fn capture_matches_committed_fixtures() {
     }
 }
 
-/// Rewrites the committed fixtures from a live server. Run it when the corpus should change, then
-/// read the diff.
+/// Rewrites the fixtures from a live server. Run when the corpus should change, then read the diff.
 #[test]
 #[ignore = "rewrites the committed fixtures using Docker"]
 fn regenerate_committed_fixtures() {

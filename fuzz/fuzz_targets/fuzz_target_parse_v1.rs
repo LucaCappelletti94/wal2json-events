@@ -18,9 +18,8 @@ fuzz_target!(|data: &[u8]| {
         .expect("reparse should not fail after serialization");
     assert_eq!(parsed, reparsed, "parsed and reparsed should be equal");
 
-    // The model can accept input that a serde_json::Value cannot hold, because skipping an unknown
-    // field never requires representing its number, while building a Value does. The comparison
-    // below is only defined when both representations exist.
+    // The model accepts input a Value cannot hold: skipping an unknown field never requires
+    // representing its number. The comparison needs both representations.
     let Ok(input) = serde_json::from_str::<Value>(text) else {
         return;
     };

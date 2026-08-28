@@ -11,7 +11,7 @@ use serde::{Deserialize, Deserializer, Serialize, de};
 use serde_json::Value;
 use thiserror::Error;
 
-/// wal2json v2 action type, with each variant mapping to its wire letter.
+/// wal2json v2 action, one variant per wire letter.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 pub enum Action {
     /// Begin transaction, wire letter `B`.
@@ -37,9 +37,8 @@ pub enum Action {
     Message,
 }
 
-/// Deserializes a present field into `Some`, keeping an explicit `null` distinct from an absent
-/// key. wal2json uses both: `"value":null` is a SQL NULL, and `"default":null` is a column with no
-/// `DEFAULT` clause, while an absent key means the option that emits the field was off.
+/// Deserializes a present field into `Some`, so an explicit `null` stays distinct from an absent
+/// key: `"value":null` is a SQL NULL, no key means the option emitting the field was off.
 fn present<'de, T, D>(deserializer: D) -> Result<Option<T>, D::Error>
 where
     T: Deserialize<'de>,
@@ -49,9 +48,6 @@ where
 }
 
 /// The error returned by [`parse_v1`] and [`parse_v2`].
-///
-/// The two structural variants are what the wire model enforces beyond JSON syntax: a field that
-/// the action or kind requires, and the co-indexed v1 arrays agreeing in length.
 #[non_exhaustive]
 #[derive(Debug, Error)]
 pub enum ParseError {
@@ -86,7 +82,7 @@ impl ParseError {
     }
 }
 
-/// Rejects a parallel array whose length does not match the array it is co-indexed with.
+/// Rejects an array whose length does not match the one it is co-indexed with.
 fn check_len(
     field: &'static str,
     len: usize,
@@ -105,11 +101,7 @@ fn check_len(
     }
 }
 
-/// wal2json v2 column.
-///
-/// Every field except `name` depends on the action and on the plugin options in force, so all of
-/// them are optional. `type_name` is absent under `include-types=false`, and `value` is absent in
-/// the `pk` list, which carries identities only.
+/// wal2json v2 column. Everything but `name` is option-gated or action-specific, hence optional.
 #[non_exhaustive]
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct Column {
@@ -118,28 +110,24 @@ pub struct Column {
     /// PostgreSQL type name, absent under `include-types=false`.
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
     pub type_name: Option<String>,
-    /// Type OID, present under `include-type-oids=true`. Signed because wal2json prints the OID
-    /// with `%d`, so an OID above `i32::MAX` arrives negative.
+    /// Type OID, under `include-type-oids=true`. Signed: wal2json prints it with `%d`, so an OID
+    /// above `i32::MAX` arrives negative.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub typeoid: Option<i64>,
     /// Column value, absent for `pk` entries. `Some(Value::Null)` is a SQL NULL.
-    ///
-    /// Consumers needing `numeric` precision beyond `f64` must enable this crate's
-    /// `arbitrary_precision` feature.
     #[serde(
         default,
         deserialize_with = "present",
         skip_serializing_if = "Option::is_none"
     )]
     pub value: Option<Value>,
-    /// Whether the column is nullable, present under `include-not-null=true`.
+    /// Whether the column is nullable, under `include-not-null=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub optional: Option<bool>,
-    /// Attribute number, present under `include-column-positions=true`.
+    /// Attribute number, under `include-column-positions=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub position: Option<i32>,
-    /// Default expression, present under `include-default=true`. The inner `None` is wal2json
-    /// reporting that the column has no `DEFAULT` clause.
+    /// Default expression, under `include-default=true`. Inner `None` means no `DEFAULT` clause.
     #[serde(
         default,
         deserialize_with = "present",
@@ -149,7 +137,7 @@ pub struct Column {
 }
 
 impl Column {
-    /// A column with only its name set. Every other field defaults to absent and is public.
+    /// A column with only its name set. Every other field is public and starts absent.
     ///
     /// # Examples
     ///
@@ -180,25 +168,25 @@ impl Column {
 #[non_exhaustive]
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct TransactionBoundary {
-    /// Transaction id, present under `include-xids=true`.
+    /// Transaction id, under `include-xids=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub xid: Option<u32>,
-    /// Commit timestamp, present under `include-timestamp=true`.
+    /// Commit timestamp, under `include-timestamp=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub timestamp: Option<String>,
-    /// Replication origin id, present under `include-origin=true`.
+    /// Replication origin id, under `include-origin=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub origin: Option<u32>,
-    /// LSN of this record, present under `include-lsn=true`.
+    /// Record LSN, under `include-lsn=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub lsn: Option<String>,
-    /// LSN just past the end of the transaction, present under `include-lsn=true`.
+    /// LSN just past the transaction end, under `include-lsn=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub nextlsn: Option<String>,
 }
 
 impl TransactionBoundary {
-    /// A boundary with every field absent, as emitted when no `include-*` option is on.
+    /// A boundary with every field absent.
     #[must_use]
     pub fn new() -> Self {
         Self {
@@ -221,16 +209,16 @@ impl Default for TransactionBoundary {
 #[non_exhaustive]
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct RowV2 {
-    /// Transaction id, present under `include-xids=true`.
+    /// Transaction id, under `include-xids=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub xid: Option<u32>,
-    /// Commit timestamp, present under `include-timestamp=true`.
+    /// Commit timestamp, under `include-timestamp=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub timestamp: Option<String>,
-    /// Replication origin id, present under `include-origin=true`.
+    /// Replication origin id, under `include-origin=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub origin: Option<u32>,
-    /// LSN of this record, present under `include-lsn=true`.
+    /// Record LSN, under `include-lsn=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub lsn: Option<String>,
     /// Schema name, absent under `include-schemas=false`.
@@ -238,19 +226,19 @@ pub struct RowV2 {
     pub schema: Option<String>,
     /// Table name.
     pub table: String,
-    /// New tuple, present for insert and update. Unchanged out-of-line values are omitted.
+    /// New tuple, for insert and update. Unchanged out-of-line values are omitted.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub columns: Option<Vec<Column>>,
-    /// Old row identity, present for update and delete.
+    /// Old row identity, for update and delete.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub identity: Option<Vec<Column>>,
-    /// Primary key columns, present under `include-pk=true`. These carry no `value`.
+    /// Primary key columns, under `include-pk=true`. These carry no `value`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub pk: Option<Vec<Column>>,
 }
 
 impl RowV2 {
-    /// A row with only its table set. Every other field defaults to absent and is public.
+    /// A row with only its table set.
     #[must_use]
     pub fn new(table: impl Into<String>) -> Self {
         Self {
@@ -267,20 +255,20 @@ impl RowV2 {
     }
 }
 
-/// wal2json v2 truncation, carried by the `T` action. One message per truncated table.
+/// wal2json v2 truncation, one message per truncated table.
 #[non_exhaustive]
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct TruncateV2 {
-    /// Transaction id, present under `include-xids=true`.
+    /// Transaction id, under `include-xids=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub xid: Option<u32>,
-    /// Commit timestamp, present under `include-timestamp=true`.
+    /// Commit timestamp, under `include-timestamp=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub timestamp: Option<String>,
-    /// Replication origin id, present under `include-origin=true`.
+    /// Replication origin id, under `include-origin=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub origin: Option<u32>,
-    /// LSN of this record, present under `include-lsn=true`.
+    /// Record LSN, under `include-lsn=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub lsn: Option<String>,
     /// Schema name, absent under `include-schemas=false`.
@@ -291,7 +279,7 @@ pub struct TruncateV2 {
 }
 
 impl TruncateV2 {
-    /// A truncation with only its table set. Every other field defaults to absent and is public.
+    /// A truncation with only its table set.
     #[must_use]
     pub fn new(table: impl Into<String>) -> Self {
         Self {
@@ -307,22 +295,21 @@ impl TruncateV2 {
 
 /// wal2json v2 logical message, carried by the `M` action.
 ///
-/// wal2json reports `xid`, `timestamp` and `origin` as explicit nulls for a non-transactional
-/// message, which parse to `None` and serialize back as absent. `transactional: false` already
-/// says they do not apply, so nothing is lost.
+/// For a non-transactional message wal2json writes `xid`, `timestamp` and `origin` as explicit
+/// nulls. They parse to `None` and serialize back as absent, which `transactional: false` implies.
 #[non_exhaustive]
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct LogicalMessageV2 {
-    /// Transaction id, present under `include-xids=true` for a transactional message.
+    /// Transaction id, under `include-xids=true` and only when transactional.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub xid: Option<u32>,
-    /// Commit timestamp, present under `include-timestamp=true` for a transactional message.
+    /// Commit timestamp, under `include-timestamp=true` and only when transactional.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub timestamp: Option<String>,
-    /// Replication origin id, present under `include-origin=true` for a transactional message.
+    /// Replication origin id, under `include-origin=true` and only when transactional.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub origin: Option<u32>,
-    /// LSN of this record, present under `include-lsn=true`.
+    /// Record LSN, under `include-lsn=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub lsn: Option<String>,
     /// Whether the message was emitted transactionally.
@@ -334,7 +321,7 @@ pub struct LogicalMessageV2 {
 }
 
 impl LogicalMessageV2 {
-    /// A message with the three fields wal2json always emits for it. The rest default to absent.
+    /// A message with the three fields wal2json always emits.
     #[must_use]
     pub fn new(transactional: bool, prefix: impl Into<String>, content: impl Into<String>) -> Self {
         Self {
@@ -351,8 +338,7 @@ impl LogicalMessageV2 {
 
 /// A single wal2json v2 message, one JSON object per line.
 ///
-/// The enum is exhaustive, so a `match` needs no catch-all arm and the compiler will point here if
-/// a wal2json release ever adds an action letter.
+/// Exhaustive, so a `match` needs no catch-all and a future action letter becomes a compile error.
 ///
 /// # Examples
 ///
@@ -414,7 +400,7 @@ impl MessageV2 {
         }
     }
 
-    /// The table this message refers to, for row and truncate actions.
+    /// The table, for row and truncate actions.
     #[must_use]
     pub fn table(&self) -> Option<&str> {
         match self {
@@ -424,7 +410,7 @@ impl MessageV2 {
         }
     }
 
-    /// The schema this message refers to, absent under `include-schemas=false`.
+    /// The schema, absent under `include-schemas=false`.
     #[must_use]
     pub fn schema(&self) -> Option<&str> {
         match self {
@@ -435,8 +421,7 @@ impl MessageV2 {
     }
 }
 
-// Flat wire form of a v2 message. Every field wal2json can emit appears exactly once, and the
-// action decides which of them are required.
+// Flat wire form: every emittable field once, with the action deciding which are required.
 #[derive(Deserialize)]
 struct MessageV2Wire {
     action: Action,
@@ -541,12 +526,10 @@ impl<'de> Deserialize<'de> for MessageV2 {
 
 /// The co-indexed column arrays of a v1 insert or update.
 ///
-/// `columnnames` and `columnvalues` are always emitted. The rest depend on plugin options, and
-/// every array that is present has the same length as `columnnames`. [`parse_v1`] rejects input
-/// that violates this, so any value it returns is co-indexed.
+/// `columnnames` and `columnvalues` are always emitted, the rest are option-gated, and every array
+/// present has the length of `columnnames`. [`parse_v1`] rejects input that does not.
 ///
-/// This type has no `Deserialize` impl because it has no standalone wire form: its fields are
-/// inlined into the change object.
+/// No `Deserialize` impl: the fields are inlined into the change object, so it has no wire form.
 #[non_exhaustive]
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct ColumnArrays {
@@ -555,18 +538,16 @@ pub struct ColumnArrays {
     /// PostgreSQL type names, absent under `include-types=false`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub columntypes: Option<Vec<String>>,
-    /// Type OIDs, present under `include-type-oids=true`. Signed because wal2json prints the OID
-    /// with `%d`, so an OID above `i32::MAX` arrives negative.
+    /// Type OIDs, under `include-type-oids=true`. Signed for the reason [`Column::typeoid`] is.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub columntypeoids: Option<Vec<i64>>,
-    /// Attribute numbers, present under `include-column-positions=true`.
+    /// Attribute numbers, under `include-column-positions=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub columnpositions: Option<Vec<i32>>,
-    /// Whether each column is nullable, present under `include-not-null=true`.
+    /// Whether each column is nullable, under `include-not-null=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub columnoptionals: Option<Vec<bool>>,
-    /// Default expressions, present under `include-default=true`. An inner `None` is a column
-    /// with no `DEFAULT` clause.
+    /// Default expressions, under `include-default=true`. An inner `None` means no `DEFAULT`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub columndefaults: Option<Vec<Option<String>>>,
     /// Column values, in tuple order.
@@ -574,9 +555,8 @@ pub struct ColumnArrays {
 }
 
 impl ColumnArrays {
-    /// The two arrays wal2json always emits, built from name and value pairs so that they cannot
-    /// disagree in length. The optional companion arrays default to absent and are public, so
-    /// setting one is the caller's responsibility to keep co-indexed.
+    /// The two always-emitted arrays, from name and value pairs so they cannot disagree in length.
+    /// Keeping a companion array co-indexed is then the caller's job.
     ///
     /// # Examples
     ///
@@ -632,10 +612,8 @@ impl ColumnArrays {
     }
 }
 
-/// Old key information identifying the row in v1 update and delete changes.
-///
-/// Every array that is present has the same length as `keynames`, and [`parse_v1`] rejects input
-/// that violates this.
+/// Old key information identifying the row in v1 update and delete changes. Co-indexed on
+/// `keynames`, which [`parse_v1`] enforces.
 #[non_exhaustive]
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct OldKeys {
@@ -644,7 +622,7 @@ pub struct OldKeys {
     /// Identity PostgreSQL type names, absent under `include-types=false`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub keytypes: Option<Vec<String>>,
-    /// Identity type OIDs, present under `include-type-oids=true`.
+    /// Identity type OIDs, under `include-type-oids=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub keytypeoids: Option<Vec<i64>>,
     /// Identity column values.
@@ -652,8 +630,7 @@ pub struct OldKeys {
 }
 
 impl OldKeys {
-    /// The two arrays wal2json always emits, built from name and value pairs so that they cannot
-    /// disagree in length. `keytypes` and `keytypeoids` default to absent and are public.
+    /// The two always-emitted arrays, from name and value pairs so they cannot disagree in length.
     #[must_use]
     pub fn new(entries: impl IntoIterator<Item = (String, Value)>) -> Self {
         let (keynames, keyvalues) = entries.into_iter().unzip();
@@ -701,20 +678,20 @@ impl<'de> Deserialize<'de> for OldKeys {
     }
 }
 
-/// Primary key information of a v1 change, present under `include-pk=true`.
+/// Primary key information of a v1 change, under `include-pk=true`.
 #[non_exhaustive]
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct PrimaryKeyV1 {
     /// Primary key column names.
     pub pknames: Vec<String>,
-    /// Primary key PostgreSQL type names. wal2json emits this key even under
-    /// `include-types=false`, in which case it is empty rather than absent.
+    /// Primary key type names. wal2json emits this key even under `include-types=false`, where it
+    /// is empty rather than absent.
     pub pktypes: Vec<String>,
 }
 
 impl PrimaryKeyV1 {
-    /// Primary key names with no types, the shape wal2json emits under `include-types=false`.
-    /// `pktypes` is public, and setting it means matching the length of `pknames`.
+    /// Names with no types, the shape wal2json emits under `include-types=false`. Setting
+    /// `pktypes` means matching the length of `pknames`.
     #[must_use]
     pub fn new(pknames: Vec<String>) -> Self {
         Self {
@@ -765,7 +742,7 @@ pub enum ChangeV1 {
         /// The new tuple.
         #[serde(flatten)]
         columns: ColumnArrays,
-        /// Primary key information, present under `include-pk=true`.
+        /// Primary key information, under `include-pk=true`.
         #[serde(skip_serializing_if = "Option::is_none")]
         pk: Option<PrimaryKeyV1>,
     },
@@ -780,13 +757,13 @@ pub enum ChangeV1 {
         /// The new tuple.
         #[serde(flatten)]
         columns: ColumnArrays,
-        /// Primary key information, present under `include-pk=true`.
+        /// Primary key information, under `include-pk=true`.
         #[serde(skip_serializing_if = "Option::is_none")]
         pk: Option<PrimaryKeyV1>,
         /// The old row identity.
         oldkeys: OldKeys,
     },
-    /// Row delete. wal2json emits no column arrays for a delete.
+    /// Row delete, which carries no column arrays.
     #[serde(rename = "delete")]
     Delete {
         /// Schema name, absent under `include-schemas=false`.
@@ -794,13 +771,13 @@ pub enum ChangeV1 {
         schema: Option<String>,
         /// Table name.
         table: String,
-        /// Primary key information, present under `include-pk=true`.
+        /// Primary key information, under `include-pk=true`.
         #[serde(skip_serializing_if = "Option::is_none")]
         pk: Option<PrimaryKeyV1>,
         /// The old row identity.
         oldkeys: OldKeys,
     },
-    /// User-defined logical message. It carries no schema or table.
+    /// User-defined logical message, with no schema or table.
     #[serde(rename = "message")]
     Message {
         /// Whether the message was emitted transactionally.
@@ -813,7 +790,7 @@ pub enum ChangeV1 {
 }
 
 impl ChangeV1 {
-    /// The table this change refers to, for row changes.
+    /// The table, for row changes.
     #[must_use]
     pub fn table(&self) -> Option<&str> {
         match self {
@@ -824,7 +801,7 @@ impl ChangeV1 {
         }
     }
 
-    /// The schema this change refers to, absent under `include-schemas=false`.
+    /// The schema, absent under `include-schemas=false`.
     #[must_use]
     pub fn schema(&self) -> Option<&str> {
         match self {
@@ -859,7 +836,7 @@ impl KindV1 {
     }
 }
 
-// Flat wire form of a v1 change, mirroring MessageV2Wire.
+// Flat wire form, as MessageV2Wire.
 #[derive(Deserialize)]
 struct ChangeV1Wire {
     kind: KindV1,
@@ -968,16 +945,16 @@ impl<'de> Deserialize<'de> for ChangeV1 {
 #[non_exhaustive]
 #[derive(Debug, Clone, PartialEq, Serialize)]
 pub struct TransactionV1 {
-    /// Transaction id, present under `include-xids=true`.
+    /// Transaction id, under `include-xids=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub xid: Option<u32>,
-    /// LSN just past the end of the transaction, present under `include-lsn=true`.
+    /// LSN just past the transaction end, under `include-lsn=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub nextlsn: Option<String>,
-    /// Commit timestamp, present under `include-timestamp=true`.
+    /// Commit timestamp, under `include-timestamp=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub timestamp: Option<String>,
-    /// Replication origin id, present under `include-origin=true`.
+    /// Replication origin id, under `include-origin=true`.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub origin: Option<u32>,
     /// The ordered list of changes.
@@ -985,7 +962,7 @@ pub struct TransactionV1 {
 }
 
 impl TransactionV1 {
-    /// A transaction holding the given changes. Every other field defaults to absent and is public.
+    /// A transaction holding the given changes.
     #[must_use]
     pub fn new(change: Vec<ChangeV1>) -> Self {
         Self {
@@ -998,8 +975,7 @@ impl TransactionV1 {
     }
 }
 
-// Flat wire form of a v1 transaction. Its changes stay in wire form so that `parse_v1` can report
-// a typed error instead of a serde message.
+// Changes stay in wire form so `parse_v1` reports a typed error rather than a serde message.
 #[derive(Deserialize)]
 struct TransactionV1Wire {
     xid: Option<u32>,
@@ -1037,9 +1013,8 @@ impl<'de> Deserialize<'de> for TransactionV1 {
 ///
 /// # Errors
 ///
-/// Returns [`ParseError::Json`] on malformed JSON, and [`ParseError::MissingField`] on a row or
-/// truncate action without a `table`, or a message action without `transactional`, `prefix` or
-/// `content`.
+/// [`ParseError::Json`] on malformed JSON, [`ParseError::MissingField`] on a row or truncate
+/// without a `table`, or a message without `transactional`, `prefix` or `content`.
 ///
 /// # Examples
 ///
@@ -1063,9 +1038,8 @@ pub fn parse_v2(line: &str) -> Result<MessageV2, ParseError> {
 ///
 /// # Errors
 ///
-/// Returns [`ParseError::Json`] on malformed JSON, [`ParseError::MissingField`] on a change without
-/// a field its kind requires, and [`ParseError::LengthMismatch`] on co-indexed arrays that disagree
-/// in length.
+/// [`ParseError::Json`] on malformed JSON, [`ParseError::MissingField`] on a change missing a field
+/// its kind requires, [`ParseError::LengthMismatch`] on arrays of unequal length.
 ///
 /// # Examples
 ///
@@ -1085,12 +1059,11 @@ pub fn parse_v1(json: &str) -> Result<TransactionV1, ParseError> {
     serde_json::from_str::<TransactionV1Wire>(json)?.into_model()
 }
 
-/// Parse a wal2json v2 message from a JSON line held as bytes, as it arrives from a replication
-/// connection.
+/// Parse a wal2json v2 message from a line held as bytes, as it arrives from a connection.
 ///
 /// # Errors
 ///
-/// The same as [`parse_v2`].
+/// As [`parse_v2`].
 ///
 /// # Examples
 ///
@@ -1110,7 +1083,7 @@ pub fn parse_v2_slice(line: &[u8]) -> Result<MessageV2, ParseError> {
 ///
 /// # Errors
 ///
-/// The same as [`parse_v1`].
+/// As [`parse_v1`].
 ///
 /// # Examples
 ///
@@ -1128,9 +1101,8 @@ pub fn parse_v1_slice(json: &[u8]) -> Result<TransactionV1, ParseError> {
 
 /// Parse every message of a wal2json v2 stream, which carries one message per line.
 ///
-/// Blank lines are skipped, so a trailing newline is not an error. Each message is a separate
-/// result, so one unparseable line does not end the iteration. This assumes wal2json's default
-/// output: under `pretty-print` a message spans several lines and this is the wrong tool.
+/// Blank lines are skipped and each message is a separate result, so one unparseable line does not
+/// end the iteration. Assumes wal2json's default output: `pretty-print` spans lines.
 ///
 /// # Examples
 ///
@@ -1153,7 +1125,7 @@ pub fn parse_v2_lines(stream: &str) -> impl Iterator<Item = Result<MessageV2, Pa
 
 /// Parse every transaction of a wal2json v1 stream, which carries one transaction per line.
 ///
-/// Blank lines are skipped and each transaction is a separate result, as in [`parse_v2_lines`].
+/// As [`parse_v2_lines`], over whole transactions.
 ///
 /// # Examples
 ///

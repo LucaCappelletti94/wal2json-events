@@ -3,14 +3,11 @@
 use serde_json::Value;
 use wal2json_events::{ChangeV1, ColumnArrays, OldKeys, PrimaryKeyV1, TransactionV1};
 
-/// Asserts that serializing a parsed value invents nothing and corrupts nothing: every key the
-/// model emits was present in the input at the same path, carrying an equal value, and no array
-/// changed length.
+/// Asserts serialization invents and corrupts nothing: every key the model emits was in the input
+/// at the same path with an equal value, and no array changed length.
 ///
-/// The other direction, that the model keeps every field the input carried, is position dependent,
-/// because a `B` message legitimately ignores a `table` and a delete ignores `columnnames`.
-/// Expressing it here would mean restating the model's field map as a second source of truth, so
-/// the captured corpora in `tests/captured_fixtures.rs` cover that instead, against real output.
+/// The converse, that no input field was dropped, is position dependent (a `B` ignores `table`), so
+/// asserting it here would restate the model's field map. The captured corpora cover that.
 pub fn assert_nothing_invented(input: &Value, output: &Value, path: &str) {
     match (input, output) {
         (Value::Object(input_fields), Value::Object(output_fields)) => {
@@ -39,8 +36,7 @@ pub fn assert_nothing_invented(input: &Value, output: &Value, path: &str) {
     }
 }
 
-/// Asserts the guarantee `parse_v1` documents: every array a change carries is co-indexed with the
-/// names array beside it, so a caller can zip them.
+/// Asserts the guarantee `parse_v1` documents: every array is co-indexed with its names array.
 pub fn assert_co_indexed(transaction: &TransactionV1) {
     for change in &transaction.change {
         match change {
@@ -110,7 +106,7 @@ fn assert_old_keys(keys: &OldKeys) {
 
 fn assert_pk(pk: Option<&PrimaryKeyV1>) {
     if let Some(pk) = pk {
-        // wal2json emits an empty pktypes under include-types=false, which is why empty passes.
+        // Empty passes: that is what include-types=false emits.
         if !pk.pktypes.is_empty() {
             assert_eq!(pk.pktypes.len(), pk.pknames.len(), "pktypes");
         }
