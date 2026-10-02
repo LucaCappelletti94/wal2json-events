@@ -1,0 +1,1 @@
+{"action":"U","table":"all_options_rows","columns":[{"name":"i d","type":"integer","oid":23,"value":1,"   ":"'xt"},{"name":"amount","type":"numeric",      "typeoid":1700,"value":123456789},{ "name":"notext","tytione":"amric",      "typeoid":1700,"value":123456589},{ "name":"note","type":"text","eoid":23,"value":1}],"pk":[{"name":"id","type":"integer","typeoid":23}]}

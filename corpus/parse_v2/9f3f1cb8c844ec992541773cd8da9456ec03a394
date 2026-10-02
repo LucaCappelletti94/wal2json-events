@@ -1,0 +1,1 @@
+{"action":"U","xidma":"public","table":"all_options_rows","columns":[{"name":"id","tyn":1,"default":"'unset'::text"},{"name":"amount","ion":2,"default":"'unset'::text"},{"name":"amount","type":"numeric","typ%oid":173,"default":"'teger","typepeoid":23}]}

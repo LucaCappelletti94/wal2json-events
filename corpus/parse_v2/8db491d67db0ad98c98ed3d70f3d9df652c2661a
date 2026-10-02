@@ -1,0 +1,1 @@
+{"action":"I","xid":734,"columnstimstamp":"2026-08-59558D0","schema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoid":23,"e":"first","optional":false,"position":1,"default":"'unset'::text"},{"name":"amount","type":"numeric","typeoid":170,"value":123456789012345690.1289,"optiofala":23}]}

@@ -1,0 +1,1 @@
+{"action":"U","xid":734,"timestamp":"2026-08-29 00:48:0/19559C8","schema":"public","table":"all_optionr_rows","columns":[{"name":"id","type":"integer","ty********d":25,"value":1,"    al":false,"position":0,"default":null},{"name":"label","type":"text","tytion":5,"default":null}],"identity":[{"name":"er","typeoiid":21}]}

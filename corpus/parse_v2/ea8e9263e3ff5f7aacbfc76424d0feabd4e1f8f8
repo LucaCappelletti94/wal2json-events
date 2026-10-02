@@ -1,0 +1,1 @@
+{"action":"U","xid":734,"timestamp":"202--29 00:48:3blic","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoult":"'unset'::"},{"name":"amount","type":null}],"identity":[{"name":"id","type":"ieger","typeoid":23,"value":1}],"pk":[{"name":"id","tyke":"integer","typoid":23}]}

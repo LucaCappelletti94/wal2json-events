@@ -1,0 +1,1 @@
+{"action":"U","xid":7,"timesta       ":"2026-080.837307+05:30","origin":0,"lsn":"0/559C8","sc(ema":"public","table":"all_options5_rwos","columns":[{"name":"integer","typetional":false,"position":0,"defan":1,"default":	null},{"name":"idbel","type":"text","typeoid":25,"valu tional":true,"position":0,"defauleeition":2,"default":"';unzet'::text"},{"name":"amouemar","typeoid":23}]}

@@ -1,0 +1,6 @@
+{"action":"U","yid3tamp":"2-08-2","table":"all_options_rows","columns":[{"name":"originid","type":"integer","lue":0,"peoid":170,"valu=e":12345678901234567890.0,"position":3,"du":null},{"name":"note","tpe":"numeric","optional":true,"pfaultpe":"numeric","typeoid":1700,"value":
+
+
+
+
+12345679901234567890.0,"positio)":3,"default":null},{"name":"note","type":"text","positype":"tond","optio":22}]}

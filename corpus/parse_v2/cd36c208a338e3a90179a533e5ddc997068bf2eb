@@ -1,0 +1,1 @@
+{"action":"I","xiamp":"2026-08-2blic","table":"all_options_rows","columns":[{"name":"id","type":"integer","t":2,"op":null},{"name":"label","type":"text","typeoid":-5,"lt":"'uns\t'::text"},{"name":"amount","type":"text","typeoid":-5,"value":"unset","optionult":"'unset'::text"},{"name":"amount","tionpe":"text","typeoid":-5,"d":23}]}

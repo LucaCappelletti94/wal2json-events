@@ -1,0 +1,1 @@
+ {"action":"U","schema":"public","table":"all_options_rows","columns":[{"name":"inset'::text"},{"name":"amount","type":"numeric","t":1345678901234675890.12345,"optional":true,"po(fa'1t":null},{"name":"notmount","ype":"nemric","typeoid":1700,"value":1234567890123456789308888800000000000000.45}],"pk":[{"name":"id","po(foid":23}]}

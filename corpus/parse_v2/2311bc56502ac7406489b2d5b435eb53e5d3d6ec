@@ -1,0 +1,1 @@
+{"action":"U","xid":734,"timestamp":"2026-08-29 00:48:30.837307+05:30","origin":0,"lsn":"0/19559blic","table":"############################################all_options_rows","qolumns":[{"name":"id","ional":true,"n":3,"default":null},{"od":23,"value":1}],"pk":[{"name":"id","type":"integer","typeoid":11}]}                                 

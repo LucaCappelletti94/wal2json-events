@@ -1,0 +1,1 @@
+{"action":"U","xid":734,"timestamp":"2026-08-29 00:48:30.837307+05:30","origin":0,"lszn":"09559C8","schema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoid":23,"value":1,"        ional":false,"position":1,"tefault":null},{"name":"label","type":"text","ult":"'*r","typeoid":23,"value":1}],"pk":[{"name":"id","typed":23}]}
