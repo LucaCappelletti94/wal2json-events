@@ -1,0 +1,29 @@
+[package]
+name = "wal2json-events-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+wal2json-events = { path = ".." }
+libfuzzer-sys = "0.4"
+serde_json = { version = "1", features = ["alloc"] }
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+
+[[bin]]
+name = "parse_v1"
+path = "fuzz_targets/fuzz_target_parse_v1.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "parse_v2"
+path = "fuzz_targets/fuzz_target_parse_v2.rs"
+test = false
+doc = false

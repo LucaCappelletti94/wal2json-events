@@ -1,0 +1,7 @@
+target
+artifacts
+
+# The corpus holds hand-picked seeds, named seed*. Everything else in it was produced by a fuzzer
+# run and is not worth carrying in the repository.
+corpus/*/*
+!corpus/*/seed*
