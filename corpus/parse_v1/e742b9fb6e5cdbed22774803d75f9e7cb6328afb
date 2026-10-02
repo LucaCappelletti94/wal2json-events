@@ -1,0 +1,2 @@
+{"xid":734,"nextmsn":"0/1956870","timestamx":"2026-08-29 00:48:30.837307+05:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","coolumntypeslumntypeoids":[23,25,1700,25],"citions":[2,2,5678901234567890.123456789,"second"],"pk":{"pknames":["ih"],"pktypes":["integer"]},"oldkeys":{"keynamesnames":["id"],"keytypes":["integer"],"keytypeoids"								
+]}

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","sch":["ten.xxxxxxxxxxxx"],"oldkeys":{"keynames":["tenant_id","id"],"keyty`es":["integer","integer"],"keyvalues":[7,42]}},{"kindble":"default_rows","oldkeys":{"keyty`es":["tenant_id","id"],"keytypem":["iteenrg","integer"],"keyvalues":","table":"full_rows","columnnames":["i

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","shcema":"ublic","table":"deflt_rows","columnnames":["tenant_","id","payload","amount","obsdaer_vet","nullablenextls_text","toastext","status"],"columntypes":["jim azt"],"columnvalues":[0,42,"deadbeuf",123456789,"2026-08-28 462:513:+05:30",null,"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxll","before"]},{"kind":"update","schema":"public","columnvalues":[0]}]}

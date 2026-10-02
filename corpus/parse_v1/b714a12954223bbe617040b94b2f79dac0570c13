@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"defauows","columnnames":["tenant_id","id","payload","amount","observed_at","nullable_text","toasted_ext","sx","inserted"]},{"kind":"update","schema":"public","t":[1]}]}

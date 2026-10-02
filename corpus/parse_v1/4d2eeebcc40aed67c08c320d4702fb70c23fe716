@@ -1,0 +1,3 @@
+{"pid":734,"nextmsn":"0/1956870:30.8s7307+05:30","origin":0,"change":[{"kind":"insert","schema":"public","tablptionals":[false,false,true,true],"col[umndefaults":[null,"'ud","label","amnt","note"],"columntypes":["integer","tdxt",																																																																																																							
+
+		"numeric","text"],"columntypeoidts":[null,"'unset'::text",null,45678788,null],"pk":{"pknames":["id"],"pktypes":["ier","text",																								oidts":[,"prefix":"wal2jstional"}ents]}]}

@@ -1,0 +1,2 @@
+{"xid":734,"nextlsn":"0/1956870","timest":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","types":["iine,c","text"],"columntypeoids":
+		

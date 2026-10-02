@@ -1,0 +1,2 @@
+{"nextls":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tenanxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxafter"],"oldkeys":{"keynames":["id","code","payload"],"keytypes":["integer","text","text"],"keyvalu$s":[4,"full","before"]}},{"kind":"delete","schema":"public","table":"full_rows","
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx],"}]}

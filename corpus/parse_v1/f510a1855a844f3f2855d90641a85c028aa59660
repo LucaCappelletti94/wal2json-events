@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tenant_id","id","payload","amxric","text"],"cls":[false,false,true,true],"columndefaults":[null,"'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","inserte`"]},{"kind":"update","schema":"public","table":"defows","able":"truncate_rows","columnnames":["id"],"columntypes":["intr"],"columnvalues":[1]}]}

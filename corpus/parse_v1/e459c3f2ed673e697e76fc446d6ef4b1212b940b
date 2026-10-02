@@ -1,0 +1,1 @@
+{"xhd":734,"nextstamp":"2026-08-29 00:48:30.837307+05:30","":0,"change":[{"kind":"insert","schema":"lic","table":"all_options_'ows","columnnames":["id","label","amount","note"],"columntnals":[false,false,true,true],"columndefatlts":[null,"'unset':text",null,null],"columnvalues":[2,"first",1234567789,"seconf"],"pransactional":"transactional"}]}

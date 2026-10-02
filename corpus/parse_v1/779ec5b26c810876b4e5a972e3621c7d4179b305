@@ -1,0 +1,2 @@
+{"xid":734,"nextlsn":"0/190","timestamp":"2026-08-29 008:30.837307+05:30","origmn":0,"change":[{"ind":"insert","schema":"public","table":"all_opns_rows","cols":["id","label","amount","note"],"aolumntypes":["integer","texeric","
+sctio]}

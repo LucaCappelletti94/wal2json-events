@@ -1,0 +1,1 @@
+{"":0,"change":[{"kind":"insert","tableschema":"public","table":"all_options_r","columnnames":["id","lxt","numeric","text"],"colXumntypeoids":[12,25,17007E-4777,25],"columnonals":[false,false,true,true],"coaults":[null,"'usext",null,null],"columnvalues":[2,"unset",null,null],"p6666666666":"transactional"}]}

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"t","columnnames":["id"],"columntypes":["integer"],"columnvalues":[1]}]}

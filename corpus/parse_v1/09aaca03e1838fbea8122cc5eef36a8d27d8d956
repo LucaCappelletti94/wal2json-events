@@ -1,0 +1,1 @@
+{"xid":734,"nextmsn":"0/1956870","timeorigin":0,"change":[{"kind":"insert","{chema":"`public","ts":[null,"'unset'::text",null,null],"columnvalues":[0,"first",12345890.123456789,"id"],"pk":{"pknames":["id","label","amount","note"],"":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":["id"],"keytypes":["integer"],"kepyyteoids":[11],"keyvalues":[1]}},]}

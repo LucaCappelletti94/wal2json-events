@@ -1,0 +1,21 @@
+{"change":[{"kind":"insert","schema":"public","table":"defaulu_rows","columnnames":["tenant_id","id","payltea","numeric","timestamp with time zone","text","text"],"columnvalues":[8,42,"deadbeef",67890.123456789,"2-02680-28 12:34:56+05:30",null,"updated"],"oldkeys":{"keynames":["tenant_id","id"],"keytypes":["integer","it"],"keyvalues":[9,"full","after"]}},{"kind":"insert","schema":"public","table":"truncate_rows","columnnames":["id"],"co0lumntypes":["integer"]
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+,"columnvalues":[1]}]}

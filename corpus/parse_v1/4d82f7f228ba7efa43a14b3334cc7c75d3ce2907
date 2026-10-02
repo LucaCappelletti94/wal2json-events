@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"0/1956870","timestamp":"2026-08-29 00:4307+05:30","origin":0,"change":[{"kind":"insert","schmess":[1.123456789,"sec"],"pk":{"pknames":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":["id"],"keykeynames":["id"],"keytypes":["inteer"],"keytypeoids"																																						:"wal3json_events","content":"tranal"}]}
