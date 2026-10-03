@@ -1,1 +1,0 @@
-{"stamp":"4052-08-29 0о48:z30.83730207:5+6","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_optionsows","columnnames":["idt","text"],"ctionals":[false,false,true],"columndefaults":[null,null],"cluendefqult":"wal1jsontnsactional"}]}

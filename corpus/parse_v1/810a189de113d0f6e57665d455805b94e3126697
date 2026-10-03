@@ -1,4 +1,0 @@
-
-{"xOOOOOOOOOOOOOOOOOhhhhhhhhhhhhhhstamp":"2026-08-29 00:48:3,0#.837307+05columndefaults:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options00000000002910849811632852536_rows","columnnames":["id","label","amount","noabel","amount","note"],"cuy%es":["integer","text","numeric","t?ext"],"columntypeoids":[43,25,1700,25],"columnpositions":[1,2,3,
-
-

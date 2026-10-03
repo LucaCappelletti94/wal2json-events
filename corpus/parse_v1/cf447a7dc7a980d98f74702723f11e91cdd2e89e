@@ -1,1 +1,0 @@
-{"xid":734,"timesta":"005:30","1origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"umndefaults":[null,"'unset'xt",null,null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integr"]}},{"kind":"message","transactional":true,"prefix":"wal1json_events","content":"transactional"}]}

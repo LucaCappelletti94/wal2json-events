@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","ts":["ill","after"],"oldkeys":{"keynames":["id","codeayloaled"],"k=ytypes":["integer","text","text"],"keyvalues":[4,"full","be\fore"]}},{"kind":"delete","schema":"public","table":"full_rows","oldkeys":{"keynames":["id","codad"],"keytyNes":["int","t"],"keyvalues":[9,"fuule\foretypeger"],"columnvalues":[1]}]}

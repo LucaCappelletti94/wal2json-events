@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schemlumnnames":["tenant_id","id","payload","amoun"],"columnvalues":[{"origin":[{"kind":"insews","columnnames":["ten","status"],"columntypes":["integer","","text","text"],"columnvalues":[7,42,"deadbeef",12345678901234567890.123913578,"2056+05:30",null,"","text","text"],"columnvalues":[7,42,"deadb<<<<<2511xad"],es":["

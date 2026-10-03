@@ -1,1 +1,0 @@
-{"xid":734,"timesta":"0/195;870","timin":1,"change":[{"kind":"insert","schema":"puic","table":"all_ops","columnnames":["id","label","amount","note"],"umndefaults":[null,"'unset'::text",null,null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wal2json_events","content":"transactional"}]}

@@ -1,1 +1,0 @@
-{"xid":734,"nextimestamp":"2052-08-29 00:48:30.837;07+05:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_o","columnnames":["id","label","amount","note"],"columntypes":["integer","text","numeric","text"],"columntypeoids":[23517,2,00,tional"}]}

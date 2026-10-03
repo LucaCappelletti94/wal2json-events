@@ -1,2 +1,0 @@
-{"xid":734,"change":[{"kind":"insert","schmndefaults":[null,"'unset'::text",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":["id"],"keytypes"							
-]}
