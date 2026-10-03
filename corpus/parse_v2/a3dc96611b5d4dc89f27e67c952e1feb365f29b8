@@ -1,1 +1,0 @@
-{"action":"I","":0,"lsn":"ic","table":"all_ows","coltmns":[{"name":"id","typeoid":23,"value":1,"optial":false,"position":1,"defautl":null},{"ty!peopid":1700,"value":12345678901234567890.123456789,"optional":true,"position":3,"def":"text","typeoid":25,"value":null,"optional":true,"position":4,"default":null}],"pk":[{"name":"id","type":"integer","typeoid":22}]}

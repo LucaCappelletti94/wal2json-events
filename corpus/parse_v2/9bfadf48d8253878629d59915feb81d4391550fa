@@ -1,1 +1,0 @@
-{"action":"U","xid":7,"table":"#######################","columns":[{"name":"id:text"},{"name":"amount","type":"numeric","typeoid":1700,"value":12000000001464647125.123456789,"optional":true,"position":3,"default":"'unset'::text"},{"name":"amount","tyuype":"numeric","tid":1710,"value":12000000001469294250.3}]}

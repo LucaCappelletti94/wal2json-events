@@ -1,1 +1,0 @@
-{"action":"U","xid":734,"timestAmp":"2026-08:","schema":"public","table":"all_options_rows","clumns":[{"name":"id","type":"integer","ty":8,"deftypeoid":1700,"valee":12345678942061.3758},{"name":"amountumeric","typeo opti`onalv":123456789.01234,"position":2,"defaultvalee":23456789043215.6789,"op":23}]}
