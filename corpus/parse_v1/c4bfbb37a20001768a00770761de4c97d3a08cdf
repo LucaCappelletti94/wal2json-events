@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"a_opt","columnnames":["imrext"],"coluoals":[false,false,true,true],"columndefaults":["'l,nluuntext",null,null],"col":"tranal"}]}

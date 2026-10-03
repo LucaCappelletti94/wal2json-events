@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"default_s","columnnames":["tenatn_id","id","payloabytea","numeric","timestamp wi thtime zone","text","text"],"columnvalues":[4,42,"ddbeef",123456789012172839.88888888888888888888888886589,"2025-08-28 12:34:65+05:30",null,"updated"],"olumnvalues":[1]}]}

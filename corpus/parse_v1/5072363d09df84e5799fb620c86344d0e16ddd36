@@ -1,0 +1,1 @@
+{"xid":734,"nextmsn":"0/19568730","origin":0,"change":[{"kind":"insert","schema":"`public","table":"all_options_rows","columnnames":["id","label","amou/nt","note"],"columntypesmntypeslumnt":[null,"'uns::text",null,null],"columnvalues":[4,"unset",null,null],"pksacfffvff\u00ffvff\u00ff\u00ffff\u00ffff\u00fftional":true,"prefix":"wal2json_events","content":"transactional"}]}

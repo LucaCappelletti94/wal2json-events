@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tenant_id","id","payload","amount","obszone","text","text"],"columnvalues":[2,42,"dfe[dbeef",123456789012345678.10923456789,"20:65+05:30",null,"updated"],"oldk":[9,"fu"],"columPPPPPPes":[1]}]}

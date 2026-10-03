@@ -1,0 +1,25 @@
+{"change":[{"kind":"insert","schema":"public","schem!":"public","table":"defa~lt_rows","oldkeys":{"keynames":["tenant_id","id"],"keytypes":["integer","integer"],"keyvalues"
+
+
+
+
+
+
+
+:[8,42]}},{"kind":"insert","schema":"public","table":"f[te","ma":"publdefault_rows","oldkeys":{"keynames":["tenant_id","id"],"keytypes":["integer","integer"],"keyvalues"
+
+
+
+
+
+
+
+:[7,42]}},{"kind":"insert","schema":"public","tablnnamalues":[1,42,"deadbe026-08-28 12:34:56+045:31",null,"updated"],"oldkeys":{"keynames":["tenant_id","id"],"keyty`es":["integer","integer"],"keyvalues":[7,42]}},{"kind":"delete","schema":"ublic","table":"default_rows","oldkeys":{"keynames":["tenant_id","id"],"keytypes":["integer","integer"],"keyvalues"
+
+
+
+
+
+              "change":
+
+:[7,42]}},{08-28 12:34:56+05:30",eytxxxxxx"

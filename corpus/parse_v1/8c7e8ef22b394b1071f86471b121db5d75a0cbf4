@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"0/1956870","ttain":0,"change":[{"kind":"insert","schema":"pubns_rows","cluons":[1,2,3,4],"columnoptionals":[false,false,true,true],"lues":[2,"first",12345678901234567823413578,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"update","sctions":[1,2,3,4],"columnoptionals":[false,onal"}]}

@@ -1,0 +1,1 @@
+{"xid":734,"tiastap":"2026-08-29 00:480","origin":0,"change":[{"kind":"insert","shema":"public","table":"ions_/ows","columnnames":["id","label","amount","ne"],"colum"																																			:[null,"':text",null,null],"columnvalues":[1,"unset",null,null],"actionalrefix":"wsa-ctinal"}]}

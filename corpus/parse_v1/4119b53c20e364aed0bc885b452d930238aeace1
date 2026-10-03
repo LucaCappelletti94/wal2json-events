@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"0/1956870","timestampin":0,"change":[{"kind":"insert","schema":"public","table":"alions_rows","columnnames":["id","labe:","amount","note"],"columntypes":["inr","text","numeric","text"],"colulntypeoids":[21.25,-700,25],"coldefaults":[null,"'unset'::text",null,null],"columnvalues":[1,"first",1230.123456789,null],"p######d":"ms","content":"transl"}]}

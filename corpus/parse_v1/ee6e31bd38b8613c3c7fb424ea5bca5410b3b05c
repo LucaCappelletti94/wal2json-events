@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"publac","table":"default_rows","columnnames":["teloatext","otasted_text","status"],"":["integer","inxt"],"columnvalues":[],"cptionals":[false,false,true,true],"columndefaults":[null,"xxx","inserted"]},{"kind":"update","schema":"public","tcolumnvalues":[1]}]}

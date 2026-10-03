@@ -1,0 +1,1 @@
+{"":"0/1956870","timen":0,"change":[{"kind":"insert","schemza":"public","table":"_rows","columnnames":["id","","numeric","text"],"columntyions":[1,"'unset'::text",null,null],"columnvalues":[1,"first",123456708901234567890.123456789,"second"],"pkki":"message","transactional":true,"prefix":"wal1json_events","content":"transactional"}]}

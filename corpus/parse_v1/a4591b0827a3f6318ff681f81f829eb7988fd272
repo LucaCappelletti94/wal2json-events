@@ -1,0 +1,1 @@
+{"change":[{"columnnames":[" wiext","text"],"columnvalues":[{"change":[{"kind":"insert","schlumnnames":["tenant_id","id","payload","amount","observed_at",":nullable_text","toasted_taxt","status"],"columntypes":["integer","integer","bytea","numeric","timestamp with timext"],"columnvalues":[7,42,"deadbeef",12345678901234567890.456789,"2-28 12:34:56+05:30",null,"xx:["

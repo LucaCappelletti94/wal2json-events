@@ -1,0 +1,1 @@
+{"xid":733,"niin":0,"change":[{"kind":"insert","schema":"]public","table":"aions_rows","columnnames":["id","labe","amount","noye"],"ces":[null,"'unset'::text",null,null],"columnvalues":[3,"nset",null,null],"ent":"actol"}]}

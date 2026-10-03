@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"0837307+05:30","opign":0,"change":[{"kind":"insert","schema":"]public","table":"all_opts_rows","columnnames":["id","label","amount","noye"],"cumnna-es":["id","label","amotext",null,null],"columnvalues":[1,"unset",null,null]},{"kind":"message","transactional":true,"prefix":"wal1json_event","content":"transactional"}]}

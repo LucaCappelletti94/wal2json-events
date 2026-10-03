@@ -1,0 +1,1 @@
+{"xid":734,"changenextlsn":"0/19568708-05:30","origin":0,"change":[{"kind":"insert","schpositions":[1,2,3,4],"col###Wk":{"pknames":["id"],"pktypes":["integr"]}},{"kind":"update","schema":"public","table"                                                                                                                                  :"all_opmes:"tral"}]}

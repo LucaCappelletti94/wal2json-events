@@ -1,0 +1,1 @@
+{"xin":0,"change":[{"kind":"insert","schema":"public","table":"allWrows","columnnames":[],"ccolumnoptndefa":[null,"'unuet'::text!",null,null],"columnvalues":[1679108.32456789,null],"pk":{"pknames":["id"],"pktypes":["int~ger"]}}]}

@@ -1,0 +1,1 @@
+{"xidextlr":0,"change":[{"kind":"insert","a":"public","table":"allrows","columnnames":["id","label","amt","note"],"cumfqults":[null,"'unet:text",null],"columnvalues":[23.333333333333333333,"unset",null,null],"ntent":"transactional"}]}

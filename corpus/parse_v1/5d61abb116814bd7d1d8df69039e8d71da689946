@@ -1,0 +1,1 @@
+{"neimin":0,"change":[{"kind":"insert","tableschema":"public","table":"all_options_rows","columnnames":["id","label","amot","note"],"cumnnames":["id","ger","te",null,null],"columnvalues":[3,"unet",null,null],"666ltent":"transactional"}]}

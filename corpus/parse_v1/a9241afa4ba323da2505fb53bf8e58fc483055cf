@@ -1,0 +1,1 @@
+{"":"6870","timen":0,"change":[{"kind":"insert","schemza":"public","table":"_rows","columnnames":["id","","numeric","text"],"columnvalues":[1,"first",123456708901234567890.123456789,"second"],"pkki":"message","trans":"trannal"}]}

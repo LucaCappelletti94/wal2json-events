@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"s","columnnames":["tpdated"],"oldkeys":{"keynames":["tenant_id","id?"],"key2types":["intege"],"keyna(mes":["tenant_id","id"],"kyteypes":["integer","ger"],"keyna(mes":[2dko

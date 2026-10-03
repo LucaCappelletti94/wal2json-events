@@ -1,0 +1,10 @@
+{"xid":0,"change":[{"kind":"insert","schma":"p:blic","table":"all_options_rows","columnnames":["id","label","amount","note"],"cumnnames":["eger",{"":[
+
+
+
+
+
+
+
+
+]},"text"],"ints":[1,2,3,4],"columnoytionals":[false,false,"'unset'::text",null,null],"columnvalues":[2,"unset",null,null],"pkntent":"transactional"}]}

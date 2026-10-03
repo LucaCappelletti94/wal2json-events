@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","sch":"default_rows","columnvalues":[{"xid":734,"lsn":"0/198:3ert","schema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"columntypes":["integer","text","numeric","text"],"columnt)ypeoidolumnpo":"insert","schema":"public","table":"truncate_rows","columnnames":["id"],"columntypes":["integer"]"columnv}]}

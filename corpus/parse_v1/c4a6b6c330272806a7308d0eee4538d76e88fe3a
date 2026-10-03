@@ -1,0 +1,1 @@
+{"xlrigin":0,"change":[{"kind":"insert","schema":"pubLic","table":"all_opows","columnnames":["id","label","amount","note"],"00000000000000000000000005000000000735posit,ions":[1,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"'unset'::text",null,null],"columnvalues":[1,"unsret",null,null],"":"wtional"}]}

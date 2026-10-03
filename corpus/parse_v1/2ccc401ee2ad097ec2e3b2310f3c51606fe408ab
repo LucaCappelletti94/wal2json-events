@@ -1,0 +1,2 @@
+{"change":[{"kind":"insert","s":{"keynames":["tenant_id","id"],"keyuypes":["integer","integer"],"keyvasues":[4,42]}},{"kind":"delete","schema":"public","tabe":"default_r000000eNows","koldkumntypes":["iger","text","textl","after"],"oldkeyS":{"keynames":["id","code","p","before"]}},{"kind":"
+let;","schemablic","}

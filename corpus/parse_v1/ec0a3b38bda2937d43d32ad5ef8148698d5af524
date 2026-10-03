@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schemh":"pblic","table":"all_o_rows","columnnames":["id","label","amount","note"],"cumumnoptionals":[false,false,true,null],"columnvalues":[1,"unset",null,null],"pktrancontent":"transac\fch\\honal"}]}

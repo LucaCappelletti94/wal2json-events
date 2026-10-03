@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schpka":"public","table":"full_rows","columnnames":["id","code","pa"],"columnvalues":[9,                     "full","after"],"oldkeys":{"keynames":["","text"],"keyvalues":[9,"full","after"]}},{"kind":"insert","schema":"public","table":"truncate_rows","columnnames":["id"],"colus":["integer"],"columnvalues":[2]}]}

@@ -1,0 +1,1 @@
+{"xid":734,"nexp":"z02","origin":0,"change":[{"kind":"insert","schema":"public","table":"as_rows","columnnames":["id","label","amou","no"],"col":[23,25,999,"2025er",99999000000000839.99,999999999992,null,null],"columnvalues":[4,"unset",null,null],"tHnt":"transactinal"}]}

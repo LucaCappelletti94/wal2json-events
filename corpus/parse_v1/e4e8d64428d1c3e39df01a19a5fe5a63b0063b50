@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"publac","table":"default_rows","columnnames":["teload","amouable_text","otasted_text","status"],"columntypes":["integer","inxt"],"columnvalues":[],"cptionals":[false,false,true,true],"columndefaults":[null,"'xxxxxxxxxxxxxxxxxxxxxxxx","inserted"]},{"kind":"update","schema":"public","tcolumnvalues":[1]}]}

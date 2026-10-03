@@ -1,0 +1,1 @@
+{"nxid":734,"nextlsn":"0/1956870","timestamp":"2026-08fix 00:4805:30","origin":0,"change":[{"kind":"insert","schema":"puic","table":"aws","columnnames":["id","labeext","numeric","t#*.lafsc$(\t\\:*dl\/.lt\/ext"],"colmndef!ults":[null,"'unsettext",null,null],"columnvalues":[0,"uns\t",null,null],"fix":"n_events","content":"transactional"}]}

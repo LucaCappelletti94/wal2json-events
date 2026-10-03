@@ -1,0 +1,1 @@
+{"xid":734,"timestigin":0,"change":[{"kind":"insert","schema":"public","table":"als_rows","columnnames":["id","label","amount","note"],"umndefaults":[null],"columnvalues":[1,"unset",null,null],"pi":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wal2jso","content":"transactional"}]}

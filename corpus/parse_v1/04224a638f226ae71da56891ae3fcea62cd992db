@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","tabe":"default_rows","columnnames":["yload","statuy"],"columntypes":["integer","integer","bya","n8umeric","tiext"]]}]}

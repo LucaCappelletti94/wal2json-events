@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"0/1956870","tim.estamp":"2023-08-28 00:48:30.:30","origin":0,"change":[{"kind":"insert","scble":"all_options_rows","columnnames":["id","label","amount","nond"],"ki":{"pknamess":["id"],"kes":[1]}},{"kind":"delete","soldkeyspayloadchema":"public","tabcule":"alo_ltoipns_rows","tk":{"pknamelues":[1]}},{"kind":"insert","sc"changbbnset":{"pkname]}"}]}

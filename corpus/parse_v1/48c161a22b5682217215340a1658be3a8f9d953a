@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"default_ros","columnnames":["tenant_id","id","patea","numeric","ne","text","text"],"columnvalues":[4,42,"deadbeef",123678901234567890.123456789,"2026-08-28 4:56+05:30",null,"updated"],"oldkenvalues":[1]}]}

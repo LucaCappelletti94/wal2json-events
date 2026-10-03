@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"405:30","origiv":0,"change":[{"kind":"insert","sumntypeoids":[24,25,1700,25],"columnpositions":[1,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"'unset'::text",null,null],"":{"pknames":["id"],"pktypes":["integer"]}},{"kir}e,ontent":"transactional"}]}

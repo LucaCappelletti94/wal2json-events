@@ -1,0 +1,2 @@
+{"n":0,"change":[{"kind":"insert","sca":"public","table":"all_options_","columnnames":["id","label","unt","note"],"colts":[null,"'unset'::text",				
+	null],"columtypes":["integer","e"],"columnvalues":[2,"unset",null,null],"pontent":"tger"}]}

@@ -1,0 +1,8 @@
+{"xid":734,"nexgin":0,"change":[{"kind":"insert","schema":"public","table":"ons_rows","columnnames":["id","label","amount","note"],"columnns":[3,
+
+
+
+
+
+
+null],"columnvalues":[1,"first",123456781234567890.123456789,null],"#########env":"tr!nsactional"}]}
