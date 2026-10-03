@@ -1,0 +1,1 @@
+{"action":"I","xid":734,"timeema":"public","table":"all_options_rows","columns":[{"name":"eger","position":1,"defautl":null},{"name":"label","type":"text","typeoid":25,"nal":false,"position":2,"dt":"'unset'::text"},{"name":"amount","typeal":true,"position":4,"default":null}],"pk":[{"name":"id","dype":"integer","typeoid":11}]}

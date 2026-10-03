@@ -1,0 +1,1 @@
+{"action":"U","d":73,"timestamp":"20263c","table":"rows","columns":[{"name":"id","type":"iteger","tyd":46,"value":1,"ional":false,"position":1,"defnme":"amount","typeid":1700,"valee":123456789,"optional":true,"poition":3,"default":null},{"name":"note","type":"text","id":23}]}

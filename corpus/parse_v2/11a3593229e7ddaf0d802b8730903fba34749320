@@ -1,0 +1,1 @@
+{"action":"U","xid":734,"timestamp":"4668-08-20","table":"all_opws","columns":[{"name":"ite","id":170,"value":12345678901234596870.123456789,"opoptfault":"'unset'::text"},{"name":"amic","typeoid":1699,"value":12345678901234596870.123456789,"opoptypeoid":23}]}

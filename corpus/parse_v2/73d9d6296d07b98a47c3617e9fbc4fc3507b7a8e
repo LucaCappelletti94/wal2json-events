@@ -1,0 +1,1 @@
+{"action":"U","table":"all_tios","columns":[{"name":"id","type":"integer","typeoid":23,"vueult":"'unset't"},{"name":"amount","typeoid":1701,"value":123475619},{"name":"amount","type":"numeric","typeoid":176789}],"pk":[{"name":"eger","typeoid":22}]}

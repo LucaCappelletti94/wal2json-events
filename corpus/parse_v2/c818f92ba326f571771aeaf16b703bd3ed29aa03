@@ -1,0 +1,1 @@
+{"action":"I","xid":734,"ti":"pu","table":"all_options_rows","columns":[{"name":"eger","position":1,"efautl":null},{"name":"label","al":false,"position":2,"dt":"'unset'::text"},{"name":"amount","typeal":true,"position":4,"defult":null}],"pk":[{"name":"id","dype":"integer","id":11}]}

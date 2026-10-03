@@ -1,0 +1,1 @@
+{"action":"I","xid":734,"timstamp":"248:30.837+05:30","origin":0,"lsn":"0/955A70","schema":"public","table":"ons_rows","columns":[{"name":"id","position":3,"dult":null},{"name":"note","type":"text","typeoid":null,"optional":true,"position":4,"defpeoid":11}]}

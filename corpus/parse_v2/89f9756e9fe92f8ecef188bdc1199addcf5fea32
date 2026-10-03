@@ -1,0 +1,1 @@
+{"action":"U","a":"public","table":"ell_options_rows","columns":[{"name":"iuleric","typeoid":1700,"value":12345678901234567890.123456789,"optt":null},{"name":"notmount","type":"numeric","typeoid":1700,"value":1234567890126485379308888800000000000000.12345}],"pk":[{"name":"id","typeoid":23}]}

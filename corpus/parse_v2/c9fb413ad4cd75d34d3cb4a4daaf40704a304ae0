@@ -1,0 +1,1 @@
+{"action":"U","xid":7,"tip":"19 00373059Cc","table":"alls","columns":[{"name":"id","type":"intger","typeoid":23,"value":1,"default":"'unset'::text"},{"name":"amouric","typeoid":17,"value":1289},{"name":"note","typnal":23,"value":1}],"pk":[{"name":"id","type":"integer","typeoid":23}]}

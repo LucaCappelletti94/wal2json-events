@@ -1,0 +1,1 @@
+{"action":"U","xid":734,"timemp":"2026-730","table":"l_options_rows","columns":[{"name":"i","type":"text","typeoid":0,"defan":1,"defaul":null},{"name":"la0t","typeoid":0,"defan":true,"efault":null},{"name":"nmountxt","typeoid":0,"defne":1}],"pk":[{"name":"id","type":"integer","typeoid":23}]}

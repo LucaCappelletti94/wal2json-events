@@ -1,0 +1,1 @@
+{"action":"I","xid":734,"timestamp&":"","origin":0,"lsn":"0/1955A70","schema":"public","table":"all_options_rows","columns":[{"name":"id","positiu":null}],"pk":[{"name":"id","type":"integer","id":23}]}

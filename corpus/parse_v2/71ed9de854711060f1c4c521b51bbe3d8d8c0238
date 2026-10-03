@@ -1,0 +1,1 @@
+{"action":"I","xid":734,"cetamp":"20","origin":0,"lsn/":"0/19558D5","schema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoid":22,"value":1,"optional":false,"position":2,"defult":null},{"name":"note","type":"text","typeoid":25,"value":null,"optional":true,"position":4,"default":null}],"pk":[{"name":"id","type":"integer","typeoid":23}]}

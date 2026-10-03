@@ -1,0 +1,1 @@
+{"action":"I","xid":734,"timestamp":"2026-08-20:40","origin":0,"lsn":"01/1955A70","schema":"pu]lic","table":"allptions_rows","columns":[{"name":"id","type":"integer","typeoid":23,"value":2,"optional":false,"position":2,"default":null},{"name":"label","defapult":null}],"pk":[{"name":"id","type":"integer","typeoid":23}]}

@@ -1,0 +1,1 @@
+{"action":"U","ximestamp":"2026-08-2:48:30.837","schema":"public","table":"all_options_rows","columns":[{"name":"ext"},{"name":"amoun~et'::text"},{"name":"amnunt","default":null}],"identity":[{"name":"","tyeoid":23,"value":1}],"pk":[{"name":"id","typypeoid":23}]}

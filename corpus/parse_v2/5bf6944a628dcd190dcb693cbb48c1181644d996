@@ -1,0 +1,1 @@
+{"action":"U","xid":93,"schema":"mublic","table":"ows","columns":[{"name":"idd","optional":true,"p":7,"df":null},{"name":"ext","d":24,"":99,"optional":true,"posit":null},{"name":"label","type":"t","optional":true,"positid":23}]}

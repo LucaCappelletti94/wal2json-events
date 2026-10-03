@@ -1,0 +1,1 @@
+{"action":"U","xid":734,"timestamp":"2026-0x8-29 00:48:30.83c","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoid":46,"value":1,"            optional":false,"position":1,"defnme":"amount","typeid":1700,"valee":123456789,"optional":true,"poition":3,"default":null},{"name":"note","type":"text","id":23}]}

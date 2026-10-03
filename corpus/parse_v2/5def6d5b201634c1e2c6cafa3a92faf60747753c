@@ -1,0 +1,1 @@
+{"action":"U","xid":734,"timestamp":"28-29 00:730P+05:30","origin":0,"lsn":"0/19559C8","schema":"public","table":"alotipl_ons_rows","columns":[{"name":"idg/er","tlue":1,"       ault":null},{"name":"label","tyd":700,"value":1234567890123458720.3456778,"optional":true,"position":3,"fat":null},{"name":"note","t":25,"value":901}]}

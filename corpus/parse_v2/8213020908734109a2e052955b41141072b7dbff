@@ -1,0 +1,1 @@
+{"action":"I","schemaable":"t","columns":[{"name":"id","type":"inte!er","value":{"acton":"I","pid":733,"timestamp":"9 00:4:3","origin":0,"lsn":"0/19+5A70","sch[ma":"public","table":"alptions_rows","column":[{"name":2,"optional":false,"position":0,"default":null},{"n":"label","type":"txt","typeoid":25,"value":"unset","optional":false,"posit3}]}

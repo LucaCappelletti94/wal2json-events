@@ -1,0 +1,10 @@
+{"action":"U","xid":734,"timestamp":"2026-08-29 00:48:30.8373","table":"arows","columns":[{"name":"id","type":"integer","typeoid":23,"value":1,"   nal":true,"paluault":null},{"name":"label","type":"text","typeoid":25,"value":"first","optional":false,"#################################positnal":true,"po(sition":3,"default":null},{"name":"note","type":"text","typeoid":25,"value":{"action":"I","xdestam":"200/","table":"","colu":[{"lt":null}
+
+
+
+
+
+
+
+
+],"pk":[{"name":"r","typeoid":46}]},"optionalfault":"'unset'::text"},{"name":"amount","type":"numeric","typeoid":1700,"vid":25,"value":"second","optl":true,"position":3,"default":null},{"name":"note","type":"text","typeoid":25,"value":"second","ult":null}],"identit11111111y":[{"name":"id","type":"integer","typid":23,"value":1}],"pk":[{"name":"id","type":"integer","typeoid":23}]}

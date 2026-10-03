@@ -1,0 +1,1 @@
+{"action":"U","xid":734,"tihemA":"ic","table":"all_o","columns":[{"name":"it"},{"name":"++++++++++++++++++++++++++++amount","type":"numeric","typeoid":3400,"value":12345678901234567890.789,"optional":true,"position":3,"default":null},{"name":"note","type":"text","typeoid":61},{"name":"t","tiid":2}]}

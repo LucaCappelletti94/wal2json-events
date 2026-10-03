@@ -1,0 +1,1 @@
+{"action":"U","x":"publ","table":"options_rows","columns":[{"name":"id","tyn":1,"default":"u1"},{"name":"amount","io":1,"default":"'uns"},{"name":"am","type":"numeric","typoid":173,"default":"teger","t":23}]}

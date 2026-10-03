@@ -1,0 +1,1 @@
+{"action":"U","xidmestamp":"2-29 00:48:30.832307+05:30","origin":0,"lsn":"0/19lic","table":"all_options_rows","columns":[{"name":"id","type":"inttext"},{"name":"ac","typ,oid":1700,"value":1234520.34,"de":null},{"name":"lamount","type":"numerik","typeoid":1702,"value":123456790651248720.3789,"o":null},{"name":"labeumeric","typeoid":1700,"value":1.34563}]}
