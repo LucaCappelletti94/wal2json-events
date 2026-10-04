@@ -1,1 +1,0 @@
-{"xid":734,"nextlsn":"0/19(56870","timesp":"1202olble+05:30","origin":0,"change":[{"kable":"s_rows","coloids":[23,4567890.123456789,"second"],"pk":{"pknames":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":["iid"],"keytypes":["inte,er"],"keytypeoids":[23],"keyvalues(":[1]}},{kind":"insert",]}

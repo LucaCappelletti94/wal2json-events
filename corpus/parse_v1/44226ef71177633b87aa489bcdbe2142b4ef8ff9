@@ -1,1 +1,0 @@
-{"change":[{"kind":"delete","schema":"public","table":"}l_rows","oldkeys":{"keynames":["id","code","pxt"],"keyvalues":[0,"full","after"]}},											{"kind":"insert","schema":"puNblic","table":"truncate_rows","columnnames":["id"],"coqpes":["integer"],"columnvalues":[0]}]}

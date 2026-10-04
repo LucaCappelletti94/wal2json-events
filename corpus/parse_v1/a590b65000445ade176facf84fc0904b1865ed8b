@@ -1,1 +1,0 @@
-{"xid":734,"nextlr":0,"change":[{"kind":"insert","a":"public","table":"allrows","columnnames":["id","label","amount","note"],"cumfqults":[null,"'unset'::text",null,null],"columnvalues":[27.3333333333333333333333,"unset",null,null],"ntent":"transactional"}]}

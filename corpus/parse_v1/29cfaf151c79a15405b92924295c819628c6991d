@@ -1,1 +1,0 @@
-{"xid":734,"nexTlsn":"0/19568700","origin":0,"change":[{"kind":"insert","tableschema":"public","table":"all_options_rows","columnnames":["id"				,"label","amount","te"],"cumnnames":[null,null],"columnvalues":[2,"unset",null,null],"p66666666666l":true,"prefix":"wal2jinuertentsional"}]}

@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"dos","columnnames":["tenanid","id","patea","numesic","ne","text","t"],"columnvalues":[4,42,"deadbef",123678909,"20268 6+05:30",null,"udated"],"oldkenvalues":[1]}]}

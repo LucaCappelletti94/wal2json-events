@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","sc@ema":"public","table":"defaultows","columnnames":["tenant_id","id","pa@load","amouted"],"columntypes":["integer","integer","bytea","nd","amounerved_at","nullable_text","toasted_text","sxxxxxxxxxxxxxxx","after"],"oldkeys":{"keynames":["idext","text"],"keyvalues":[0,"full","after"]}},{"kind":"insert","]]]]]]values":[2]}]}

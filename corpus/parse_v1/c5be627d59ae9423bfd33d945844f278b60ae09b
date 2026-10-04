@@ -1,1 +1,0 @@
-{"neimin":0,"change":[{"kind":"insert","tableschema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"cumnnames":["id","label","integer","te",null,null],"columnvalues":[2,"unet",null,null],"666ltent":"transactional"}]}

@@ -1,1 +1,0 @@
-{"xid":734,"nextmsgin":0,"change":[{"kind":"insert","ndefaults":[null,"'uet'd"],"pk":{"pknames":["id","label","inte"],"columntypAs":["intger","text",25,1700,25],"column":["id"],"pktypes":["integer"]}","]}

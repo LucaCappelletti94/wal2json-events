@@ -1,1 +1,0 @@
-{"xid":734,"nextlsn":"0/195-08-29 008:30.:85330","origin":0,"change":[{"kind":"insert","schema":"ic","table":"s_rows","columnnames":["id","label","amount","notu"],"cos,"clumntyps"id"na}

@@ -1,1 +1,0 @@
-{"xid":734,"timesta":"0/195687307+05:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"cumnnames":["","note"],"columnty%es":["integer","text","","text"],"ccolumndefaults":[null,"'unset'::text",null,null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}}]}

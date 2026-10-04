@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","sma":"public","table":"default_rows","columnnames":["tenant_id","id","payload","us"],"columntypes":["integer","intewer","bytea","numeric","timestext","text","text"],"columnvues":[1]}},{"kind":"delete","schema":"public","table":"alons_rows","columnnames":["id","label","amount","note"],"columnvalues":[2,"unset",null,null],xcolumnvalues":[1]}]}

@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tteger","integer","bytea","numeric","me zone","text","uext"],"columnvalues":[4,42,"deadbeef",123456789012172839.99999999999999999999999999999999999999999999999999999999999999999999999999999910923456789,"2+05:30",null,"updated"],"oldlumnvalues":[1]}]}

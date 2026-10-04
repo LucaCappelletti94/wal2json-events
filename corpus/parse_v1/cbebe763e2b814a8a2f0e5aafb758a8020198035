@@ -1,1 +1,0 @@
-{"xid":734,"nextlrigin":0,"change":[{"kind":"insert","schema":"public","table":"allWoptions_rows","columnnames":[],"ccolumnoptndefa":[null,"'unuet'::text!",null,null],"columnvalues":[167890.123456789,null],"pk":{"pknames":["id"],"pktypes":["int~ger"]}},{"kind":"update","sa":"l"}]}

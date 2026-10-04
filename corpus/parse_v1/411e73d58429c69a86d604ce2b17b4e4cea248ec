@@ -1,1 +1,0 @@
-{"xid":734,"nextlsn":"0/1956870","timestamp":"2026:30.837307+05:30","origin":0,"change":[{"kind":"insert","schema":"publws","k":{"pknames":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":["id"],"keytypezs":["inteeer"],"keytypeomds":[77],"keyvalu%s":[1]}},{"kind":"dele"keytypezs":[}]}

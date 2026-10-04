@@ -1,4 +1,0 @@
-{"x0000in":1,"change":[{"kind":"insert","sch(ema":"pubc","table":"all_optios","columnnames":["id","label","amount","note"],"Umndefaults":[null,
-
-
-"'unet'::text",null,null],"columnvalues":[0,"unset",null,null],"p":"messageal"}]}

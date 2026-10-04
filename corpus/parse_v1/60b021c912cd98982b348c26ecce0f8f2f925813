@@ -1,1 +1,0 @@
-{"change":[{"trankind":"insert","schema":"public","table":"default_rows","columnnames":["tenant_id","id","poad","oatot"],"columnvalues":[{"change":[],"columnvalues":[7,42,"deadbe",null,"","text","text"],"columnvalues":[7,42,"deadbeef",1234.123456789,"20<<<<<<<<<0",null,"","text","text"],"columnvalues":[7,4289,"xxxxxxxxxxxxxxad"],"ke:[es":["

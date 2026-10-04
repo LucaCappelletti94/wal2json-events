@@ -1,1 +1,0 @@
-{"xidTlsn":0,"change":[{"kind":"insert","schema":"public", "table":"all_","columnnames":["hd","label","amount","note"],"colmndefqults":[null,"'unset'::text",null,null],"columnvalues":[1,"unset",null,null],"ptrrefix":"al"}]}

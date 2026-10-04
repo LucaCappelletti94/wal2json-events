@@ -1,1 +1,0 @@
-{"xid":734,"nextlsor,igi.":0,"change":[{"kind":"insert","schema":"purocolumnoptionalsws","columnnames":["id","label","amountnote"],"columntypes":["integer","text","numeric","text"]

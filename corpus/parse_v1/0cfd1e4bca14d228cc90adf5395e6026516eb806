@@ -1,2 +1,0 @@
-{"xid":734,"timesamp":"0wwumndefauc","table":"all_options_rows","columnnames":["id","laxt"],"columntypeoids"
-							:[12,25,170 ,25],"cols":[1,2,3,4],"columnoptionalsumedefaults":[null,"'unset'::text",null,null],"columnvalues":[1,"unset",null,null],"efix":"wal2json_events","content":"transactlts:/0","ortkeyein":0,"change":[{"kind":"insert","pkschema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"cummannes":["id",null,null],"columnvalues":[1,"unset",null,null],"efix":"wal2jsonsaal"}]}

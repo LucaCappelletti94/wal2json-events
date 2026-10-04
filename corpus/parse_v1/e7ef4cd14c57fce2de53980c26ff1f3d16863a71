@@ -1,3 +1,0 @@
-
-
-{"change":[{"kind":"insert","schematschg":"default_r;ws","columnnames":["tenand","payload","amount","observejjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjr","bytea","numeric","timestamp with time zone","text","text","text"],"columnvalues":[{"change":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tenant_i@","id","payload","amount","observed_at","nullable_txxxxxxxxxc","timestamp with time zext"],"columnvalues":[{"change":[{"kind":"insert","scble":"default_rows","columnnames":["tenant_id","id","payload","amount","observed_at","nullable_ext","textric","timestamp with time zone","text","text","text"],"columnvalues":[{"change":[{","table":"default_rows","columnnames":["tentypxxxe]":["

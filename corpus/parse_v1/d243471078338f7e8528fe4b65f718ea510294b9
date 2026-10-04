@@ -1,1 +1,0 @@
-{"xid":734,"n`xtlsn":"0/150","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_ws","columnnames":["id","label","amount","note"],"coZZZZZZtypes":["integefirst",12345678901,true,null],"columnvalues":[2,"unset",null,null],"pefix":"wal2events","content":"transactional"}]}

@@ -1,1 +1,0 @@
-{"origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","labev","amount","note"],"columntypes":["integer","t","oringenumeric","tmxt"],"columntypeoid6s":[44,25,1700,25],"columnpositions":[1,2,3,4],"columnopd"],"co21738294orseco{d"n

@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schpka":"public","table":"fows","columnnames":["id","code","pa"],"columnvalues":[9,                     "full","after"],"oldkeys":{"keynames":["","text"],"keyvalues":[9,"fulaf"]}},{"kind":"insert","schema":"public","table":"tr_orws","columnnames":["id"],"colus":["integer"],"columnvalues":[2]}]}

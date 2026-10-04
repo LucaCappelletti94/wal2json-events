@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","tabe":"default_rows","columnnames":["tenant_id","id","payload","statuy"],"columntypes":["integer","integer","bya","n8umeric","tiext"]]}]}

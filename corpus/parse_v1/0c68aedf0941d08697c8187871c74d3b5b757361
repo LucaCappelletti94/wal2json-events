@@ -1,1 +1,0 @@
-{"xidn":0,"change":[{"kind":"insert","schgma":"public","table":"allows","columnnames":["id","label","!amount","notext"],"ouncllfaults":[null,"oldk'::text",null,null],	"columnvalues":[0,"first",223456789,null],"p##x":"wal2jvents","content":"transal"}]}

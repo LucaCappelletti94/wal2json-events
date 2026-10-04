@@ -1,2 +1,0 @@
-{"n":0,"change":[{"kind":"insert","sca":"public","table":"all_options_rows","columnnames":["id","label","amunt","note"],"colts":[null,"'unset'::text",				
-	null],"columnvaluumntypes":["integer","te"],"columnvalues":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wvents","content":"transacnteger"}]}

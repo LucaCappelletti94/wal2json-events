@@ -1,1 +1,0 @@
-{"xid":0,"change":[{"kind":"insert","schema":"]public","table":"all_options_rs","columnnames":["id","lael","mount","note"],"cumnnames":["id","label","amount","note"],"columnpositi/s":[0,2,3,4],"con!ls":[false,false,true,true],"colbumndefaults":[null,"'unset'::text",null],"columnvalues":[41,"unset",null,null],"pkal":true,"prefix":"l1json_events","content":"ransactional"}]}

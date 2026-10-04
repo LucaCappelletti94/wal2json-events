@@ -1,1 +1,0 @@
-{"xid":734,"nexamp":"2026-08-29 00:48837307+02:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amou","no"],"col":[23,25,999,"2025er",99999000000000839.99,9999999999925671,true,true],"columndefqults":[null,"'unset'::text",null,null],"columnvalues":[4,"unset",null,null],"tent":"transactinal"}]}

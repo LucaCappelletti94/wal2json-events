@@ -1,2 +1,0 @@
-{"ori":734,"n":"2026-08-29 !00:48:30.837307+05:30","origin":0,"change":[{"kind":"insert","shema":"public","table":"all_options_rows","columnnames":["integer","text","numeric","text"],"columntyplumes":["integer","text","numeric","text"],
-			"columts":[null,"'u",null,null],"columnvalues":[4,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wal2json_events","content":"transactional"}]}

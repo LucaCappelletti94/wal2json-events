@@ -1,1 +1,0 @@
-{"xid":735,"nextlsn":"07+05:30","origin":0,"change":[{"kind":"insert","schema":"]public","table":"ns_rows","columnnames":["id","label","amount","note"],"cumnnames":["id","label","amount","notext",null,null],"columnvalues":[7,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"ws","content":"n`xtlsntional"}]}

@@ -1,1 +1,0 @@
-{"xid":734,"nextlsn":"0/19568700","origi.":0,"change":[{"kin'":"insert","schs":[0,"h time zone",""],"columnvalues":[{"xid":734,"nextp":"2:30.837307+","schema":"public","table":"all_options_rows","columnnames":[1700,25],"columnpo":"insert","schema":"pc","table":"truncate_rows","columnnames":["id"],"colUmnon_ents]}

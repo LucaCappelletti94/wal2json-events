@@ -1,1 +1,0 @@
-{"xidn":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","!amount","notext"],"colulnfaults":[null,"'unsetoldk'::text",null,null],	"columnvalues":[0,"first",246913580.123456789,null],"p##x":"wal2jvents","content":"transal"}]}

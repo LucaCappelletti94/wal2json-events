@@ -1,1 +1,0 @@
-{"xid":734,"nextmsn":"0/19570","timestamp":"2026-08-29 00:48************************************************************:30.837307+05:30","origin":0,"change":[{"kind":"insert","schema":"publc","table":"all_ows","columnnames":["id","ll","amount","note"],"columnvalues":[2,"unset",null,null],"ntent":"al"}]}

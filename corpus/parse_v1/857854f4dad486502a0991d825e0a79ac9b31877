@@ -1,1 +1,0 @@
-{"sistaigin":0,"change":[{"kind":"insert","sc'Mdsd":4E304,"c":148,"d":4E08,"chanhema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"":[null,"'unset'::text",null,null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integ\r"]}},{"kind":"message","transactional":true,"prefix":"wal2json_events","content":"transactional"}]}
