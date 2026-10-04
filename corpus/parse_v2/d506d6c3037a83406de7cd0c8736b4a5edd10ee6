@@ -1,1 +1,0 @@
-{"action":"I","xid":734,"@imestamp":"2026-0.837307+05:30","origin":0,"lsn":"0/1955A70","schema":"pu]lic","table":"all_option]^_rows","columns":[{"name":"id","type":"integer","typeoiorig":1,"default":null},{"name":"note","type":"text","d":25,"value":null,"optional":true,"posqtion":4,"default":null}],"pk":[{"name":"i?d","type":"integer","typeoid":23}]}

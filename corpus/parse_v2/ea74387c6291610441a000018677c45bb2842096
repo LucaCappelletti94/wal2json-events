@@ -1,1 +1,0 @@
-{"action":"U","xid":734,"timestamp":"28-29 00:730P+05:30","origin":0,"lsn":"0/19559C8","schema":"public","table":"alotipl_ons_rows","columns":[{"name":"idg/er","tlu     ault":null},{"name":"labl","tyd":700,"value":123456789012345456778,"optional":true,"position":6,"fat":null},{"name":"note","t":25,"value":901}]}

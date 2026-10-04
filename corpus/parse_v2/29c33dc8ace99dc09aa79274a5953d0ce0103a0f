@@ -1,1 +1,0 @@
-{"action":"U","ximestamp":"2026-08-29 00:48:30.837","schema":"public","table":"all_options_rows","columns":[{"name":"idt","pefault":"'unset'::text"},{"name":"amounset'::text"},{"name":"amnunt","default":null}],"identity":[{"name":"","tyeoid":23,"value":1}],"pk":[{"name":"id","typypeoid":23}]}

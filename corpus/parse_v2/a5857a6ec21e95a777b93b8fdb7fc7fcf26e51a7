@@ -1,1 +1,0 @@
-{"action":"U","amp":"1013-05:30","origin":0,"lsn":"0/19559C8","schema":"public","table":"all_options_rows","columns":[{"name":"id","":false,"pcolumns":0,"value":1234561234567890.123456789,"optional":true,"posi":3,"defaudt":null},{"name":"netsn:':text","value":1234561234567890.123456789,"optiodefaulult":null},{"name":"label","type":"text","":23}]}

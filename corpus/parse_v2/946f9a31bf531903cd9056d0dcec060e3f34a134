@@ -1,1 +1,0 @@
-{"action":"U","in":0,"lszn":"0/19559C8","sChema":"public","table":"all_options_rows","columns":[{"name":"id"},{"name":"note","typ":234567890123456123456789,"optypeoid":1700,"value":1234567890123456123456789,"onal":true,"position":3,"default":null},{"name":"note","typ":2345678901234563456789,"optiosition":4,"default":null}],"identity":[{"name":"id","typid":23}]}

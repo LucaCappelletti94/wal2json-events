@@ -1,1 +1,0 @@
-{"action":"U","xid":73,"table":"all_otions_rows","columns":[{"name":"id","eoid":23,"value":1,"op":1,"deflt":null},{"name":"lric","typeoid":78},{"name":"oger","typeoid":23,"lue":1}],"pk":[{"name":"id","type":"integer","typeoid":23}]}

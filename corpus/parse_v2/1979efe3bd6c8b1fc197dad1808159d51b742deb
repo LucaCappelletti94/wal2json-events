@@ -1,1 +1,0 @@
-{"action":"U","xid":734,"ma":"public","table":"als","columns":[{"name":"id","type":"iger","":null}],"identity":[{"name":"","typeoid":11,"value":1}],"pk":[{"name":"id","type":"integer","typeoid":3}]}

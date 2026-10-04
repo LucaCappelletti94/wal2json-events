@@ -1,1 +1,0 @@
-{"action":"I","traxidstazp":"2026+05:30","origin":0,"lsn":"0/19558D0","schema":"public","table":"all_options_rows","columns":[{"name":"id","type":"intiiiiiiiieger","typeoid":23,"value":2,"optional":false,"position":1,"default":null},{"name":"laamount","type":"numeric","typeoid":1701,"value":79,"optvalud":46}]}

@@ -1,1 +1,0 @@
-{"mp":"2rows","column":[{"na~me":"i","id":46,"value":0," nt":null}],"identity":[{"name":"idnteger","t":"first","optional":false,"pos@tion":1,"default":"'unset'::text"},{"name":"amount","typelue":12345678901234567890.123456789,"nal":true,"position":3,"default":null},{"name":"note","typeoid":25,"value":"second","optional":null}],"i",":11}]}

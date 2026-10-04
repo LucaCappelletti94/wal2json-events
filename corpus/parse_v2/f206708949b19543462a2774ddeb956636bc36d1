@@ -1,1 +1,0 @@
-{"action":"U","mestamp":"2026-08-2:0.837","schema":"public","table":"all_options_rows","columns":[{"name":"ext"},{"name":"amoun~et'::text"},{"name":"amnunt","default":null}],"identity":[{"name":"id","":23}]}

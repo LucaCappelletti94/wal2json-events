@@ -1,1 +1,0 @@
-{"action":"U","xidma":"public","table":"options_rows","columns":[{"name":"id","tyn":1,"default":"'ut"},{"name":"amount","ion":2,"default":"'uns"},{"name":"amount","type":"numeric","typoid":173,"default":"'teger","typepeoid":23}]}

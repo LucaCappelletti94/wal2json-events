@@ -1,1 +1,0 @@
-{"action":"U","xid":0,"lsn":"0/19559C8","schema":"public","table":"all_opows","columns":[{"name":"idn.ote","type":                                              "text","typeoid":25,"colue":"second","optional":true,"position":4,"default":null}],"identity":[{"name":"id","typpeoid":23,"value":1}],"pk":[{"name":"id","type":"inteeer","typeoid":23}]}

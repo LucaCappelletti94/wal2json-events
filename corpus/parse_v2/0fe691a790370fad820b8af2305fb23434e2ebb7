@@ -1,1 +1,0 @@
-{"action":"U","xid":93,"schema":"public","table":"ows","columns":[{"name":"idd","optional":true,"p":4,"def":null},{"name":"ltext","typeoid":24,"":90.123456789,"optional":true,"posit":null},{"name":"label","type":"t","ope":"second","optional":true,"positid":23}]}

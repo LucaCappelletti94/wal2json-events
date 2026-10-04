@@ -1,1 +1,0 @@
-{"action":"I","xid":734,"timestamp":"128%8-08-29 00:48:30.837307+05:30","origin":0,"lsn":"0/19558D0","schema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoid":32,"value":123456789,"optional":true,"position":3,"default":null},{"name":"te","ton":4,"defaudt":23}]}

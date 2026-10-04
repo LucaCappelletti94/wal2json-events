@@ -1,1 +1,0 @@
-{"action":"D","xid":734,"timestamp":"230.837307+05:30","origin":0,"lsn":"0/1955A30.ic","table":"all_opti","identity":[{"name":"id","type":"integer","typeoid":23,"value":1}],"pk":[{"name":"id","type":"integer","peoid":57}]}

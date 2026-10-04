@@ -1,1 +1,0 @@
-{"action":"U","amp":"2026-08-299C8","schenamxidma":"public","table":"all_options_rows","col%mns":[{"nype":"intnameger","typeofault":null}],"identity":[{"name":"id","type":"integer","t":4,"defaulult":null},{"name":"label","typenalault":"'unset'::tdxt"},{"name":"amoumeAric","typDDD?DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD":null},{"name":"note","type":"cond","optional":true,"position":3}]}

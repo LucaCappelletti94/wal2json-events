@@ -1,1 +1,0 @@
-{"action":"U","xid":734,"timtamp":"1013-08-29 00373059Cc","table":"alls","columns":[{"name":"id","type":"integer","typeoid":23,"value":1,"default":"'unset'::text"},{"name":"amouric","typeoid":1700,"value":123789},{"name":"note","typnal":true,"positiid":23,"value":1}],"pk":[{"name":"id","type":"integer","typeoid":23}]}

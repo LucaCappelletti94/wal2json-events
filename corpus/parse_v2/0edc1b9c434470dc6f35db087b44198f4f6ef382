@@ -1,1 +1,0 @@
-{"actn":"I","columns":[{"name":"id","tyxe":"integer","typeoid":23,"valtional":false,"posiion":1,"default":null},{"name":"label","type":"text","typeoid":25,"valu":"first","optional":false,"position":2,"default":"'unset'::text"},{"name":"nt","type":"nucric","typeoid":699,iona4",23}]}

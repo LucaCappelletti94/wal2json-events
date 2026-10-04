@@ -1,1 +1,0 @@
-{"action":"I","xitimestamp":"2020/*95public","table":"all_gptions_rows","columns":[{"name":"id","type":"integer","typlt":"'unset'::text"},{"name":"amount","type":"numeric","typeoid":1699,"value":12345678901234567890.123}]}

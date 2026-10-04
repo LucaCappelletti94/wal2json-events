@@ -1,4 +1,0 @@
-{"action":"I","schema":"t","columns":[{"nameii          ":25,"value":{"action":"I","xid":[
-{
-
-"n":0,"lsn":"0C8","schema":"public","table":"all_omeric","typeoid":1700,"valee":12345678901234567890.324761589,"optioee":12345678901234567890.123456789,"optional":true,"po(spe":false,"position":3,"default":"'unset'::text"},{"name":"amount","typelue":12345678901234567895.123456789,"optional":true,"positiosition":4,"defauypeypelue":12345678901234567890.123456789,"opid":1700,"valee":12345678901234567890.123456789,"optio":true,"p[   tilee":12345678901234567890.12345678,"optional":true,"po(sition":3,"defauln":2,"vafaume":"amount","typelue":12345678901234567890.123456788,"optional":true,"ypelue":12345678901234567890.1234,{"namname":"id","*type":"intgeer"
