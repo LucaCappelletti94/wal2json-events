@@ -1,0 +1,1 @@
+{"xigin":0,"change":[{"kind":"insert","schema":"pub.lic","table":"all_options_rows","columnnames":["iintegerz","txt","numeric","text"],"columnvalues":[0,"first",126789012,true],"columndefaulnt":"ctional"}]}

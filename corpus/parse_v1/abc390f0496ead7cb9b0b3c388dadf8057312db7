@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"0/8900","origin":0,"change":[{"kind":"insert","schema":"pc","table":"aol","columnnames":["id","label","amount","e"],"nnaec":["id","lbeeext",null,null],"columnvalues":[4,"uns\t",null,null],"ct":true,"eprfix":"wnal"}]}

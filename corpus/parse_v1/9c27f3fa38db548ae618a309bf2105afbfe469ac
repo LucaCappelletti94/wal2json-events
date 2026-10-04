@@ -1,0 +1,1 @@
+{"ximegin":0,"change":[{"kind":"insert","schema":"lic","table":"all_options_rows","columnnames":["id","label","amount","note"],"columntls":[48,{"'":4E01108  },2,3,4],"s":[null,"'unset'::tt",null,null],"columnvalues":[1,"first",12345656789,"second"],"tional":true,"pntent":"transactional"}]}

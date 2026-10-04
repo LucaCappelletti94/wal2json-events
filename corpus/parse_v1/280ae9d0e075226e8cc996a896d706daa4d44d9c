@@ -1,0 +1,1 @@
+{"rigin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"lumnpositions":[1,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,null],"defqults":[null,"xt",null,null],"columnvalues":[2,"unset",null,null]},{"kind":"message","transactional":true,"prschematent":"transactIonal"}]}

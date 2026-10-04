@@ -1,0 +1,1 @@
+{"xtlsnstamp":"/026-z8-29 0005:","origin":0,"change":[{"kind":"insert","schema":"public","tamnames":[456789,null],"pk":{"pknames":["id"],"pktypes":["integext","numeric","text"],"columntypol":true,"prefix":"wal2json_enal"}]}`

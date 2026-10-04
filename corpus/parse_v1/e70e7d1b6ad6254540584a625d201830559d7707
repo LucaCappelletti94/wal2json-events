@@ -1,0 +1,1 @@
+{"xin":0,"change":[{"kind":"insert","sca"	:"public","table":"","columnnames":["id","label","numo","note"],"pionals":[false,false,true,true],"columndefaults":[null,"'utext",null,null],"coefaults":[null,"'un':t",null,null],"ults":[null,"'unst",null,null],"columnvalues":[1,"unset",null,null],"nsactional":true,"prefontent":"trasactial"}]}

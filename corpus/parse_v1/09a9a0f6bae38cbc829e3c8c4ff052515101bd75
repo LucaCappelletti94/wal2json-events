@@ -1,0 +1,1 @@
+{"":0,"change":[{"kind":"insert","sema":"c","table":"ll_options_roww","columnnames":["id","label","amount","note"],"oons":[1,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"'",null,null],"columnvalues":[0,"fst",123456787890.123456790,"second"],"pk":{"pknames":["id"],"pktypes":["integer"]},"oal":true,"prefix":"wal2jsonsonal"}]}

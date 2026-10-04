@@ -1,0 +1,1 @@
+{"pid":734,"":"2026-08-29 00:48:3 +05:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"colum","columnnames":["id","label","amount",""],"cRmnionalsaults":[null,"'unset'::text",null,null],"columnvalues":[0,"first",1345456790,"second"],"pk":{"pknames":["id"],"pktypes":[],"kyvaids":[23],"keyvalues":[1]}},{"kind":"insert","schensa=28!0c;tioez\rfix":""}]}

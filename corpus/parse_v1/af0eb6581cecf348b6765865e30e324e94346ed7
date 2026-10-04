@@ -1,0 +1,1 @@
+{"p":"2026-08e-29 00:48:5:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"al_options_rows","columnnames":["id","label","amoun2t","note"],"cmntlts":[23,25,125],"columnpositions":[0,0,3,4],"c":[null,"'unset'::text",null,null],"columnvalues":[1,"unset",null,null],"pktent":""}]}

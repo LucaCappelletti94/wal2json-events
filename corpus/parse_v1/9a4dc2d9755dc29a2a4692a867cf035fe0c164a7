@@ -1,0 +1,1 @@
+{"xl":0,"change":[{"kind":"insert","schema":"pubLic","table":"all_opows","columnnames":["id","labTl","amount","note"],"0000000000sit,ions":[1,2,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"'unset'::txt",null,null],"columnvalues":[1,"unsret",null,null],"":"wtional"}]}

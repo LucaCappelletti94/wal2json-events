@@ -1,0 +1,1 @@
+{"sidin":0,"change":[{"kind":"insert","sc'Mdsd":4E308,"c":148,"ma":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"umndefaults":[null,"'unset'::text",null,null],"columnvalues":[1,"unset",null,null],"ix":"wal2json_events","content":"trtional"}]}

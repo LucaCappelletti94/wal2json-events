@@ -1,0 +1,1 @@
+{"n":0,"change":[{"kind":"insert","schema"	:"public","table":"","columnnames":["id","label","amount","note"],"columntypes":["integer","tt","numeric","tt"],"columnults":[null,"'unset'::text",null,null],"columnvalues":[2,"unset",null,null],"pionfix":"wal2jso","content":"tal"}]}

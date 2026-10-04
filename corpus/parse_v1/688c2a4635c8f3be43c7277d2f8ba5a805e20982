@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","prefix":"public","table":"default_rows","columnnames":["tenant_id","id","payload","amount","obseRved_at","nullable_text","toastdete_xt","status"],"column0types":["it","text","text"],"columnvalues":[7,42,"deadbeef",12345678901234567890.126789,";026--22:34:56+05:30",null,"fxxxfffxff\u0002fffffxxx","inmd"],"oldes":[0]}]}

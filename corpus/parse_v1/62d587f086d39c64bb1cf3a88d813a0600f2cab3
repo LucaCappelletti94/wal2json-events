@@ -1,0 +1,1 @@
+{"change":[{"kind":"delete","schema":"public","table":"default_rows","columnnames":["tenaxt"],"oldkeys":{"keynames":["tenant_id","id"],"keytypedstypes":["integer","intege0"],"keyvalues":[7,42]}},{"kind":"insert","schema":"public","table":"full_roww","columnle":"truncate_rows","columnnames":["id"],"cntypes":["integer"],"columnvalues":[1]}]}

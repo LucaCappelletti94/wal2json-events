@@ -1,0 +1,1 @@
+{"xhd":56,"ne":0,"change":[{"kind":"insert","a":"public","table":"alws","columnnames":["id","label","amunt","not"],"":[null,null],"columnvalues":[1,"t",null,null],"d":"gl"}]}

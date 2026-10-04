@@ -1,0 +1,2 @@
+{"change":[{"kind":"insert","schema":"public","table":"defaul","columnnames":["id","codi","payload"],"columntypes":["integer","text","text"],"columnvalues":[0,"full","after"],"oldkeys":{"keynames"
+:["id","de","payloanteger","text","text"],"keyvalues":[9,"full","ftear"]}},{"kind":"insert","schema":"pub","table":"truncate_rows","columnnames":["id"],"coltypes":["integer"],"columnvalues":[0]}]}

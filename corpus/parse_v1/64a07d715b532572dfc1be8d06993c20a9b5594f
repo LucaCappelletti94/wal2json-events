@@ -1,0 +1,1 @@
+{"xid":734,"stap":"2026-08-29 00480","origin":0,"change":[{"kind":"insert","shema":"public","table":"iws","columnnames":["id","label","aunt","ne"],"colum"																																			:[null,"':text",null,null],"columnvalues":[1,"unset",null,null],"actionalrefix":"wsa-cnal"}]}

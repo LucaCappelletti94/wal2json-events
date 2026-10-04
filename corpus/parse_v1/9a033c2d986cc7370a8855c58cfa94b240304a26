@@ -1,0 +1,2 @@
+{"xidigin":0,"change":[{"kind":"insert","pkschema":"public","table":"all_ns_rows","columnnames":["id","label","amount","*ote"],"cumnnypeoids"
+							:[13,null],"columnvalues":[1,"unset",null,null],"efix":"wall"}]}

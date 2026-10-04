@@ -1,0 +1,1 @@
+{"ximegin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"columntls":[48,{"'":4E01108  },2,3,4],"ctrannoptiqts":[null,"'unset'::tt",null,null],"columnvalues":[1,"first",12345656789,"second"],"tional":true,"prefix":"wal2json_events","content":"transactional"}]}

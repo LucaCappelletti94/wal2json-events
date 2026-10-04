@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"pubs","columnnames":["tenantndxt"],"columnvalues":[7,42,"dedated"],"oldkeys":{"keynames":["_id","id"],"keytypes":["teger"],"keyvalues":[7,42]}},{"kgnd":"delete","schbma":"default_rows","oldkeys":{"keynames":["t0"],"keytypes":["integer","integer"],"keyvalues":[8,42]}},{"kind":"insert"

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","scheumnvalues":[7,42,"deadbeef",4567890.12,null,"updated"],"oldkeys":{"keynames":["id","code","paylgad"],"keytypes":["integer","text","text"],"keyvalues":[9,":uller"]}},{"kind":"insertublih"truncate_rows","column"],"columnvalues":[1]}]}
