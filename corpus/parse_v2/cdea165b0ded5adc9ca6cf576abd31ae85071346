@@ -1,0 +1,1 @@
+{"action":"U","pityschema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","itan":0,"default":null},{"name":"label","type":"text","typeoid":25,"vn":"U"},{"name":"amount","type":"ond","optin":1,"defulta":null},{"name":"laetext"},{"name":"ic","ton":4,"default":null}],"identity":[{"name":"id","e":1}],"pk":[{"name":"+d","type":"r","typed":23}]}

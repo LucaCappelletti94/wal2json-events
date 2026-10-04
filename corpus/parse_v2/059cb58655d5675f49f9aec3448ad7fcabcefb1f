@@ -1,0 +1,1 @@
+{"action":"U","pkdtityschema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","tosition":4,"fan":1,"default":null},{"name":"label","":1,"default":null},{"name":"laetext"},{"name":"ic","ton":4,"default":null}],"pk":[{"name":"id","type":"inr","typeoid":23}]}

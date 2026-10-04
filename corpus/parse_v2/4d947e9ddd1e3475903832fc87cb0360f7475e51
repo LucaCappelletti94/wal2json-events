@@ -1,0 +1,1 @@
+{"action":"U","table":"o","columns":[{"name":"d","value":{"action":"U","xid":734,"timesin":0,"lsn":"0/1_rows","columns":[{"name":"id","type":"integer","typion":1,"default":null},{"name":"label","type":"text","typeoid":25,"value":"first","optional":false,"position":2,"default":"'1#5eunst'::text"},{"nid":23}]}}]}

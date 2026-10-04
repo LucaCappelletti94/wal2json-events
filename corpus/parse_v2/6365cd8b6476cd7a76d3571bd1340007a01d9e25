@@ -1,0 +1,1 @@
+{"action":"U","xid":73,"table":"all_otionws","columns":[{"name":"id","eoid":46,"value":1,"p":1,"default":null},{"name":"lric","typeoid":78},{"name":"ger","typeoid":23,"value":1}],"pk":[{"name":"id","type":"integer","typeoid":23}]}

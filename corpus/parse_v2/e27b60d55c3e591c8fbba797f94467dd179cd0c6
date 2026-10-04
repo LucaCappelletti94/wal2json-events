@@ -1,0 +1,1 @@
+{"action":"I","xid":734,"timp!":"0","origin":0,"lsn":"0/1955A70","actionschema":"public","table":"al_options_rows","columns":[{"name":"id","t":"label","typeoid":1700,"value":null,"optional":true,"position":3,"def_ult":null},{"name":"note","type":"text","typeonal":true,"position":3,"def_ult":null},{"name":"note","type":"text","typeoid":25,"value":null,"opton":4,"defaulpeoid":3}]}
