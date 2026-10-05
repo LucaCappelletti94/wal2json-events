@@ -1,1 +1,0 @@
-{"a":"options_rows","columns":[{"name":"id","ptional":false,"position":1,"default":null},{"name":"label","onal":false,"position":2,"default":"'unset'::text"},{"e":"numeric","talue":null,"optional":true,"position":3,"]}

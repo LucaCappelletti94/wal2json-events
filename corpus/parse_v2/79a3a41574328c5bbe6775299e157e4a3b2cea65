@@ -1,1 +1,0 @@
-{"action":"I","xid":734,"gin":0,"lsn":"0/1955actionA70","schema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoid":10,"value":2,"o":false,"position":1,"default":null},{"name":"label","type":"text","typeoid":25,"value":"unsset","optional":false,"o":2}]}

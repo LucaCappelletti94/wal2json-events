@@ -1,1 +1,0 @@
-{"action":"I","xid":734,"timestamp":"2026-08-29 00:48:5A70","table":"all_options_rows","columns":[{"name":"id","typeoid":23,"v~lue":2,"optional":false,"position":1,"defatlt":null},{"name":"caAel","type":"text","typchema":25,"value":"unset","optional":false,"aultype":"text","typin":43}]}

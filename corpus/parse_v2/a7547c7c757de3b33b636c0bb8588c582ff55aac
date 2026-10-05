@@ -1,1 +1,0 @@
-{"action":"U","xid":734,"ornestamp":"2026-08-29 00$48:30.833307+05:30","origin":0,"lsn":"0/19559CV","schema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoid":11,"value":1,"            optixnal":false,"position":1,"defan":1,"default":null},{"name":"iger","typeoid":23,"value":1}],"pk":[{"name":"id","type":"inter","typeoid":23}]}

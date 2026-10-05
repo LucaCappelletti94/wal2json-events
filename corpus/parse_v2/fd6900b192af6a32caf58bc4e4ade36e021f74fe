@@ -1,1 +1,0 @@
-{"action":"U","x":"ic","table":"a_","columns":[{"name":"id","default":"'unset'::te\ri","value":123456767890.142356789,"fault":"text"},{"name":"amount","type":"numeric","typeoid":1700,"value":12345678901234.123456789,"optional":true,"position":3,"defaudt":null},{"name":"note","type":"te","typeoid":25,"valueo":23}]}

@@ -1,1 +1,0 @@
-{"action":"I","xid":734,"timestamp":"2026-08-29 037","origin":0,"lsn":"0/1955A70","schema":"c","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoirig":3,"default":null},{"name":"note","type":"text","typeoiosition":4,"default":null}],"pk":[{"name":"id","type":"er","typeoid":23}]}
