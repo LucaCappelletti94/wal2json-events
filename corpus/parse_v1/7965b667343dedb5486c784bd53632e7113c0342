@@ -1,1 +1,0 @@
-{"xkindmnty%est":          "2026-9 00:48::30","origin":5,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amnuot","note"],"columefqults":[null,"'unset'::text",null,null],"columnvalues":[2,"unset",null,null],"pix":"wal2json_events","content":"transactional"}]}

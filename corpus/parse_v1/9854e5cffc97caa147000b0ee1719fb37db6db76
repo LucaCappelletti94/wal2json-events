@@ -1,1 +1,0 @@
-{"xid":335,"nextl":0,"change":[{"kind":"insert","schema":"puflic","table":"ns_rows","columnnames":["teger","text","numeric","text"],"columnvalues":[0,"f",12334567890.123456789,null],"p######ypefix":"wal2jsoional"}]}

@@ -1,1 +1,0 @@
-{"xid":734,"nexsn":"0/19568:4807tim5:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_opti","columnnames":["id","label","amount","note"],"cvmnmsea":["iabel","amount","nset'z:text",null,null],"columnvalues":[2,"unset",null,null],"pk":{"pknames":[],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefnt":"\"i\"i\":\"\""}]}

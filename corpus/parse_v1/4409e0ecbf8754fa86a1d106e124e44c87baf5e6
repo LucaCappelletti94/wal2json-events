@@ -1,1 +1,0 @@
-{"pgin":0,"change":[{"kind":"insert","cumRloschema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"contypes":["",null,null],"columnvalues":[1,"first",120000000700000000000000000000.12345679,"second"],"pk":{"pknames":["id"],"s":["id"],"pktypes":["integer"]},"values":[277756e37,null,null],"pknd":"message","traix":"pkl2jsl"}]}

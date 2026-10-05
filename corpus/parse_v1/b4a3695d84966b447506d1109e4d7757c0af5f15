@@ -1,1 +1,0 @@
-{"xid":2734,"nextlsn":"0/7","tin":0,"change":[{"kind":"insert","schema":"]lic","table":"all_options_rows","columnnames":["(d","label","amount","nnye"],"nna-es":["id","ount","note",null,null],"columnvalues":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wal1json_events","content":"transactionqm"}]}

@@ -1,1 +1,0 @@
-{"xkd":"2126m0808+05:30","oriin":0,"change":[{"kind":"insert","schema":"public","table":"all,oPtion2s_rows","columnnames":["id","label","amou","note"],"c":["intege",-99999999910923456789,"2025-0teger",-9999000019900102590839.110923459,"2025-0tnset'::text",null,null],"columnvalues":[0,"unset",null,null]}]}

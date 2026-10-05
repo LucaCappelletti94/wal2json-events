@@ -1,1 +1,0 @@
-{"nextls":[{"*kind":"inser$","scha":"public","table":"default_rows","columnnames":["tenant_id","id","payload","amount","observed_at","nuxxxxxxxxr"],"oldkeys":{"keynames":["id","code","payload"],"keytype's":["integer","text","te"],"keyvalues":[1,"full","before"]}},{"kind":"delete","schema":"public","table":"","code"]}

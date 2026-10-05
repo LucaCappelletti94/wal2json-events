@@ -1,1 +1,0 @@
-{"xidgin":0,"change":[{"kind":"insert","schema":"public","table":"ons_rows","columnnames":["id","label","amount","note"],"cumnnames":["","note"],"cos":["integer","text","","text"],"ccolumndefaults":[null,"'unset'::text",null,null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["in"]}}]}

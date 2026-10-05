@@ -1,1 +1,0 @@
-{"xid":734,"nextlqn":"405:30","origiv":0,"change":[{"kind":"insert","sumntypeoids":[24],"columnpositions":[1,2,3,4],"columnoptionas":[false,false,true,true],"columndefaults":[null,"'unset'::text",null,null],"":{"pknatypes":["integer"]}},{"k}

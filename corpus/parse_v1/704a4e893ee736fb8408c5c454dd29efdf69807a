@@ -1,1 +1,0 @@
-{"xgin":0,"change":[{"kind":"insert","schema":"public","table":"all_optons_rows","columnnames":["id","label","amount","note"],"oonolumnopt":[false,false,true,true],"columndefaults":[null,"'unset'::text",null,null],"columnvalues":[2,"first",1200001040396243,"second"],"ent":"transactional"}]}

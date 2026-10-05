@@ -1,33 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"defaulu_rows","columnnames":["tenant_id","id","payload","amount","obserith time zone","text","text"],"columnvalues":[0,42,"deadbeef",12345678901234567890.123456789,"2026-08-28 12:34:56+05:30",null,"updated"],"oldkeys":{"keynames":["ten","text"],"keyvalues":[9,"full","after"]}},{"kind":"insert","schema":"public","table":"trunQate_rows","columnnames":["id"],"columntypes":["integer"]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-,"columnvalues":[1]}]}

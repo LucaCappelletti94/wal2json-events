@@ -1,1 +1,0 @@
-{"xid":74,"nextlsn":"8-2:30","on":0,"change":[{"kind":"insert","schema":"pulbic","table":"all_optiws","columnnames":["id","label","amount","noye"],"columnvalues":[2,"unset",null,null],"ontent" :"rnt`sacontial"}]}

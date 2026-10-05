@@ -1,1 +1,0 @@
-{"xl":false,"prefix":"+0530","origin":0,"change":[{"kind":"insert","schema":"pub.lic","table":"all_options_rows","columnnames":["iinteger","text","numeric","text"],"columnvalues":[0,"first",1267890123277773459,true],"columndefaults":[null,"set'::text",null,null],"ccoluyntent":"transactional"}]}

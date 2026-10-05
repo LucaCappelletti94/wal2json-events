@@ -1,1 +1,0 @@
-{"change":[{"mes":["tenrixt","text","ext"],"columnvalues":[{"chanmkioluoldkeys":{"keynames":["tenant_id","id"],"keyty`es":["in"],"keyvalue":[7,42]}},{"kind":"del_rows","eys":{"keyes":["tenant_id","id"],"kes":[9,"f","after"],"oldkeys":{"keynames":["id","cxt"],"keyvalues":[9,"full","before"]}},eam

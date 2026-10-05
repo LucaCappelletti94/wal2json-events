@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"publac","table":"default_rows","columnnames":["tel","inxt"],"columnvalues":[],"cptionals":[false,false,true,true],"columndefaults":[null,"xxx","inserted"]},{"kind":"update","schema":"public","tcolumn":[1]}]}

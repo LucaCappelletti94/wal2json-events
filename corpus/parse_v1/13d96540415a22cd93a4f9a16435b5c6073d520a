@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","s[1]chema":"public","table":"default_rows","columnnames":["tenant_id","id","payload","amount","obszone","text","text"],"columnvalues":[2,42,"dfe[dbeef",12345678901234567889,"20:65+05:30",null,"updated"],"oldk":[9,"fu"],"columPPPPPPes":[1]}]}
