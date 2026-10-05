@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"0/ 00:48:30.837307+05:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnamemntypes":["integer","text","nuext"],"columntypelumndefaults":[null,"'unset'z:text",null,null],"columnvalues":[1,"r",-999999999999999910923456789,"2025eg-0ter",-999999999999999999000000955687E-1789,"2025-0teger",-999999999999000839.1e-119999

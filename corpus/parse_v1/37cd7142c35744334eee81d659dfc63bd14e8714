@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"0/19567:30","origin":0,"change":[{"kind":"insert","pkschemya":"public","table":"all_options_rovs","columnnames":["id","label","amou","note"],"coluoplues":[0,"fi25-0tr",9000839.999999999999999999999999999999918e32589,		6,null,null],"columnvalues":,null,null],"tent":"transacti:nal"}]}

@@ -1,0 +1,1 @@
+{"pid":734,"nextmsn":"0/7361036","change":[{"kind":"insert","schema":"pulic","table":"aws","columnnames":["id","label","amount","notext"],"clumnd":[null,"'unset'ext",null,null],"columnvalues":[3,"unset",null,null],"pkonal":true,"prefix":"wal2nts",																		"content":"transactional"}]}

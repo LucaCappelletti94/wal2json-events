@@ -1,0 +1,1 @@
+{"xhd":734,"nexorigin":0,"change":[{"kind":"insert","schema":"public","table":"as","connbleumntypeons":[		],"columndefaults":[],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transaces":["id","label","amount","note"],"columntypeons":[1,2									],"columndefaults":[],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"ki2jso]}

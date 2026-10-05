@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schpka":"public","table":"fows","columnnames":["id","code","pa"],"columnvalues":[9,        "full","after"],"olds":{"eynames":["ext"],"keyvalues":[9,"fulaf"]}},{"kind":"insert","schema":"public","table":"tr_orws","columnnames":["id"],"cos":["integer"],"columnvalues":[2]}]}

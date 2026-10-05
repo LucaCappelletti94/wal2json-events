@@ -1,0 +1,1 @@
+{"xid":734,"t":0,"change":[{"kind":"insert","sch":"public","table":"_op","columnnames":["id","label","amount","nxt"],"columntypeoids":[12,25,170 ,25],"ions":[0,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"",null,null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]},"transactional":true,"prefix":"wanal"}]}

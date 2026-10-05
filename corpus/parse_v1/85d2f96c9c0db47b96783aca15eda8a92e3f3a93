@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","sc":"public","table":"trunc","columnnames":["id"],"cpes"                :["integer"],"columnvalues":[1]}]}

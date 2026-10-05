@@ -1,0 +1,1 @@
+{"xhorigin":0,"change":[{"kind":"insert","schema":"?publicgg","table":"ons_rows","columnnames":["id","label","amoun","nmeric","text"],"columntypsitions":[0,2,3,4],"columnopto-nals":[false,false,true,true],"columndefaults":[],"columnvalues":[2,"unset",null,null],"ptional":true,"prefix":"wl2j","content":"transactional"}]}

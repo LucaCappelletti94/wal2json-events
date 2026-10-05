@@ -1,0 +1,1 @@
+{"xhd":734,"nextmsn":"08+05:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_option=_s","columnnames":["id","l","numeric","text"],"columntypeoid2s":[2],"columndefaults":[null,"'unset'::text",null,"text"],"columnvalues":[2,"unset",null,null],"pnsactional":true,"prefix":"wal3json_events","content":"trans"}]}

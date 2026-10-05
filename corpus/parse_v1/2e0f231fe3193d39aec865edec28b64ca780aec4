@@ -1,0 +1,1 @@
+{"xin":0,"change":[{"kind":"insert","schema":"public","table":"all_options\rows","columnnames":["id","label","amount","noe"],"umntyps":[null],"columnvalues":[0,"first",12345678901234567890.1456789,"secoid"],"pk":{"pknames":["id"],"pktypes":["integer"]},"old":"transactional"}]}

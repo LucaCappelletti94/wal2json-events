@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"default_r","columnnames":["tena_id",			"id","lt"],"columnvalues":[9,"full","after"],"oldkeys":{"keynames":["id","codente"],"keyvalues":[4,"full","after"]}},{"kind":"insert","&chema":"public","table":"truncate_rows","columnnames":["id"],"columntypes":["in]teger"],"columnvalues":[0]}]}

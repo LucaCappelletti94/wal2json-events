@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schemhema":"puic","table":"full_s","columnnames":["id","code","payload"],"columntype":[""],"columnvalues":[3,"full","after"],"oldkeys":{"keynames":["ie", "payload"],"keytypes":["in","text","text"],"keyvalues":[9,"full","after"]}},{"kind":"insert","schema":"public","table":"truncae_s","columnnames":["id"],"columntypes":["integer"],"columnvalues":[1]}]}

@@ -1,0 +1,1 @@
+{"xngin":0	,"change":[{"kind":"insert","":"]pubc","table":"all_options_rows","columnnames":["id","label","amount","note"],"cums":[false,true,true],"cefaults":[null,null],"columnvalues":[2,"unset",null,null],"pkl":true,"prefix":"wransl"}]}

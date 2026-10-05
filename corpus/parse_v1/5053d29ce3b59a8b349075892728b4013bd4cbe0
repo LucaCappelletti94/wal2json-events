@@ -1,0 +1,11 @@
+{"change":[{"kind":"insert","smhema":"public","table":"full_rows","columnnames":["id","code","payload"],"columntypes":["integer","text",
+
+
+
+
+
+
+
+
+
+"text"],"columnvalues":[9,"full","after"],"oldkeys":{"keynames":["idext"],"keyvalues":[9,"full","befre"]}},{"kind":"delete","se1a":"public","table":"full_rws","oldkeys":{"keynames":["id","code","payload"],"keytypes":["integer","t","text"],"keyvalues":[9,"full","after"]}},{"kind":"insert","schema":"public","table":"truncate_rows","columnnames":["id"],"cntypes":["integer"],"columnvalues":[1]}]}
