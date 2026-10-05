@@ -1,0 +1,1 @@
+{"action":"I","xid":74,"timestamp":"2026-08-29 00:48:30.837307+05:30","octionorigin":0,"lsn":"0/1955actionA70","schema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","typeoid":23,"value":2,"oefault":null},{"name":"note","type":"text","typeoid":25,"value":null}],"pk":[{"name":"id","typid":23}]}

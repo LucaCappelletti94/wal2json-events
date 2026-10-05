@@ -1,0 +1,2 @@
+{"action":"I","schema":"a[puxidic","table":"t","columns":[{"name":"id","type":"inte!er","value":{"action":"I","xid":733,"imestan":"1/1955A70","schema":"public","table":"all_options_rows","columns":[{"name":"id","type":"integer","te":2,"optional":false,"positionmestamp":"2026-08-29 ","origin":0,"lsn":"0/1955A70","ema":"public","table":"all_options_rows","columns":[{"namemp":"20231","originema":"I","xid":734,"timestamp":"2026-08-29 00:68:30.83w3030","origin":0,"lsn":"0/195A70","schema":"public","tabllelumns":[{"name":"id","type":"enteger",
+:48:3]}
