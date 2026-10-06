@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"lefault_rows","columnnames":["xxxxxx|xxxxxxxyxxxxxxxed"]},{"kind":"update","schema":"public","table":"default_rows","ces":[7,42,1234567890129,"202612:ated"],"oldkeys":{"keynames":["tenanteger"],"keyvalues":[7,42]}},{"schema":"public","table":"default_rows","oldke":{"keyname0]}]}

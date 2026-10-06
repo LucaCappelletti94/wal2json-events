@@ -1,1 +1,0 @@
-{"xid":734,"timestamp":"2026-070","orign":0,"change":[{"kind":"insert","schema"	:"public","table":"s","columnnames":["id","label","amoc","text"],"columntypeoids":[23,25,1700,25],"qults":[null,"\uDADD\t",null,null],"columnvalues":[2,"uns%t",null,null],"":"transa`tional"}]}

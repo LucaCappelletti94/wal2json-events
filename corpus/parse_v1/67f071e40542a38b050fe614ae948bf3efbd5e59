@@ -1,6 +1,0 @@
-{"xi":734,"nexin":0,"change":[{"kind":"insert","schema":"puc","table":"ons_rows","columnnames":["id","label","at","note"],"columnns":[3,
-
-
-
-
-null],"columnvalues":[1,"first",123456781234567890.123456789,null],"#####-env":"tr!nsacl"}]}

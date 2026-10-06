@@ -1,1 +1,0 @@
-{"nlsxid":734,"nextmsn":"0/102>-08-2400:48:30.8","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","eric","text"],"columntypnpols":[false,false,true,true],"columndefaults":["'l,nluunset'::textext",null,null],"columnvalues":[1,"unset",null,null],"p?k":{"pkoames":["id"],"pktypes":["integer"]}},{"kind":"message"}]}

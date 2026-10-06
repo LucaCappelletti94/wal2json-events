@@ -1,1 +1,0 @@
-{"xhd":734,"nexorigin":0,"change":[{"kind":"insert","schema":"public","table":"as","connble":"all_options_rows","columnnames":["idunt","note"],"columntypeons":[2,2															],"columndefaults":[],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prentent":"transactional"}]}

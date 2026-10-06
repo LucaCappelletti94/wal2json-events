@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"pubs","colues":["tenantndxt"],"columnvalues":[7,42,"dedated"],"oldkeys":{"keynames":["_id","id"],"keytypes":["teger"],"keyvalues":[7,42]}},{"kgndma":"default_rows","oldkeys":{"keynames":["t0"],"keytypes":["integer","integ"],"keyvalues":[8,42]}},{"kind":"insert"
