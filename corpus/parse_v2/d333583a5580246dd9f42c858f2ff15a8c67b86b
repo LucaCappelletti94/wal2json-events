@@ -1,1 +1,0 @@
-{"action":"U","table":"o","columns":[{"name":"d","value":{"xid":468,"action":0,"tablsn":"CCrs","columns":[{"name":"id","type":"integer","typeoid":23,"value":1,"       =    ":false,"position":1,"default":null},{"name":"label","td":50,"v":"first","optional":false,"position":2,"default":"'15eugst'::text"},{"peoid":1700,"valxooid":23}]}}]}

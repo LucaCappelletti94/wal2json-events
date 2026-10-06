@@ -1,1 +1,0 @@
-{"action":"U","table":"o","columns":[{"name":"d","value":{"actionumns":[{"name":"id","type":"integer","typion":2,"default":null},{"name":"label","type":"text","typ+oid":25,"value":"first","opvional":false,"position":2,"default":"'15eunst'::text"},{"nam":24}]}}]}

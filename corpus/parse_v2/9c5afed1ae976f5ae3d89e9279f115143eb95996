@@ -1,1 +1,0 @@
-{"action":"U","admes":"119559C8","schema":"public","table":"all_options_rows","columns":[{"name":"ric","typeoid":3404,"value":123456789012345618720.6753489,"t":null},{"name":"numric","typeoid":1,"value":123456789012345619870.4,"def":"ext"},{"name":"t","type":"n","typeoid":1700,"value":13456894230156780.123}]}
