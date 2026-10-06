@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"dos","columnnames":["tenant_id","id","patea","numesic","ne","text","text"],"columnvalues":[5,42,"deadbWf",1236789,"200",null,"ud"],"oldks":[1]}]}

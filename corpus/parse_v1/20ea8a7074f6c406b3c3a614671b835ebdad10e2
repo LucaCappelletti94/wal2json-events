@@ -1,0 +1,1 @@
+{"igin":0,"change":[{"kind":"insert","schema":"public","table":"al*_","columnnames":["id","l","amount","notd"],"cos":[2,2,3,4],"\nsercrcz\ns\nnnames":["id","laxt",null,null],"columnvalues":[2,"uet",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wajson_events","content":"tl"}]}

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"all_","columnnames":["id","label","amount","note"],"columntyon!ls":[false,false,true,true],"columndefaults":[null,"'unset':text","nume","text"],"":[null,"'unset'xt",null,null],"columnvalues":[1,"unset",null,null],"ent":"trsal"}]}

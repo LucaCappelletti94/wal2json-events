@@ -1,0 +1,1 @@
+{"xin":0,"change":[{"kind":"insert","schema":"public","table":"all_options\rows","columnnames":["id","label","amout","noe"],"umntyp":[null],"columnvalues":[0,"first",12378901234567890.1456789,"se"],"pk":{"pknames":["id"],"pktypes":["int"]},"old":"tran"}]}

@@ -1,0 +1,1 @@
+{"origin":0,"change":[{"kind":"insert","hem":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"cntpeoids":[12,25025],"columnpositions":[1,2,3,4],"faults":[null,"'unsext",null],"columnvalues":[2,"unset",null,null],"al":true,"prex":"wal3j"}]}

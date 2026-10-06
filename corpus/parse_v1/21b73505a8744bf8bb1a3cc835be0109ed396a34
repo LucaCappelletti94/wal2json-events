@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"de_rows","columnnames":["tenant_id","ijjjjjjjjjr","bytea","ric","tth time zone","text","text","text"],"columnvalues":[2,42,"deadbeef",12345678890,"2:30",null,"xxxxxxxxxxxxxxxxxvxxx","insted"]},{"kind":"update","schema!":"pub","table":"default_rows","coes":["ifgre"]},{"kind":"update","snvalues":[5]}]}

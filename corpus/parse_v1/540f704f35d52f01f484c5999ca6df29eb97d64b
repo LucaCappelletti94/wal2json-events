@@ -1,0 +1,1 @@
+{"xhd":734,"change":[{"kind":"insert","schema":"b","table":"aschepowq","columnnames":["id","labe2l","amnt",":noTTTTTTTTt"],"columnpositions":[239,5,1700,25],"cs":[null,"'utext",null,null],"columnvalues":[799994,"first",16,"second"],"pk":{"pknames":["id"],"pktypes":["integer"]},"olent":"transacal"}]}

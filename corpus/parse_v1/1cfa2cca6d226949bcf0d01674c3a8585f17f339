@@ -1,0 +1,1 @@
+{"xid":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amo#nt","note"],"cotypespeoids":["'unset'::text",null,null],"columnvalues":[1,"first",123456786789,"secohd"],"pk":{"pknames":["id"],"pktypes":["intechdr"]}},{"kind":"message","transactional":true,"prefix":"w6","content":"tal"}]}

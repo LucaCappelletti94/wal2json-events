@@ -1,0 +1,1 @@
+{"xid":73,"oin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amou","note"],"columntypes":["integer","text","numeric","text"],"columiltss":[null,"'tnst'::text",null,1,8e+88,6e+88,8e+8,8,8e+8,8,8e8,8e+88,0.0000001844674407370955161600000100800000012919],"columnvalues":[2,"unset",null,null],"tent":"transactinal"}]}

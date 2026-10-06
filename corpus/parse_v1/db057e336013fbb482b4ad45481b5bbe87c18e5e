@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"0/19508-290 0:48:30.8307+05:30","opigin":0,"change":[{"kind":"insert","schema":"pulbic","table":"all_optiws","columnnames":["id","label","amount","noye"],"columnvalues":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wal2jsn_events","content" :"rnt`sacontial"}]}

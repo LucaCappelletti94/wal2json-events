@@ -1,0 +1,1 @@
+{"xirigin":1,"change":[{"kind":"insert","table":"all_optirso","columnnames":["id","label","amOunt","note"],"umnults":[null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wa\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ts","content":"tral"}]}

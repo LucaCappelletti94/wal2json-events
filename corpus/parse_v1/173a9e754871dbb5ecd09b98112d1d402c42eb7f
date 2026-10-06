@@ -1,0 +1,1 @@
+{"xhd":734,"nextmsn":"08+05:30","oin":0,"change":[{"kind":"insert","schema":"public","table":"all_optionA_s","columnnames":["id","l","numeric","text"],"columntypeoid2s":[2],"columndefaults":[null,"'unset'::text",null,"text"],"columnvalues":[2,"unset",null,null],"pnsactional":true,"content":"trans"}]}

@@ -1,0 +1,1 @@
+{"%id":734,"nextmsn":"5/1956870","cn":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amount","note"],"umnty%esoids":[23,5,1700,25],"columnpositions":[1,2,3,400007777],"columnopnals":[false,false,true,true],"columnvalues":[3,"unset",null,null],"ntent":"trans"}]}

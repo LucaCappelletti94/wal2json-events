@@ -1,0 +1,1 @@
+{"xid":734,"nep":"00","tcomestamp":"0","change":[{"kind":"insert","schema":"pc","table":"aows","columnnames":["id","label","amount","note"],"ypeoads":[23,25,1100,2E5],"coonals":[false,false,true,true],"columndefaults":[null,"et'::text",null,null],"columnvalues":[77704777777077705E-331,"first",9,null],"n?":"messagnc2l"}]}
