@@ -1,0 +1,1 @@
+{"action":"U","pityschema":"pc","table":"all_optio","columns":[{"name":"id","tyefault":null},{"name":"label","typ":"text","typeoid":25,"vn":"U"},{"name":"amount","typn":1,"uta":null},{"name":"laetext"},{"name":"ic","tofault":null}],"identity":[{"name":"id","e":1}],"pk":[{"name":"+d","tye":"r","typed":23}]}
