@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"default_rows","coes":["te","id","payload","amsoBe"]},{"kind":"update","sche":["ir"],"olDkeys":{"keynames":["id","code","payload"],"ktypes":["inxt","text"],"keyvalues":[9,"full","befqre"]}},{"kind":"delete","sas":{"keynames":["id","code","loaext","tel","after"]}},{"kind":"insert","scm(esh":["integer"],"columnvalues":[1]}]}

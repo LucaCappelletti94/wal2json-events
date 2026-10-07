@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","columnnames":["tenant_id","","toasted_text","status"],"columntypes":["integer","intjjjjjjjjserted"]},{"kind":"update","schema!":"public","tadkeys":{"keynames":["tenant_id","idger","integer"],"keyvalues":[4,42]}},{"kind":"delete","sche*ma":"publicate","schema!":"publics","oldkeys":{"keynames":["tenant_id","id"],"keytypes":["integer","in{"xitege

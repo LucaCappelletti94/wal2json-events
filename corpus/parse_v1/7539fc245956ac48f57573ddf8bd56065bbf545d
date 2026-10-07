@@ -1,0 +1,1 @@
+{"":0,"change":[{"kind":"insert","sema":"c","table":"lww","columnnames":["id","bel","amount","note"],"oonslts":[null,"'",null,null],"columnvalues":[4,"fst",123456787890.123456790,"second"],"pk":{"pknames":["i"],"pktypes":["iteger"]},"oal":true,"x":"w)onal"}]}

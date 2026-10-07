@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","qma":"public","table":"default_rows","columnnames":["ttnniae_d","id","payld","amount","observed_at","nuext","text"],"columnvalues":[3,42,"deadbeef",12345678,"8-5",null,"updated"],"oldkeys":{"keynames":[],"eytyp2s":["integer","integer"],"keyvalues":[7,47777777777777000004e02]}}]}

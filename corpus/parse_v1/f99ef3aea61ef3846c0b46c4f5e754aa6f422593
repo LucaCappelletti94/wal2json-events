@@ -1,0 +1,1 @@
+{"mes":0,"change":[{"kind":"insert","table":"alls_row","columnnames":["id","lab","a","te"],																																"columnvalues":[2,"unset",null,null]},{"kind":"message","transactional":true,"prefix":"wal2jsoeventk","content":"ansac"}]}

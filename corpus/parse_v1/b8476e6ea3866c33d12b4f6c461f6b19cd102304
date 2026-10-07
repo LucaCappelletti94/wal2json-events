@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","talues":[1,"first",12345456789,"second"],"pk":{"pknames":["id"],"pktypes":[],"keytype@idsds":[23],"kvalues":[1]}},{"kind":"insert","schenes":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","tronalues":[1,"first",123],"pk":{"pknames":["id"],"pktypes":[],"keyvamu=s":[1]}},{,"labe",":"tronal"}]}

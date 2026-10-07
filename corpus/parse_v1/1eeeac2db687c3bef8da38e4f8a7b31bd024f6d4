@@ -1,0 +1,1 @@
+{"xid":734,"nextlsn":"700:0","origin":0,"change":[{"kind":"insert","schema":"c","table":"s","columnnames":["id","label","amount","note"],"c":"wal2jso","content":"rns_rows","couumnnas":["id","label"],"columnvalues":[4,"uset",null,null],"pk":{"pknames":["id"],"pktypes":["ilteger"]}},{"kind":"message","transactional":true,"prefix":"walals","content":"trl"}]}

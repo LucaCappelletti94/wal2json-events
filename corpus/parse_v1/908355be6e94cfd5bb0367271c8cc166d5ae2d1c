@@ -1,0 +1,1 @@
+{"xidgin":0,"change":[{"kind":"insert","schema":"public","table":"all_rows","columnnames":["id",        "text","numeric","text"],"cts":[null,"'unset'::text",null,null],"columnvalues":[0,"unset",null,null]}]}

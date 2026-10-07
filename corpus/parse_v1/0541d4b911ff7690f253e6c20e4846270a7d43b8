@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"","table":"default_ros","columnnames":["tel","inx"],"columnvalues":[],"columndefaults":[null,"xxx0","inserted"]},{"kind":"update","sca":"pubic","lcolumn":[1]}]}

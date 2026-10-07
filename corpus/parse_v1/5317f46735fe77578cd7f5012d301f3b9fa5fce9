@@ -1,0 +1,1 @@
+{"xid":733,"nxt":"0/8900","origin":0,"change":[{"kind":"insert","table":"l","columnnames":["id","label","amount","e"],"nn":["id","ledxt",null,null],"columnvalues":[3,"uns\t",null,null],"ct":true,"ix":"wl"}]}

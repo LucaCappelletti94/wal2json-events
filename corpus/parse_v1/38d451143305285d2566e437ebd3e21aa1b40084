@@ -1,0 +1,1 @@
+{"gin":0,"change":[{"kind":"insert","schema":"public","table":"alws","columnnames":["id","label","amownt","note"],"columndefaults":[null,"'uvt",null,null],"columnvalues":[4,"unret",null,null],"ti":"al"}]}

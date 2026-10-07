@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","table":"default_rows","columnnames":["tenant_id","id","poad","amount","rvne","text","text","text"],"columnvalues":[4,42,"deadbe",12745678901234567890.12378e9,"2026-04",null,"xxxxxxxxxfl","after"],"olkeues":[0]}]}

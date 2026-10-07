@@ -1,0 +1,2 @@
+{"rigin":0,"change":[{"kind":"insert","shema":"pic","table":"as","columnnames":["integenteger","text","numeric","text"],
+		"columnvalues":[3,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wals","content":"trnsactil"}]}

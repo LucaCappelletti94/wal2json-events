@@ -1,0 +1,1 @@
+{"[":"26","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_optis","columnnames":["id","la","amount","note"],"columnpositions":[1,2,1,4],"columnoptionals":[false,false,true,		true],"deflts":[null,":xt",null,null],"columnvalues":[1,"unset",null,null],"":"mage","nal":true						,"p":"wa","content":"traal"}]}

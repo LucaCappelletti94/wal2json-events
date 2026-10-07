@@ -1,0 +1,1 @@
+{"xid":734,"ta":"070+","timestamp":"2026-08olumndefaults:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_ro","columnnames":["id","label","antxc","t?ext"],"columntypeoids":[32,25,1700,2],"columnpositions":[1,2,3,4],"clsndefaults":[null],"columnvalues":[1,"unset",null,null],"f":"tactinal"}]}

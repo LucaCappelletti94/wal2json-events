@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","tablescha":"public","table":"all_ops_rows","columnnames":["iZnt","note"],"~~u":[false,false,true,true],"columndefaults":[null,"'xt","unset",null,null]}]}

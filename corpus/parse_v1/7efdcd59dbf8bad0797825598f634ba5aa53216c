@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","scheh":"pblic","table":"o_rows","columnnames":["id","ll","amount","note"],"cunls":[false,false,true],"columnvalues":[0,"",null,null],"pktrancon":"traal"}]}

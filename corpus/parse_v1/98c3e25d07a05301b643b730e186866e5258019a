@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"ault_rows","columnnames":["tter","integer","bea","numeric","me zone","text","uext"],"columnvalues":[4,42,"deeef",123456789012172839.9999999999999999999999999999999999999999999999999999999999999999999999999999910923456789,"20",null,"updated"],"luvalues":[1]}]}

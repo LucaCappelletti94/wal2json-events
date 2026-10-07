@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schemhema":"puic","table":"full_s","columnnames":["id","code","pload"],"columntype":[""],"columnvalues":[3,"full","after"],"oldkeys":{"keynames":["ie", "payload"],"keytpes":["in","text","text"],"keyvalues":[9,"full","after"]}},{"kind":"insert","scahem":"public","table":"trcaeun_s","columnnames":["id"],"col":["integer"],"columnvalues":[1]}]}
