@@ -1,1 +1,0 @@
-{"action":"I","xid":734,"timestamp":"2026-087","origin":0,"lsn":"","schema":"c","table":"lows","columns":[{"name":"id","type":"eger","typirig":3,"default":null},{"name":"notypete","type":"tt","default":null}],"pk":[{"name":"id","type":"er","typeoid":23}]}

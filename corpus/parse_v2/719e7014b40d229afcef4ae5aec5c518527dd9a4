@@ -1,1 +1,0 @@
-{"action":"I","xid":734,"timestamp":"2026-087","origin":0,"lsn":"","schema":"c","table":"lons_rows","columns":[{"name":"id","type":"integer","typirig":3,"default":null},{"name":"note","type":"tt","default":null}],"pk":[{"name":"id","type":"er","typeoid":23}]}

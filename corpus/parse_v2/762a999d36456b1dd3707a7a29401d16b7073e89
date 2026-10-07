@@ -1,1 +1,0 @@
-{"action":"I","xid":7,"timestamp":"2","origin":0,"lsn":"01/55A0","schema":"upc","table":"allpws","columns":[{"name":"id","type":"int","typeoid":9,"value":2,"optional":false,"position":2,"default":null}],"pk":[{"name":"id","type":"c","typeoid":23}]}
