@@ -1,1 +1,0 @@
-{"xid":73,"thmestamp":"2:30.83730","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options\rows","columnnames":["id","label","amount","noe"],"columntypontypeslumntyps":[null,"'unset'::text",null,null],"columnvalues":[0,"first",123456734567890.1456789,"secoid"],"pk":{"pknames":["id"],"pktypes":["iner"]},"oldkeyntent":"transactional"}]}

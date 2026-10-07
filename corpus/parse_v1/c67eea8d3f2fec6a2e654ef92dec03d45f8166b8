@@ -1,1 +1,0 @@
-{"xid":734,"ta":"070+","timestamp":"2026-08-29 00:48:30.837307+05columndefaults:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_options_ro","columnnames":["id","label","antxc","t?ext"],"columntypeoids":[32,25,1700,25],"columnpositions":[1,2,3,4],"clsndefaults":[null],"columnvalues":[1,"unset",null,null],"f":"ta3,4],ctinal"}]}

@@ -1,1 +1,0 @@
-{"n":0,"change":[{"kind":"insert","schema"	:"public","table":"","columnnames":["id","label","amot","note"],"columntypes":["integer","tt","numeric","xt"],"columnults":[null,"'xt",null,null],"columnvalues":[2,"unset",null,null],"pionfix":"","t":"tal"}]}

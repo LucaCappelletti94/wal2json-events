@@ -1,1 +1,0 @@
-{"n":0,"change":[{"kind":"insert","schema":"]public","table":"allo_p_rows","columnnames":["id","label","amount","te"],"cumnnames":["amount"],                                                                                                                                "columnns":[1,2],"ts":[null,"'unset'::text"],"columnvalues":[2,"t",null,null],"p":"jsonevents","content":"al"}]}

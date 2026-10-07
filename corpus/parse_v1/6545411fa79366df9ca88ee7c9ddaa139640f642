@@ -1,1 +1,0 @@
-{"change":[{"kind":"delete","schema":"c","table":"s","es":["integerext","t"],"mn":"full_","oldkeys":{"keynames":["id","code","pxt"],"keyvalues":[0,"full","after"]}},									{"kind":"insert","schema":"puc","table":"tows","columnnames":["id"],"coqes":["integer"],"columnvalues":[0]}]}

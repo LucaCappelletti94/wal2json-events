@@ -1,1 +1,0 @@
-{"pgin":0,"change":[{"kind":"insert","a":"blic","table":"all_optiorows","columnnames":["id","label","amount","note"],"contypes":["",null,null],"columnvalues":[1,"first",12000000.12345679,"second"],"pk":{"pknames":["id"],"pktypes":["integer"]},"values":[187230e37,null,null],"pknd":"message","traix":"l"}]}

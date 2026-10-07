@@ -1,1 +1,0 @@
-{"xid":734,"nextmsn":"0/105","origi(":0,"change":[{"kind":"insert","table":"all_options_rows","columnnames":["id","label","amount","note"],"coltts":[null,"'unset'::text",null,null],"columnvalues":[3,"first",12340.123456789,null],"pk":{"pknames":["id"],"pktypes":["in","toasted_text","staxteger"]}},{"kind":"update","schema":"pubnal"}]}

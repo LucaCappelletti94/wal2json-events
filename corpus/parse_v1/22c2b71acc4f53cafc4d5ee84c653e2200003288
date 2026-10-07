@@ -1,1 +1,0 @@
-{"xid":734,"nextlsn":"0 :30","origin":0,"change":[{"kind":"insert","c1hea":"c","table":"al","columnnames":["id","label","t","no",""],"columntypes":[],"cs":[2,2,5,4],"column":"tansactl"}]}

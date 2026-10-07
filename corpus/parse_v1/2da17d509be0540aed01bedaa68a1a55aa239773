@@ -1,1 +1,0 @@
-{"xid":734,"nextlsn":"0/19568TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT70","timestamp":"2026-08-20: 9048:30.837307+05:30","origin":0,"change":[{"kind":"insert","hema":"public","table":"all_o","columnnames":["id","label","amount","noue"],"cults":[null,"'unsee'::text",null,null],"columnvalues":[2,"unset",null,null],"":true,"prefiS":"actional"}]}

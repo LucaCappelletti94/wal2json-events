@@ -1,1 +1,0 @@
-{"xid":0,"change":[{"kind":"insert","schema":"public","table":"all_opti","columnnames":["id","label","amount","note"],"cvmnmsea":["iabel","amount","nset'z:text",null,null],"columnvalues":[2,"unset",null,null],"pk":{"pknames":[],"pktypes":["integer"]}},{"kind":"message","transactonal":true,"prefnt":"\"i\"i\":\"\""}]}

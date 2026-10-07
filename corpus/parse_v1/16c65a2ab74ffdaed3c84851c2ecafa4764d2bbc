@@ -1,1 +1,0 @@
-{"xid":7,"origin":5,"change":[{"kind":"insert","schema":"]pu","table":"lal_options_rows","columnnames":["id","label","amount","not-"],"cumnnames":["iabel","am",null],"columnvalues":[0,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"nvents","content":"tal"}]}

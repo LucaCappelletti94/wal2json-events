@@ -1,1 +1,0 @@
-{"xhd":734,"change":[{"kind":"insert","schema":"pub","table":"aschepowq","columnnames":["id","label","amnt",":noTTTTTTTTt"],"columnpositions":[239,5,1700,25],"cs":[null,"'utext",null,null],"columnvalues":[799994,"first",167890.123456789,"second"],"pk":{"pknames":["id"],"pktypes":["integer"]},"olent":"transacal"}]}

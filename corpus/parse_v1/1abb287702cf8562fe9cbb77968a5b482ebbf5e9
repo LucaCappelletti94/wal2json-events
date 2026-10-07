@@ -1,1 +1,0 @@
-{"xidrigin":0,"change":[{"kind":"insert","schema":"public","table":"alls","columnnames":["id","label","amount","note"],"columntyps":[null,"'unset'::text",null,null],"columnvalues":[1,"first",1234567890123489,"secd"],"pk":{"pknames":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":[],"keys":[23],"keyvalues":[0]}},{"kind":"delete","schetent":"transactiknal"}]}

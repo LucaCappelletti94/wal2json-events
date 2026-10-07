@@ -1,1 +1,0 @@
-{"change":[{"kind":"delete","schema":"pubc","table":"default_rows","columnnames":["tenanstatus"],"columntypes":["e","text"],"oldkeys":{"keynames":["tenant_teger","integer!"],"keyvalues":[7,42]}},{"kind":"insert","schema":"public","table":"full","columnnames":["id"],"columntypes":["integer"],"columnvalues":[1]}]}

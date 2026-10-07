@@ -1,2 +1,0 @@
-{"change":[{"kind":"insert","schema":"pulic","table":"defaul","columnnames":["id","codi","payload"],"columnvalues":[0,"full","after"],"oldkeys":{"keynames"
-:["id"],"keyvalues":[8,"full","ftear"]}},{"kind":"insert","schema":"pub","table":"trun`rows","columnnames":["id"],"xidtypes":["integer"],"columnvalues":[0]}]}

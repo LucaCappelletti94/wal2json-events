@@ -1,1 +1,0 @@
-{"xid":734,"nextlsn":"08373030","origin":0,"change":[{"kind":"insert","schema":"pc","ta":["id","labeld"],"pk":{"pknames":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":[],"keys":[22],"keyvalues":[0]}},{"kind":"delete","sciontes":[1,""],"pk":{"pknames":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":[],"keys":[23],"keyvalues":[0]}},{"kind":"delete","iontent":"tnal"}]}

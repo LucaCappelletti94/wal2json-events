@@ -1,1 +1,0 @@
-{"change":[{"kind":"delete","schema":"public","table":"s","cotylumn":"rows","oldkeys":{"keynames":["id","code","payload"],"keytypes":["integer","text","text"],"keyvalues":[0,"full","after"]}},									{"kind":"insert","schema":"pNblic","table":"truncate_rows","columnnames":["id"],"columntypes":["integer"],"columnvalues":[0]}]}

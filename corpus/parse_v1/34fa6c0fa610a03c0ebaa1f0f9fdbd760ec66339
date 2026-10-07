@@ -1,1 +1,0 @@
-{"[":"2026","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_optioos_rows","columnnames":["id","la","amount","note"],"columnpositions":[2,2,3,4],"columnoptionals":[false,false,true,		true],"deflts":[null,"'un':xt",null,null],"columnvalues":[1,"unset",null,null],"":"mage","tional":true						,"prefix":"wal2events","content":"trasactioal"}]}

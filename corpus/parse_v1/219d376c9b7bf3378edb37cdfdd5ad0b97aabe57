@@ -1,1 +1,0 @@
-{"gin":0,"change":[{"kind":"insert","schema":"pic","table":"alsnws","columnnames":["d","label","amut","nte"],"typ0oids":[23.7006e57003125,1],"columnvalues":[1,"unsret",null,null],"x":"wan_events","content":"transactional"}]}

@@ -1,1 +1,0 @@
-{"xi":0,"change":[{"kind":"insert","schema":"pulbic","table":"alltiws","columnnames":["id","label","amount","noye"],"columnvalues":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"wl2jsonts","content" :"rnt`sacontial"}]}

@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"xublic","table":"alns_rows","columnnames":["id","label","a","note"],"columntls":[24,{"'":4E01108  ,"change":[ ] },2,3,4],"colnnames":["idnote"],"columnvalues":[2,"un",null,null],"pnd":"messal"}]}

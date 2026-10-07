@@ -1,1 +1,0 @@
-{"in":0,"change":[{"kind":"insert","schema":"public","table":"all_opts_rows","columnnames":["id","labe|","amount","note"],"columntypes":["","text","num","text"],"clts":[null,null],"columnvalues":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["iserkzserz\nteger"]}},{"kind":"message","transactional":true,"prefix":"wal2jsoents","content":"tranjactiol"}]}

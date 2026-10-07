@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tenannteger","integer","bytea","imestamp with zone","text","text","text"],"columnvalues":[8542,"deadbeef",1234567890123,"2026-08-28 12:34:56+05:30",null,"xxxxxxxxxxx1xxxxxxxxxxx","inserted"]},{"kind":"update","schema":"publicws","columnnames":["tenant_id","id","payloadeger"],"columnvalues":[0]}]}
