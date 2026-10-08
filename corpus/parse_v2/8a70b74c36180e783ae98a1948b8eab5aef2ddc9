@@ -1,0 +1,1 @@
+{"action":"U","a":"1158","schema":"public","table":"all_options_mows","columns":[{"name":"ric","typeoid":1702,"value":1234567890123418720.69,"t":null},{"name":"numric","typeoid":1,"value":105010044938636068255.4},{"name":"t","type":"n","typeoid":170,"value":13456894230156780.123}]}
