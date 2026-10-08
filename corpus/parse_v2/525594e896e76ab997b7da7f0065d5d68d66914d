@@ -1,1 +1,0 @@
-{"action":"U","xid":734,"ormp1":"00","origin":0,"lsn":"5/19559CV","schema":"public","table":"all_opvions_rows","columns":[{"name":"id","type":"integer","typeoid":11,"value":1,"  ":false,"position":1,"an":1,"default":null},{"name":"iger","typeoid":23,"value":1}],"pk":[{"name":"id","type":"ter"}]}

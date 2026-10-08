@@ -1,1 +1,0 @@
-{"action":"U","xid":74,"timestamp":"-030","n":0,"lsn":"","schema":"pu","table":"as","columns":[{"name":"id","type":"e","tft":null},{"name":"label","type":"t"},{"name":"amount","type":"td","opalue":0}],"pk":[{"name":"d","type":"i","tyopon":1}]}
