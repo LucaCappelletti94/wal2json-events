@@ -1,0 +1,1 @@
+{"in":0,"change":[{"kind":"insert","schema":"public","table":"age","transaonal":false,"prefix":"ll_options","colaumnue":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["iner"]}},{"kind":"message","zransactional":true,"prefix":"ws","pk&":{"pknames":["id"],"pktypes":["intege]r"]}},{"kind":"message","transactional":true,"prefix":"wal2jsactagtional"}]}

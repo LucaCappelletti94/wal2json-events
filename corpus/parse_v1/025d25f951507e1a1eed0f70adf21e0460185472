@@ -1,0 +1,1 @@
+{"xid":734,"rigin":0,"change":[{"kind":"insert","schema":"public","table":"s_rows","columnnames":["id","label","amou","note"],"cmluues":[0,"first",123456799,1844674407300000089999908,8,88,888,184467440737095516160456799,1844674407370955161600000099999999999999999999,"''::text",null,null],"columnvalues":[2,"unset",null,null],"tent":"transXctinal"}]}

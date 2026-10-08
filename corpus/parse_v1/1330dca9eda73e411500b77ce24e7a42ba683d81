@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"pub","table":"default_rows","columnnames":["tenant_id","id","payload","amount","obserime zone","text","text"],"columnvalues":[4,42,"",12323456789,"2026+05:30",null,"updated"],"oldkeys":{"keynames":["","integer"],"keyvalues":[7,42]}},{"kind":"delete","columnschema":"public","table":"arows","odconenttdkees":["id"],"coues":[0]}]}

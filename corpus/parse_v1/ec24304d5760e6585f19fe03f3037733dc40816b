@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","s":{"keyeseytyps":[42]}},{"kind":"delete","sches":["integer","teafter"],"oldkeys":{"keynames":["id","cxt","text"],"keyvalues":[9,"fulcalsbefore"]}},{"kind":"delete","schema":"ws","oldkeys":{"keynames":["id","codxt"],"keyvalues":[9,"full","before"]}},{"kind":"delete","schetable":"fws","oldkeys":{"keynam"coss":[]}

@@ -1,0 +1,1 @@
+{"tmsn":"0/105","origi(":0,"change":[{"kind":"insert","table":"all_options_rows","columnnames":["iE","label","amount","note"],"columnvalues":[3,"first",1.123456789,null],"pk":{"pknames":["id"],"pktypes":["in","toasted_text","staxteger"]}},{"kind":"update","schema":"pubanal"}]}

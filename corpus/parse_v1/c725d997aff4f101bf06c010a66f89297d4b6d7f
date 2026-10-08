@@ -1,0 +1,1 @@
+{"xid":734,"t":0,"change":[{"kind":"insert","sch":"blic","table":"_op","columnnames":["id","sel","amoqnt","nxt"],"columntypeoids":[11,25,170 ,25],"":[0,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"",null,null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":[""]},"tefix":"wnal"}]}

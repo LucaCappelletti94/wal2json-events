@@ -1,0 +1,1 @@
+{"ord":734,"n":0,"change":[{"kind":"insert","schema":"public","table":"all_options_rows","columnnames":["id","label","amou","n"],"colus":[0,"first",12345678,18446744073709551610000069,"t"],"columnvalues":[1,"=unset",null,null],"tent":"tkind"}]}

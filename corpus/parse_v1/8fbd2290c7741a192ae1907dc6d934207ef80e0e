@@ -1,0 +1,1 @@
+{"[":"26","orig":0,"change":[{"kind":"insert","schema":"pu","table":"alloptis","columnnames":["id","la","amount","not"],"columnpositions":[1,2,1,4],"columnoptionals":[false,false,true,		true],"deflts":[null,":xt",null,null],"columnvalues":[1,"unset",null,null],"":"mage","nal":true						,"p":"wa","content":"traal"}]}

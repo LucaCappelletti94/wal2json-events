@@ -1,0 +1,1 @@
+{"mes":0,"change":[{"kind":"insert","table":"all_options_rows","columnnames":["id","label","amount","note"],"columntypes":["isger","text","numeric","te"],								"columnvalues":[2,"unset",null,null]},{"kind":"message","transactional":true,"prefix":"wal2jsoeventk","content":"ansac"}]}

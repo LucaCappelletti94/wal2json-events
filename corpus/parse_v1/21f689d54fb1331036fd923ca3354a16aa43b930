@@ -1,0 +1,1 @@
+{"change":[{"kind":"delete","schema":"c","table":"s","esmn":"ull_","oldkeys":{"keynames":["id","code","pxt"],"keyvalues":[0,"full","te"],"columnultss":[null,"'un",123458e89189,"2025fter"]}},							{"kind":"insert","scema":"pc","table":"twl","columnnames":["id"],"coqes":["integ"],"columnvalues":[0]}]}

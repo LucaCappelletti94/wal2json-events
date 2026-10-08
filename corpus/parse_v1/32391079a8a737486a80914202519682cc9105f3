@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","ypes":["integer","text",4],"columnoptionals":[false,true],"ck":{"pknames":["id"],"pktypes":["intege=r"]}},{"kind":"update","schema":"public","table":"all_options_rows","columnnames":["id","lnote"],"tions":[1,2,3,4],"columnoptionals":[false,false,true,true],"keyvalues":[1]}},{"ki:["ie"nts

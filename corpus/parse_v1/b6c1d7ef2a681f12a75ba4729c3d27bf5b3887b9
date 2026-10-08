@@ -1,0 +1,1 @@
+{"xid":7,"change":[{"kind":"insert","sch":"public","table":"_op","columnnames":["id","label","amout","nxt"],"columntypeoids":[0,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"",null,null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":[""]}},{"kind":"message","transactional":true,"prefix":"wal4json_events","content":"tranal"}]}

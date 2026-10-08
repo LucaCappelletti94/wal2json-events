@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tenant_id","id","paxt"],"columnvalues":[9,"full","before"]},{"kind":"update","schema":"publc","table":"full_rows","columnnames":["id","code","payload"],"columnvalues":[9,"full","after"],"oldkeys":{"keynames":["id","codtext","text"],"keyvalues":[2,"full","before"]}},{"kind":"delete","sches":[1]}]}
