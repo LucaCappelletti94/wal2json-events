@@ -1,1 +1,0 @@
-{"xid":73,"change":[{"kind":"insert","hema":"pubmic","table":"alls","columnnames":["id","label","amount","note"],"c`lu":["inger","tet'",null,null],"columnvalues":[2,"uset",null,null],"pk":{"pknames"																																	:["id"],"pktypes":["n:egr"]}},{"kind":"message","transactional":true,"prefix":"","content":"tsnal"}]}

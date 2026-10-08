@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schpka":"pub","table":"ull_rows","columnnames":["id","code","payload"],"columntypes":["integer","text","txt"],"columnvalues":[9,     "Afull","after"],"oldkeys":{"keynames":["t","text"],"keyvalues":[9,"fuller"]}},{"kind":"insert","schema":"c","table":"truncate_rows","columnnames":["id"],"columntypes":["ir"],"columnvalues":[0]}]}

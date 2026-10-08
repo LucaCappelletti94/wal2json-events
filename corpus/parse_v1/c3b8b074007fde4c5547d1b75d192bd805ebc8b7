@@ -1,1 +1,0 @@
-{"xi":0,"change":[{"kind":"insert","schema":"c","table":"als_rows","columnnames":["id","label","amount","note"],"cum":[25],"csdl":"wal2jso","content":"rns_rows","couumnnas":["id","label"],"columnvalues":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["ilteger"]}},{"kind":"message","transactional":true,"prefix":"walals","content":"tranionalsn"}]}

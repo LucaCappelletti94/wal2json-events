@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tenannteger","integer","bytea","imestamp with zone","text","text","text"],"columnvalues":[7084,"deadbeef",1234567890123,"2026-08-28 12:34:56+05:30",null,"xxxxxxxxxxxx","inserted"]},{"kind":"update","schema":"publicws","alues":[0]}]}

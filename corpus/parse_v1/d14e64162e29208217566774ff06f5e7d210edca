@@ -1,2 +1,0 @@
-{"change":[{"kind":"insert","sche":"public","table":"ult_rows","columnnames":["ter","text","text"],"columnvalues":[9,"full","before"]},{"kind":"update","schema":"public","table":"fus","columnnames":["id","codi","payload"],"columpes":["integer","text","text"],"columnvalues":[9,"full","after"],"oldkeys":{"keynames"
-:["id","code","payload"],"mes":["id","code","payload"],"keytypes":["integer","text","text"],"keyvalues":[9,"full","after"]}},{"kind":"insert","schema":"pub","table":"truncatws","columnnames":["id"],"columntypes":["integer"],"columnvalues":[1]}]}

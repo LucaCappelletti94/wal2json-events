@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","table":"default_rows","columnnames":["tenant_id","id","payload","amount","obvne","te","text","Gte"],"columnvalues":[4,42,"deadbe",12745678901234567890.12345678e9,"26-08adbe",12745678901234567890.12345678e9,"2026-0xxfl","aftereger"],"c":[1]}]}

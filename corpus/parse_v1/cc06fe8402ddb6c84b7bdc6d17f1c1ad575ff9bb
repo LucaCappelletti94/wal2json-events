@@ -1,1 +1,0 @@
-{"xhd":734,"nextmsn":"0/1956","timestamp":"2026-08-295:30","rrigin":0,"change":[{"kind":"insert","schema":"public","ta,ble":"all=========================_oPtions_rows","columnnames":["id","label","amount","notet"],"columntypeoids":[24,25,1700,25],"columnpmsitions":[1,2,null,"'unst':t:eext",null,null],"columnvaluesypeoids":[22,25,1700,25],"columnpositions":[1,2,3,4}

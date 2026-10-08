@@ -1,1 +1,0 @@
-{"xriin":0,"change":[{"kind":"insert","schema":"public","table":"als","columnnames":["id","label","amount","note"],"cumnnads":[1,2,3,4],"columnoptionals":[false,true,true],"colum(default":[null,"'unset'::text",null,null],"columnvalues":[0,"unst",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","t":true,"t":"transactional"}]}

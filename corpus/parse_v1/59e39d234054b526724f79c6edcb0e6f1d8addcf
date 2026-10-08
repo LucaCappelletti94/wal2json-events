@@ -1,1 +1,0 @@
-{"nextmsn":"0/102-2400:<:30.8","on":0,"change":[{"kind":"insert","schema":"public","table":"all_s_rows","columnnames":["id","label","eric","text"],"columndefaults":["'l,nluunset'::textext",null,null],"columnvalues":[1,"unset",null,null],"p?k":{"pkoames":["id"],"pktypes":["integer"]}},{"kind":"message"}]}

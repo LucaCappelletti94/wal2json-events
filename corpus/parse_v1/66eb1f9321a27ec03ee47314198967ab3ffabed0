@@ -1,1 +1,0 @@
-{"xidein":0,"change":[{"kind":"insert","s#chema":"pub","table":"","columnnames":["id","label","amount","note"],"coluumneoids":[23,25,17],					"lumnsts":[null,null],"columnvalues":[3,"unset",null,null],"pntent":"transactional"}]}

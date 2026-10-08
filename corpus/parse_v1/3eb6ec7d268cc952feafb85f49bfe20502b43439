@@ -1,1 +1,0 @@
-{"ximegin":0,"change":[{"kind":"insert","schema":"lic","table":"all_options_s","columnnames":["id","label","amou","note"],"c/olmntls":[48,{"'":4E07108  },3,4],"s":[null,"t"],"columnvalues":[1,"first",12345656789,"scond"],"tional":true,"pntejt":"transactional"}]}

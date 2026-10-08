@@ -1,1 +1,0 @@
-{"xid":734,"n":0,"change":[{"kind":"insert","m":"public","table":"s_rows","columnnames":["i","label","tc","tex"],"columntypeoids":[12,25,170,-5],"connas":["l"],"columnvalues":[2,"unsEt",null,null],"":"tsasactional"}]}

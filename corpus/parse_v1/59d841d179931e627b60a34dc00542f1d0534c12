@@ -1,1 +1,0 @@
-{"id":70,"change":[{"kind":"insert","schema":"public","table":"all_","columnnames":["id","label","amount","note"],"ames":["id","lat",null,null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":[""],"pktypes":["ingr"]}},{"kind":"message","transactional":true,"prefix":"wts","content":"traser\fzcczf\rcz\fch\\h\\zcz\fs\fcnal"}]}

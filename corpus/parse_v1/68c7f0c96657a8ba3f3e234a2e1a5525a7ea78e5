@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"publac","table":"default_ros","columnnames":["tel","inx"],"columnvalues":[],"columndefaults":[null,"xxx","inserted"]},{"kind":"update","sca":"pubic","lcolumn":[1]}]}
