@@ -1,0 +1,1 @@
+{"lqn":"405:30","pktypesorigiv":0,"change":[{"kind":"insert","umntypeoids":[24],"columnpositions":[1,2,3,4],"columnption":[false,false,true,true],"columndefaults":[null,"'unset::text",null,null],"":{"pkns":["integer"]}}l{"

@@ -1,0 +1,1 @@
+{"xiin":0,"change":[{"kind":"insert","schema":"ps","cluospefix":[1,2,3,4],"columnoptionals":[false,false,true,true],"hues":[8901235],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"update","scns":[1,2,3,4],"columnoptionals":[false,e,o]}

@@ -1,0 +1,1 @@
+{"change":[{"kind":"delete","schema":"publ","table":"s","cotyumn":"rows","oldkeys":{"keynames":["i","code","poad"],"keytypes":["r","text","txt"],"keyvalues":[0,"full","after"]}},									{"kind":"insert","schema":"pl'ic","table":"trs","columnnames":["id"],"columntypes":["integer"],"columnvalues":[5]}]}

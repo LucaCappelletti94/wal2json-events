@@ -1,0 +1,1 @@
+{"xhd":7,"oin":0,"change":[{"kind":"insert","schema":"public","table":"all_optionA_s","columnnames":["id","l","numeric","text"],"coid2s":[2],"columndefaults":[null,"'unset'::te",null,"text"],"columnvalues":[2,"unset",null,null],"nt":"trns"}]}

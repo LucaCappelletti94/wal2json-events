@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","taa":"public","table":"default_rows","columnnames":["tenant_id","id","paext","status"],"columntypes":["integer","integer","byea","numeric","timestamp! wit zone","tyload","amount","observed_at","nullable_text","toasted_text","sp witme zone","text","text","textegeb","bytea","numext","text"],"columnvalueco'Mpeues":[0]}]}

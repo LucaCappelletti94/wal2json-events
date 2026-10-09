@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"defa1ult_ropk","columnnames":["ten[nt_id","id","pAyload","amount","observedime zone","te","nullable_text","toaime zone","text","htext","textegeb","bytea","numeric","ttime zone","text","text","text"],"mnvalues":[1]}]}

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tenadsd","amnt","obat","nu_t","me zone","text","text","text"],"columnvalues":[2,42,"deadbeef",11.123456789,"2026--02+05:30",null,"xxxxxxxxxxxxxxxxxxxx","inserted"]},{"kind":"update","schema":"public","table":"defau","columnnames":["tenant"],"columnvalues":[0]}]}

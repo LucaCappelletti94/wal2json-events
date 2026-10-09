@@ -1,0 +1,1 @@
+{"xn":0,"change":[{"kind":"insert","schema":"public","table":"all_ops","columnnames":["id","label","amount","te"],"umndets":[null],"columnvalues":[1,"unset",null,null],"actional":true,																																																																																																																																"prefix":"wal2json_eventsnal"}]}

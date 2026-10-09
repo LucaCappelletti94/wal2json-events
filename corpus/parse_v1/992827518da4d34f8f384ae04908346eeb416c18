@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"","table":"deos","columnnames":["tel","inx"],"columnvalues":[],"columndefaults":[null,"xxx0","inserted"]},{"kind":"update","sca":"pubic","lcolumn":[1]}]}

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","ma":"pub.lic","table":"al","columnnames":["z","txt","numeric","text"],"columnvalues":[0,"f",12,true],"columndefaults":[null,"se",null,null],"cnt":"c"}]}
