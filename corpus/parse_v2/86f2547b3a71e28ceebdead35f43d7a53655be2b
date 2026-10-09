@@ -1,1 +1,0 @@
-{"action":"I","xid":null,"op":734,"t":"2026-08-29 00:48:30.837307+05:30","origin":0,"lsn":"0/1955A70","schema":"public","table":"all_options_rows","columns":[{"name":"id","pose":"note","type":"te","typeoid":23}]}

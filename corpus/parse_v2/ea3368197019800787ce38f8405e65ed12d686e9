@@ -1,1 +1,0 @@
-{"action":"U","xid":73,"table":"s","columns":[{"name":"id","eoid":46,"value":1,"p":1,"default":null},{"name":"c","typeoid":78},{"name":"g","typeoid":23,"value":1}],"pk":[{"name":"","type":"integer","typeoid":23}]}
