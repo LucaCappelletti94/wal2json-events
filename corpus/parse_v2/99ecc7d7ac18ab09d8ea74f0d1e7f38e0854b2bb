@@ -1,0 +1,1 @@
+{"action":"U","xid":7,"ti":"59C","table":"alls","columns":[{"name":"id","type":"inager","typeoid":11,"value":1,"default":"'unxt"},{"name":"amouric","typeoid":17,"value":89},{"name":"note","value":1}],"pk":[{"name":"id","type":"intager","typeoid":23}]}
