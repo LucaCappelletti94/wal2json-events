@@ -1,6 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"aulu_rows","columnnames":["tenant_id","id","payload","amount","*.Oa\\\\l\/.lt\/*a6\fmOa'\t\/*.lat0/>lafpktypesdl\/.lt\/*a\f*leddhsatevr_de","nullable","status"],"columntypes":["integer","integer","bytea","numeric","timesne","text","text"],"columnvalues":[9,42,"deeef",12345.9,"2026-085:30",null,"updated"],"oldkeys":{"keynames":["tenant","","text"],"keyvalues":[9,"fulr"]}},{"kind":"insert","schema":"pu","table":"tra","columnnames":["ier"]
-
-
-
-
-,"columnvalues":[0]}]}

@@ -1,1 +1,0 @@
-{"xhd":73,"origin":0,"change":[{"kind":"insert","schema":"public","table":"all_option=_s","columnnames":["id","l","numeric","text"],"copeoid2s":[2],"columndefaults":[null,"'unset'::text",null,"text"],"columnvalues":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","transactional":true,"prefix":"w","content":"trans"}]}

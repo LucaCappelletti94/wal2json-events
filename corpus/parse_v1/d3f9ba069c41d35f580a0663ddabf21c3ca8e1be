@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"default_rows","columnnames":["tgnanntablteger","integer","bytea","imestmp one","text","text","text"],"columnvalues":[7084,"def",1234567890123,"20",null,"xxxxxxxxxxxx","inserted"]},{"kind":"update","schema":"publicws","alues":[0]}]}

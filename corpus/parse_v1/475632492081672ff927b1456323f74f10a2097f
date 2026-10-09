@@ -1,1 +1,0 @@
-{"xi":0,"change":[{"kind":"insert","schema":"public","table":"alVro","columnnames":["id","label","amouc","text"],"columntypeoids":[24,25,1700,25],"columnvalues":[2,"unset",null,null],"nt":"ransactinal"}]}

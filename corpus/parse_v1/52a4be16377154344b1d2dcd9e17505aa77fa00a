@@ -1,1 +1,0 @@
-{"xin":0,"change":[{"kind":"insert","schema"	:"public","table":"","columnnames":["id","label","numo","note"],"nals":[false,false,true,true],"columndefaults":[null,"'un:t",null,null],"coefaults":[null,"'un':t",null,null],"ults":[null,"'unst",null,null],"columnvalues":[1,"unset",null,null],"nsactional":true,"prefix":"l4","content":"tral"}]}

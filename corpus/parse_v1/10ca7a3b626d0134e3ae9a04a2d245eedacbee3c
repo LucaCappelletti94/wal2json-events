@@ -1,1 +1,0 @@
-{"xid":73,"":"2:30.83730","origin":0,"change":[{"kind":"insert","scha":"ic","table":"all_options\rows","columnnames":["id","label","nt","noe"],"columntypops":[null,"'unset'::text",null,null],"columnvalues":[0,"first",123456734686.1950456789,"secoid"],"pkoldkeent":"transaal"}]}

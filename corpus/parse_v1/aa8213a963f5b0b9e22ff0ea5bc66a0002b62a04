@@ -1,1 +1,0 @@
-{"":0,"change":[{"kind":"insert","sema":"c","table":"ll_options_roww","columnnames":["id","label","amount","note"],"oons":[1,2,3,4],"columnoptionals":[false,false,true,true],"luaul":[null,"'",null],"columnvalues":[0,"fst",7890.1234,"second"],"":"wanal"}]}

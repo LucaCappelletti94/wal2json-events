@@ -1,1 +1,0 @@
-{"xidgin":0,"change":[{"kind":"insert","schema":"p","table":"\\\\\\\\\\\\\\\\ws","columnnames":["","note"],"cos":[false,false,true],"columndefaults":[null,"'unset'::text",null,null,null],"pk":{"pknames":["id"],"pktypes":["integer"]}},{"kind":"message","asxid":460,"nextlhema":"al"}]}

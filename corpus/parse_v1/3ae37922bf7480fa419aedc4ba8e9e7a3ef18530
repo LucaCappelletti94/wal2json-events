@@ -1,1 +1,0 @@
-{"n":0,"change":[{"kind":"insert","schema":"]public","table":"lo_p_rows","columnnames":["id","label","amount","te"],"cumnnames":["amount"],                                                                                                                                "~s":[0,2],"ts":[null,"'unset'::text"],"columnvalues":[2,"t",null,null],"p":"jsoneal"}]}

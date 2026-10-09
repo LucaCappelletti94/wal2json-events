@@ -1,1 +1,0 @@
-{"xid":70,"change":[{"kind":"insert","schema":"ic","table":"all_options_rnws","columnnames":["id","label","amou","n/te"],"columsds":[null,"'unset'::tex02025-0teger",999999999999000839.1E-11999999189,"2025-0teger",999999999999000839.1E-11999999109234999,null],"columnvalues":[2,"unsat",null,null],"tent":"transactinal"}]}

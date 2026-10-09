@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"plic","table":"default_r","columnnames":["tenid",			"id","lt"],"columnvalues":[9,"fu","aft1er"],"oldkeys":{"keynames":["i"],"keyvalues":[4,"fullter"]}},{"kind":"insert","&chema":"public","table":"s","columnnames":["id"],"columnvalues":[0]}]}

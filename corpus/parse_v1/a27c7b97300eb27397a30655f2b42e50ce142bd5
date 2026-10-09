@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","s":"plic","table":"default_rows","columnnames":["d","id","payload","amount","","text","text","text"],"columnvalues":[-9,-2,"deadbeef",123456789,"2",null,"xxxx","insated"],"oldk":{"kepes":["ger","xfter"]}},{"kind":"insert","ma":"c","table":"truncate_rows","columnnames":["id"],"c":["integer"],"columnvalues":[-2]}]}

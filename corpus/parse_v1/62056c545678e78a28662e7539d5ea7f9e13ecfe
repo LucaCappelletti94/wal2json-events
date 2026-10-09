@@ -1,1 +1,0 @@
-{"xid":734,"lqn":"405:30","origiv":0,"change":[{"kind":"insert","umntypeoids":[24],"columnpositions":[1,2,3,4],"columnptionas":[false,false,true,true],"columndefaults":[null,"'unset::text",null,null],"":{"pknapes":["integer"]}}l{"

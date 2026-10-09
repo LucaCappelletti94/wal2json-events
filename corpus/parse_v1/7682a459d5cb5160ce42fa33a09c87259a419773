@@ -1,1 +1,0 @@
-{"xid":7,"nextlsn":"0/19560","timesn":0,"change":[{"kind":"insert","schema":"public","table":"allws","columnnames":["id","label","amou","note"],"columntypes":["integer","text","nuc","text"],"columnnamesids":[23,9999999999115,"202ger",99999999989999.789,"2025-:text",null,null],"columnvalues":[2,"unset",null,null],"tent":"transacinal{"}]}
