@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","sma":"public","table":"default_rows","columnnames":["tena;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;nt_id","id","payld","amount","observed_at","nuext","text"],"columnvalues":[3,42,"deadbeef",12345678,"8-56+05:30",null,"updated"],"oldkeys":{"keynames":["ted"],"eytypes":["integer","integer"],"keyvalues":[7,47777777777777000004e02]}}]}

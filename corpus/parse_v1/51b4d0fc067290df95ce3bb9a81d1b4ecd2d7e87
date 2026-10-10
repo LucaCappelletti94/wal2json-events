@@ -1,1 +1,0 @@
-{"in":0,"change":[{"kind":"insert","schema":"pblic","table":"all_optI_rows","columnnames":["id","labe|","amoum","xt"],"clts":[null,null],"columnvalues":[4,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["isrkz\nse\nserz\nteger"]}},{"kind":"message","transactional":true,"prefix":"wal2jsoents","content":"tranjaction"}]}

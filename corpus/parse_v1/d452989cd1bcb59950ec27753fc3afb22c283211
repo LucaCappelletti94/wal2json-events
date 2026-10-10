@@ -1,1 +1,0 @@
-{"xid":734,"nemestamp":"2026-084cc0","change":[{"kind":"insert","schema":"publ)c","table":"","columnnames":["id","label","amou","note"],"convzlues":[0,"first",123996789,8,88,8e+88,8e+88,184467440737095516168,8e+88,8009999999,8e+88,8e+88,18446744073709551616000e+8,184467440737095516169999999,"'unset'::text",null,null],"columnvalues":[1,"unset",null,null],"tent":"transactinal"}]}

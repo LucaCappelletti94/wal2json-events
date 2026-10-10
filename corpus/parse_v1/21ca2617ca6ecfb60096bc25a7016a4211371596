@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schemaind":"update","schema":"public","table":"default_rows","columnnames":["tenant_id","id","payload","amount","obcode","payload"],"columntypes":["integer","text","text"],"columnnamess":[8,"full","before"]},{"kind":"update","schems":[1]}]}

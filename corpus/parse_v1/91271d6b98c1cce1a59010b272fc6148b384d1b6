@@ -1,1 +1,0 @@
-{"xid":734,"p":"2/305:30","change":[{"kind":"insert","scma":"pubic","table":"a_rows","columnnames":["id","label","amount","note"],"":[24,5],"columnvalues":[2,"uet",null,null],"pk":{"pknames":["idws","colu"],"pktypes":["integer~"]}},{"kind":"message","trtent":"transactinal"}]}

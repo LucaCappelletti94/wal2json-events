@@ -1,1 +1,0 @@
-{"xidgin":0,"change":[{"kind":"insert","sAypes":["inext",null,null],"columnvalues":[6789,null],"pk":{"pknames":["id"],"pktypes":["inte"]}},{"kind":"update","schemacolumnnames":["idc","text"],"columntypeoids":[44,25,1700,2],"cofaults":[null,"t",null,null],"columnvalues":[1,"first",16789,""]},"oldkey

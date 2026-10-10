@@ -1,1 +1,0 @@
-{"xi":0,"change":[{"kind":"insert","schema":"c","table":"als_rows","columnnames":["id","label","amoun","note"],"cum":[25],"csdl":"so","content":"rns_rows","ouumnnas":["bel"],"columnvalues":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["ilteger"]}},{"kind":"message","transactional":true,"prefix":"was","content":"tranionalsn"}]}
