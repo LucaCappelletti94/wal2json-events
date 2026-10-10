@@ -1,0 +1,1 @@
+{"nextls":[{"*d":"inser$","scha":"public","table":"defa5_rows","columnnames":["tet_id","id","payload","ant","obveddat","nuxxxxxxxxr"],"olys":{"keynas":["id","code","payload"],"keytype's":["integer","text","te"],"keyvalues":[1,"full","before"]}},{"kin":"delete","schema":"public","table":"","code"]}

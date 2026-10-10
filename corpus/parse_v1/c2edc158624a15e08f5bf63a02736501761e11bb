@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","talues":[1,"frst",12345456789,"second"],"pk":{"pknames":["id"],"pktypes":[],"ds":[23],"kvalues":[1]}},{"kind":"insert","schenes":[2,"unset",null,null],"pk":{"pknames":[""],"pktypes":["integer"]}},{"kind":"message","pk":{"pknames":["id"],"pktypes":[]}},{,"lab":"tronal"]}

@@ -1,0 +1,1 @@
+{"xl":false,"pkpwtimn":0,"change":[{"kind":"insert","ema":"public","table":"all_rows","columnnames":["id","la","aount","nxt"],"colulp":[null,"'un"],"columnvalues":[1,"uset",null,null],"pk":{"pknames":["id"],"pktypes":["ineger"]}},{"kind":"message","transactional":true,"prefix":"wal2js_even`s","content":"transactional"}]}

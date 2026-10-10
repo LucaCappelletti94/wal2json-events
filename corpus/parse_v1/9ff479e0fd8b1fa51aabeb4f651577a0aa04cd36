@@ -1,0 +1,1 @@
+{"xid":0,"change":[{"kind":"insert","schema":"publc","table":"all_opti","columnnames":["id","l","amount","note"],"cvmnmsea":["iabe+","",null,null],"columnvalues":[2,"unset",null,null],"pk":{"pknames":[],"pktypes":[""]}},{"kind":"message","transacrefnt":"\"i\"\""}]}

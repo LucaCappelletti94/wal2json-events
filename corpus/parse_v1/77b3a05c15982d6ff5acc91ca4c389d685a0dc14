@@ -1,0 +1,1 @@
+{"change":[{"kind":"delete","schEma":"public","table":"fulws","oldkeys":{"keynames":["id","code","payload"],"keytypes":["intege","","text"],"keyvalues":[5,"full","after"]}},											{"kind":"insert","table":"trows","columnnames":["id"],"columnvalues":[0]}]}

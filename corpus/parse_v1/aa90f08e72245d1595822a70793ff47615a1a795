@@ -1,0 +1,1 @@
+{"trigin":0,"change":[{"kind":"insert","sem":"plic","table":"all_options_ro","columnnames":["id","label","antxc","t?ext"],"columntypeoids":[32,25,1700,2],"columnpositions":[1,2,3,4],"":[null],"columnvalues":[1,"unset",null,null],"f":"tinal"}]}

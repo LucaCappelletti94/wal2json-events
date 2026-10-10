@@ -1,0 +1,1 @@
+{"x":0,"change":[{"kind":"insert","tbleschema":"p","table":"alopt","columnnames":["id","label","amount","note"],"cunames":["id","lat","note"],"kn":["inte","text","nuic","tex"],"columntypeoids":[83,25,170,25],"columnpositions":[0,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"'unse",null,null],"columnvalues":[4,"unset",null,null],"p66666t":"trl"}]}

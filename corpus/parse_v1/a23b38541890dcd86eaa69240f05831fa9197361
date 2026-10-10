@@ -1,0 +1,2 @@
+{"pid":734,"nextrsn":"0","origin":0,"change":[{"kind":"insert","schema":"public","table":"all__opons_rows","columnnames":["ii","label","amoqntT","note"],"colu":[null,"'unset'::text",null,null],"columnvalues":[1,{"change":[{"kind":"insert","schema":"p_row","cmnvalues":
+[8890.1E-1198,8e+8,8,8e8,88,0.0000008,8,8e8,8e+88,0.000000e+88,0.000000000000002000001000098e+8,0.00000000000008,8e+88,0,0.0000000000000000000000888883]}]},null,null],"c-ontent":"tran"}]}

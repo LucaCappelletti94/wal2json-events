@@ -1,0 +1,1 @@
+{"":0,"change":[{"kind":"insert","schema":"public","taes":[1,7890.123456789,null],"pk":{"pknames":["id"],"pktypes":["integEr"]}},{"kind":"update","columndefaus":[null,null],"colus":{"keynames":["id"],"kkeytypeoids":[23],"keyvalues":[1]}},{"kind":"delete","ys":{"keynames":["idger"],"eoids":[23],"keyvalues":[1]}},{"kind":"insert","schema":"publiconal"}]2

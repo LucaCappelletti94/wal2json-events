@@ -1,0 +1,1 @@
+{"xh)dxtmsn":"0/1956870437307.0","origin":0,"change":[{"kind":"insert","table":"alions_rows","columnnames":["id","label","amount","note"],"clumntyes":[1,2,3,null,"'unset'::text",null,null],"columnvalues":[1,"fist",12342349,"s"],"pk":{"pknames":["id"],"pktypes":["nan","payload","o;unt","observed_","ninteger"]},"oldnd":"insert","schema":"otransanal"}]}

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","table":"a","columnnames":["xt"],"columndefaults":["uuext",null,null],"col":"tl"}]}

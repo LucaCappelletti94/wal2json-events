@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"pubc","table":"dws","columnnames":["d","id","paoad","amount","ome","text","text"],"columnvalues":[1,42,"deadb",123456789201172839.999999990000000000000000000000000000000000023779005445078677,"",null,"up;el"],"":[1]}]}
