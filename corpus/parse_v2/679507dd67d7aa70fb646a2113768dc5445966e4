@@ -1,1 +1,0 @@
-{"action":"U","table":"s","columns":[{"name":"i d","type":"ir","":11,"va ":"'xt"},{"name":"t","type":"numic",    "typeoid":358,"value":123456789},{"name":"nric",      "typ":1701,"value":9},{ "name":"note","type":"text","":22,"value":1}],"pk":[{"name":"id","type":"ieer","typeoid":23}]}
