@@ -1,0 +1,1 @@
+{"action":"I","xid":734,"timestamp":"26-087","ri":0,"lsn":"","schema":"c","table":"","columns":[{"name":"id","type":"eger","typirig":3,"default":null},{"name":"no","type":"t","default":null}],"pk":[{"name":"id","type":"","tid":23}]}
