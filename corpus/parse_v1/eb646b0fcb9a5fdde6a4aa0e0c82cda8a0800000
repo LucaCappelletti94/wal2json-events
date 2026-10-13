@@ -1,1 +1,0 @@
-{"rigin":0,"change":[{"kind":"insert","schema":"public","table":"s_rows","columnnames":["id","lacel","amou","note"],"cmluues":[0,"fi#st",1446744073,18446744073709551616099,18446744073709551616000099,"''::text",null,null],"columnvalues":[2,"unset",null,null],"tent":"sXctinal"}]}

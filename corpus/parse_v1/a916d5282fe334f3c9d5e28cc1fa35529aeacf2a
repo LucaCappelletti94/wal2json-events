@@ -1,1 +1,0 @@
-{"nextms":"0/","on":0,"change":[{"kind":"insert","schema":"public","table":"all_s_rows","columnnames":["id","label","eric","text"],"columndefaults":["'l,nnseextext",null,null],"columnvalues":[0,"t",null,null],"p?k":{"pes":["inteer"]}},{"kind":"message"}]}
