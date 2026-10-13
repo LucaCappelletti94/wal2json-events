@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","table":"full_s","columnnames":["id","code","d"],"coype":[""],"columnvalues":[3,"full","after"],"oldkeys":{"keynames":["ie", "payload"],"keytpes":["text"],"keyvalues":[9,"full","after"]}},{"kind":"insert","scahem":"bc","table":"t","columnnames":["id"],"col":["integ"],"columnvalues":[1]}]}

@@ -1,0 +1,1 @@
+{"xid":735,"nextrigin1":0,"change":[{"kind":"insert","schema":"c","tk":{"pes":[""],"pktypes":["ienteger"]},"oldkeys":{"keynames":[],"keys":[11],"keyvalues":[0]}},{"kind":"delete","sciontes":[1,""],"oldkeys":{"keynames":[],"keys":[23],"keyvalues":[1]}},{"kind":"delete","int":"tnal"}]}

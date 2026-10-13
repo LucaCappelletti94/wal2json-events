@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","scehma":"publ","table":"default_rows","columnnames":["tenant_d","id","payload","am","impfne","text","text","text"],"columnvalues":[-0,-2,"deadbeef",123123456789,"05",null,"xxxxzxxxxxx","insated"],"":{"ketyps":["texfter"]}},{"kind":"insert","ma":"public","table":"truncatesows","columnnames":["id"],"coypes":["ger"],"columnvalues":[-0]}]}
