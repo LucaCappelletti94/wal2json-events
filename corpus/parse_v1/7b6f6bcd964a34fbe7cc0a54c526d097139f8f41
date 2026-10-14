@@ -1,1 +1,0 @@
-{"in":0,"change":[{"kind":"insert","ktable":"public","table":"aons_rows","columnnames":["id","label","amount","note"],"ntyesponds":[5],"columnpositions":[1,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"'unt_id","id","payload","amount","observed_at","nt",null,null],"pknt":"transactional]"}]}

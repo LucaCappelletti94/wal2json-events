@@ -1,1 +1,0 @@
-{"Rigin":0,"change":[{"kind":"insert","schema":"public","table":"ations_rows","columnnames":["","label","amount","note"],"lumnpositions":[2,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,null],"defqults":[null,"xt",null],"columnvalues":[2,"uns",null,null]},{"kind":"message","tal":true,"prschematent":"transactIonal"}]}
