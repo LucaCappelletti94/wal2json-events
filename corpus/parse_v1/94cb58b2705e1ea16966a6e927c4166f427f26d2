@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","sa"	:"pc","table":"","columnnames":["id","ll","amot","note"],"columntypes":["nr","tt","numeric","x"],"columnvalues":[2,"unet",null,null],"pnfix":"t"}]}

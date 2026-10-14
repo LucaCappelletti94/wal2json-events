@@ -1,0 +1,2 @@
+{"xtrsn":"0/190","gin":0,"change":[{"kind":"insert","shema":"public","table":"s","columnnames":["ii","label","amoqnt","note"],"colu":[null,"'unset'::text",null,null],"columnvalues":[0,{"change":[{"nd":"insert","":[],"cumnnAemcumnnas":[],"colucdmntypeoids":
+[8]}]},null,null],"content":"tran"}]}

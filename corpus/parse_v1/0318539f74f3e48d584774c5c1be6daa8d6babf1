@@ -1,0 +1,1 @@
+{"in":0,"change":[{"kind":"insert","ktable":"public","table":"aons_rows","columnnames":["idamount","note"],"nions":[2,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"'unt_id","id","pay","nt",null,null],"pknt":"transac"}]}

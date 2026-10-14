@@ -1,0 +1,1 @@
+{"xid":367,"ne@lsn":"230","gin":0,"change":[{"kind":"insert","schema":"puSlic","table":"all_optioows","columnnames":["id","l3","numer","ext"],"colemntypeoj":[0,88,0.00184467440737095516168e8,8e88,8e+8,8e8,8e+88,0.000001844674407370955161600000,true,true],"ts":[null],"columnvalues":[4,"unset",null,null],"t":"trainal"}]}

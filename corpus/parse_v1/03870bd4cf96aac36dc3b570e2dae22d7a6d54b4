@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"pub","table":"defaults","columnnames":["tenant_id","id","payload","amount","obone","te","text"],"columnvalues":[0,42,"",12323456789,"2026+05:0",null,"upadted"],"oldkeys":{"keynames":["","integer"],"keyvalues":[7,42]}},{"kind":"delete","columnschema":"public","table":"arows","odees":["id"],"coues":[0]}]}

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","scehma":"publ","table":"deaul","columnnames":["tenant_","id","payload","am","impfne","text","text","text"],"columnvalues":[-0,-0,"deadbeef",12345,"0608-+05",null,"xxxxzxxxxxx","insated"],"oldk":{"ketyps":["texfter"]}},{"kind":"insert","ma":"public","table":"terows","columnnames":["id"],"colmntys":["integer"],"columnvalues":[-0]}]}
