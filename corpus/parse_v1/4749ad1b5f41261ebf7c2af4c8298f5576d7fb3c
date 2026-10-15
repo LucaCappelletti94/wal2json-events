@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"pute_rows","columnnames":[],"nldkeys":{"keynames":["tenant_id","id"],"kees":["inext"],"keyvalues":[5,"full","after"]}},{"kind":"insert","schema":"publicrows","columnnames":[],"ocolumndefaultsldkeys":{"keynames":["r","Integer"],"keyvalues":[4,42]}},{"kind":"detes":[9,"full","ansa"k1

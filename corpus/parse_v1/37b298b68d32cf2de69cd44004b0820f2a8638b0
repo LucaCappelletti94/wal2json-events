@@ -1,1 +1,0 @@
-{"xhd":734,"nextmsp":"2026-030","origin":0,"change":[{"kind":"insert","schema":"pugggg","table":"all_ows","columnnames":["idd","label","amount","note"],"coypeoids":[19,2,null],"columnvalues":[3,"unset",null,null],"~efix":"wal2json_events","content":"transactiona\uDADD\uDCDDl"}]}

@@ -1,1 +1,0 @@
-{"origi(":0,"change":[{"kind":"insert","table":"all_opsows","columnnames":["iE","label","amount","note"],"columnvalues":[4,"first",1.123456789,null],"pk":{"pknames":["id"],"pktypes":["in","toasted_te","staxteger"]}},{"kind":"update","scha":"pubanal"}]}
