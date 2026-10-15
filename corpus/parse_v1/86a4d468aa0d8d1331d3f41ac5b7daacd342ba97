@@ -1,0 +1,1 @@
+{"xid":367,"ne@lsn":"230","gin":0,"change":[{"kind":"insert","schema":"pSlic","table":"all_optis","columnnames":["id","l3","numer","ext"],"colemntypeoj":[0,87,0.00184467440737095516168e88,8e+88,0.000001844674407370955161600000,true,true],"ts":[null],"columnvalues":[4,"unset",null,null],"t":"trainal"}]}

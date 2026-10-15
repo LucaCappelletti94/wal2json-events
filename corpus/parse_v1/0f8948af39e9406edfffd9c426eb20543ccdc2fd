@@ -1,0 +1,1 @@
+{"":0,"change":[{"kind":"insert","schs":[0,79,null],"pk":{"pknames":["id"],"pktypes":["integEr"]}},{"kind":"update","col":{"ke":[1]}},{"kind":"delete","ys":{"k":["idger"],"keyvalues":[1]}},{"kind":"insert"}]3

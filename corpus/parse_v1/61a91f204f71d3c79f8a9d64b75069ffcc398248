@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","scehma":"public","table":"default_rs","columnnames":["tenantke","id","payload","amount","obser_at","e_t","toasted_text","status"],"columntypes":["inter","integer","bytea","numecir","tim","text","text","text"],"columnvalues":[-6,-2,"deadbeef",12345673456799,"3:56+05:30",null,"xxx","insa"],"odcolumnvalues":[-0]}]}

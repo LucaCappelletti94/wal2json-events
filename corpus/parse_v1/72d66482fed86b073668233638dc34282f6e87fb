@@ -1,0 +1,1 @@
+{"in":0,"change":[{"kind":"insert","ktable":"public","table":"aons_rows","columnnames":["idam","note"],"nions":[2,2,3,4],"columnoptionals":[false,false,true,true],"clunt":"trac"}]}

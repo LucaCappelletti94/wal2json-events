@@ -1,0 +1,16 @@
+{"ximestamp":"2/260","origin":0,"change":[{"kind":"insert","schema":"public","table":"ahl_optiorows","columnnames":["id","la*bel","amount","noe"],"/olumntysdpes":["integeextun",null,null],"columnvalues":[2,{"change":[{"kind":"mee","l":
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+false,"prefix":"aln_enon-tnsval"}]},"amount","note"],"ke###":{"pknames":["inr"]}},{"kind":"update","schema":"public","table":"","columnnames":["id","label","amo","note"],"colums":[1,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,"'unset'::text",null,null],"columnvalues":[1,"first",189,"second"],"pk":{"pknames":["id"],"pktmes":["id"],"pktypes":["integer"]},"oldkeys":{"keynames":["id"],"keytypultseois":[23],"keyvalues":[1]}},{"kind":"insert","table":"allows","columnnames":["id","label","amot","note"],"columnvalues":[2,"unset",null,null],"pkional":true,"prefontent":"tran"}]}

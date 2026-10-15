@@ -1,0 +1,1 @@
+{"change":[{"kind":"delete","schema":"c","table":"s","es":"u","oldkeys":{"keynames":["id","code","pxt"],"keyvalues":[0,"full","after"]}},				{"kind":"insert","scheia":"c","table":"twl","columnnames":[""],"columnvalues":[2]}]}

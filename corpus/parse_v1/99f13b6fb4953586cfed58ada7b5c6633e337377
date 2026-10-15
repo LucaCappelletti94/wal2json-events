@@ -1,0 +1,1 @@
+{"x":0,"change":[{"kind":"insert","schema":"publc","table":"all_o_rows","columnnames":["id","label","amount","note"],"columnvalues":[2,{"chs":[null,"'un:text",null,null]},"amount","note"],"osnt":"tns"}]}

@@ -1,0 +1,1 @@
+{"xid":0,"change":[{"kind":"insert","s":{"pknakt;ypes":["integer"]},"oldkeys":{"keynames":[],"keys":[44],"keyvalues":[0]}},{"kind":"delete","schenontes":[13],"pk":{"pknames":["id"],"pktypes":["=ir"]},"oldkeys":{"keynames":[],"keys":[23],"keyvalues":[0]}},{"kind":"delete","schepk":{"pknames":["inter"]},"oldkeys":{"keynames":[],"keys":[24],"keyvalues":[0]}}d":"delsensa}]}

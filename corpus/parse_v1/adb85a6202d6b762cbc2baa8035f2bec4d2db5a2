@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"all_","columnnames":["id","hl","amount","ote"],"colum!ls":[false,false,true,true],"columndefaults":[null,"'xt","nume","text"],"":[null,"'umxt",null,null],"columnvalues":[2,"unset",null,null],"ent":"tral"}]}
