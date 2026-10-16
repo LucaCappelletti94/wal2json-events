@@ -1,1 +1,0 @@
-{"coid":734,"nex":0,"change":[{"kind":"insert","schema":"publc","table":"all_o_rows","columnnames":["id","label","amount","note"],"columnvalues":[1,{"chs":[null,"'un:text",null,null]},"amount","note"],"osnt":"trans"}]}

@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"w","columnnames":["id","d","payload","amount","obne","ext"],"columnvalues":[4.42,"deef",6913578024691356.9999999999999499999999999999999999999999999999999399999999,"2028 10",null,"updad"],"oys":{"keynaees":["code","par"]}},{"kind":"insert","schema":"","table":"t","columnnames":["inege"],"columnvalues":[2]}]}
