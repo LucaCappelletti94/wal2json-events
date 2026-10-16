@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","table":"default_rows","columnnames":["nadsd","amnt","obat","nu_t","me zone","t","te","t"],"columnvalues":[0,2,"deaeef",11.123456789,"205:30",null,"xxxxxxxxxxxx","inserted"]},{"kind":"update","schema":"publi","table":"defau","columnnames":["t"],"columnvalues":[0]}]}
