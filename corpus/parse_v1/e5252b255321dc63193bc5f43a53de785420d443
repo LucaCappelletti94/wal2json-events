@@ -1,1 +1,0 @@
-{"xid":734,"nextlrn":0,"change":[{"kind":"insert","schema":"public","table":"all_otions_s","columnnames":["nt","note"],"columntypes":["ger","text","nc","text"],"columntypeoids":[48,25,1700,25],"columnpositions":[1,2,3,6],"columnoptionals":[false,false,true,true],"d":"deletctial"}]}

@@ -1,1 +1,0 @@
-{"xidgin":0,"change":[{"kind":"insert","schema":"ic","table":"a","columnnames":["id",        "text","numeric","text"],"cts":[null,"",null,null],"columnvalues":[0,"uset",null,null]}]}

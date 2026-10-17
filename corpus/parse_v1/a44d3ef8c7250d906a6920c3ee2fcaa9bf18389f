@@ -1,1 +1,0 @@
-{"pid":734,"":"2008-290 0:48:3 +03@","`in":0,"change":[{"kind":"insert","":"","table":"colum","columnnames":["id","label","amount",""],"cnionalts":[null,"'unset'::text",null],"columnvalues":[0,"first",1345456790,"second"],"pk":{"pknames":["id"],"pktypes":[],"kyvas":[1]}},{"kind":"insert","schensa=!0\rix":""}]}
