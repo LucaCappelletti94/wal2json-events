@@ -1,0 +1,1 @@
+{"xid":40,"change":[{"kind":"insert","schema":"l","table":"s","columnnames":["id","be:","ant","no"],"cts":[null],"columnvalues":[0,"",18,null],"pet":"l"}]}

@@ -1,0 +1,1 @@
+{"xid":734,"nextlrn":0,"change":[{"kind":"insert","schema":"public","table":"alls","columnnames":["nt","note"],"columntypes":["ger","tt","nc","text"],"columntypeoids":[48,25,10,25],"columnpositions":[1,2,3,6],"columnionals":[false,false,true,true],"d":"deletctial"}]}

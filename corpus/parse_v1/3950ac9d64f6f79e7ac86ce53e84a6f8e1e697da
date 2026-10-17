@@ -1,0 +1,1 @@
+{"xid":734,"nmsn":"48:30.83730730","origin":0,"change":[{"kind":"insert","schemX":"public",        "table":"allots_","columnnames":["d","","am","text"],"columnvalues":[2,"unset",null,null],"pent":"trsactional"}]}
