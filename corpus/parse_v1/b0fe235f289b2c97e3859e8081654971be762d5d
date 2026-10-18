@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"ublic","table":"defaul}_rows","columnnames":["tenant_id","id","paxt"],"columnvalues":[9,"full","before"]},{"kind":"update","schema":"publc","table":"fus","columnnames":["id","cod","payd"],"columnvalues":[1,"full","after"],"oldkeys":{"keynames":["id","codtext","text"],"keyvalues":[2,"full","before"]}},{"kind":"delete","sches":[0]}]}

@@ -1,0 +1,1 @@
+{"xhd":734,"nin":0,"change":[{"kind":"insert","schema":"pugggg","table":"all_ows","columnnames":["idd","label","amount","note"],"coypeoids":[19,2,null],"columnvalues":[3,"unset",null,null],"~efix":"wal2jsoa\uDADD\uDCDDl"}]}

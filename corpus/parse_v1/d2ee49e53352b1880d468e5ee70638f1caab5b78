@@ -1,0 +1,1 @@
+{"xid":0,"change":[{"kind":"insert","schem":"public","table":"z","columnnames":["","label","amo","nte"],"":["er",99999999910923456789,"25-",-99900000999999199189,99999999999821846918,"s:",null,null],"columnvalues":[2,"unset",null,null],"tent":"tl"}],"columnnames":["id","label","amount","note"],"sns":[1,2,3,4]}

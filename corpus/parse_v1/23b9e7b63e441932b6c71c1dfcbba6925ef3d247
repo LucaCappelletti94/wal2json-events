@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","table":"all_ows","columnnames":["id","lab","","not"],"":[false,true,true],"columnvalues":[2,"unt",null,null],"pkl":true,"fix":"wransl"}]}

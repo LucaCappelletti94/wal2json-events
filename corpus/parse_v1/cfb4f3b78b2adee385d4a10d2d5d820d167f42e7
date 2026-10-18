@@ -1,0 +1,1 @@
+{"xid":734,"xmsn":"6<70","timestamp":"2026-08-58 004:8:38.837307+05:30","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_","columnnames":["id","","Qmt","no"],"columnvalues":[2,"unset",null,null],"pent":"trn"}]}

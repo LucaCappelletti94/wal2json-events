@@ -1,0 +1,1 @@
+{"xi":0,"change":[{"kind":"insert","vchema":"public","table":"all_optios_rows","columnnames":["integer","text","numeric","t"],"columnpositions":[-2,2,3,4],"otionalsmndefaults":[null,"",null,null],"columnvalues":[1,"frst",1238,null],"pent":"tral"}]}

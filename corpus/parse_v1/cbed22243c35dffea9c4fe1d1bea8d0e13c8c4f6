@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"]public","table":"lo_p_ros","columnnames":["id","label","amount","te"],"cumnnames":["amount"],                                                                                                                                "~s":[0,2],"ts":[null,"'ut"],"columnvalues":[2,"t",null,null],"p":"jsoneal"}]}
