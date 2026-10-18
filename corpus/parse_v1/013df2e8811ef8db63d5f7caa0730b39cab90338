@@ -1,1 +1,0 @@
-{"tlsn":"02/0","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_opti_ows","columnnames":["id","label","amo","note"],"columnvalues":[0,"first",19,null],"p##s":{									"keys":[1]}},{"kind":"insert","em":"public","table":"_opt$","columnnames":["id","la","","text"],"clmn":[null,"xt",null,null],"columnvalues":[2,"unset",null,null],"pcon+ent":"tral"}]}

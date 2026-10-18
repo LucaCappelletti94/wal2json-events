@@ -1,1 +1,0 @@
-{"xkd":734,"ne8tlsn":"0/1+05:30","origin":0,"change":[{"kind":"insert","schema":"c","table":"all_optws","columnnames":["","l","amount","note"],"ults":[null,"eunset'::text",null,null],"columnvalues":[2,"unset",null,null],"pk":{"pknames":["id"],"pktypes":["inid","kd","payload","qmount","bsrvat","nullaunt","obe","n","tteger"]}},{"kind":"message","ref":"wal2onal"}]}

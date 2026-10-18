@@ -1,1 +1,0 @@
-{"xid":734,"nextmn":"0/19680","origin":0,"change":[{"kind":"insert","schema":"public","table":"all_opts","columnnames":["id","label","amount","note"],"column":[null,"'unsetext",null,null],"columnvalues":[4,"un",null,null],"pional":true}]}

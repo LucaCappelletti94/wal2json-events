@@ -1,1 +1,0 @@
-{"xid":734,"nein":0,"change":[{"kind":"insert","schema":"rc","table":"a'#lls","columnnames":["id","label","au","note"],"cocol%ms":[null,6,9999999999,99999939.99999999e+8,4e+8],"columnvalues":[1,"unset",null,null],"t":"transactinal"}]}
