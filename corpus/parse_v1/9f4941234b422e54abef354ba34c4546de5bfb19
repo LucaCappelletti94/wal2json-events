@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"def~aul_rows","columnnames":["t_id","id","yloadytea","numeric","mestampwith te","text","text"],"columnvalues":[3,42,"deadbeef",1,"24:55:30",null,"updated"],"dkeys":{"keynames":["tenanteger"],"keyvalues":[21]}},{"kind":"delete","schema":"publ=ic","table":"defau","oldkeys":{"keynames":["nsai"],"keyvalues":[6,42]}}]}

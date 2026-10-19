@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","schma":"publ","table":"deaul","columnnames":["tenant_","id","payload","am","ie","text","text","text"],"columnvalues":[-0,-0,"deadbef",12345,"0608-+05",null,"xxxxzxxxxxx","insated"],"oldj":{"etyps":[]}},{"kind":"insert","ma":"public","table":"terows","columnnames":["d"],"colmys":["integer"],"columnvalues":[-0]}]}
