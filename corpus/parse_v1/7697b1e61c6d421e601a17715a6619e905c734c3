@@ -1,0 +1,1 @@
+{"change":[{"kind":"delete","schema":"public","table":"defau","kindmnnames":["naxt"],"oldkeys":{"keynames":["tenant_id","id"],"\bypes":["ge0"],"keyvalues":[7,42]}},{"kind":"insert","s":"puic","table":"fuows","columnnames":["id"],"cytnpes":["ir"],"columnvalues":[1]}]}

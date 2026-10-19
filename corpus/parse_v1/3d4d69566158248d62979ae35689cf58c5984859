@@ -1,0 +1,1 @@
+{"xid":73,"change":[{"kind":"insert","table":"alls","columnnames":["id","label","amount","note"],"`l":["nget'",null],"columnvalues":[1,"use",null,null],"pk":{"pknames"																																:["id"],"pktypes":["n55"]},"content":"tsn"}]}

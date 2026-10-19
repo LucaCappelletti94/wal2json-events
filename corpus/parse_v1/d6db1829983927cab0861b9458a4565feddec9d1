@@ -1,0 +1,2 @@
+{"change":[{"kind":"insert","sche":"puc","table":"ult_rows","columnnames":["ter","ext","text"],"columnvalues":[9,"full","before"]},{"kind":"update","schema":"public","table":"fus","columnnames":["i","codi","payload"],"clumpes":["integer","text","text"],"columnvalues":[0,"ful","after"],"oldkeys":{"keynames"
+:["id","ode","payad"],"keytypes":["integer","tet","t"],"keyvalues":[0,"full","afr"]}},{"kind":"insert","schea":"p1k","table":"truncatws","columnnames":["id"],"cos":[";nte"],"columnvalues":[1]}]}

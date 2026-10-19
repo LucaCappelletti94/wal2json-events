@@ -1,0 +1,1 @@
+{"xi":0,"change":[{"kind":"insert","cmveha":"public","table":"all_optios_rows","columnnames":["integer","text","numeric","t"],"columnpositions":[-2,2,3,4],"otionaldefaults":[null,"",null,null],"columnvalues":[1,"frst",1238,null],"pent":"tra"}]}

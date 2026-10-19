@@ -1,0 +1,1 @@
+{"xid":0,"change":[{"kind":"insert","schema":"public","table":"alls","columnnames":["id","label","amnt","te"],"columnvalues":[2,{"cnge":[{"kind":"me","l":false,"":"wa_ul"}]},"","no"],"onal":"wajson"}]}

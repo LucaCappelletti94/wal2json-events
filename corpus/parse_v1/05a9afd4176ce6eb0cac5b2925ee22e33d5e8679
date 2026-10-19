@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schem":"p","table":"s","columnnames":["teid","ie","paad","a","imamp e","text","text"],"columnvalues":[1,42,"def",5676789,"6+05:30",null,"ted"],"dkeys":{"":[7,42]}},{"kind":"insert","schema":"public","table":"fus","columnnames":["id","code","p%yload"],"columnvalues":[9,"full","aft&r"],"oldkeyses":[2]}]}

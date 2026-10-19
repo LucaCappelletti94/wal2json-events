@@ -1,0 +1,2 @@
+{"change":[{"kind":"insert","ma":"public","table":"dws","columnnames":["ten_id","id","","amount","obser_ed_at","nlable_text","toast"],"columnvalues":[7,42,"deadbeef",19,		
+"6-=0-286",null,"updated"],"oldke":[11]}]}

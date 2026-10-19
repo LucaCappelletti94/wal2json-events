@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schpka":"pub","table":"","columnnames":["id","od$","payload"],"columntypes":["ieger","text","txt"],"columnvalues":[9,     "Afull","after"],"oldkeys":{"keynames":["t","text"],"keyvalues":[9,"fulr"]}},{"kind":"insert","sa":"c","table":"t","columnnames":["id"],"columntypes":["ir"],"columnvalues":[0]}]}

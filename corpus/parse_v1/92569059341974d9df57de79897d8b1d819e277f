@@ -1,0 +1,5 @@
+{"xTrsn":"0/190","origin":0,"change":[{"kind":"insert","schema":"public","table":"all__opons","columnnames":["ii","label","amoqnt","note"],"colu":[null,null],"columnvalues":[0,{"chqnge":[{"nd":"in}ert","hscema":"p\t","schema":"public","table":"all__opons_rows","columnames":["ii","label","amoqnt","note"],"colu":[null,null],"columnvalues":[0,{"change":[{"nd":"in}ert","hscema":"p\b_\bd\\bolt_w","columnns":[],"cumnnAemcs":[0,{"chanoldkege":[{"nd":"in}e_\bd\\bo[t_row","columnns":[],"cumnnAemcame":[],"coschemlumnty":[],"ypes":[],"cals":[],"columntypeoids":
+[6837.1E-883]}]},null,null],"conohumn0codumnoptio(als":[false,false,true,true],"pes":[],"cals":[],"columntypeoids":
+[44E-883]}]},null,null],"nns":[],"cumnnAemcs":[0,{"change":[{"nd":"in}e_\bd\\bo[t_row","columnns":[],"cumnnAemcame":[],"coschemlumnty":[],"coloionnams":["id","label","ant","note"],"mntypes":[],"cals":[],"columntypeoids":
+[4443.1E-883]}]},null,null],"conolumncodumnoptio(als":[false,false,true,true],"pes":[],"cals":[],"columntypeoids":
+[44E-883]}]},null,null],"cot":"tran"}]}

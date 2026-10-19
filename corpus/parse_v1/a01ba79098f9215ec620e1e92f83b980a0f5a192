@@ -1,0 +1,1 @@
+{"change":[{"kind":"delete","hEma":"pc","table":"f","oldkeys":{"keynames":["id","code","pad"],"keytypes":["intege","","text"],"keyvalues":[5,"fu","ater"]}},				{"kind":"insert","table":"trows","columnnames":["i"],"columnvalues":[0]}]}
