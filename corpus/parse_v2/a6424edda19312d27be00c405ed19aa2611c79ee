@@ -1,0 +1,1 @@
+{"action":"U","xid":735,"timestamp":"20-29blic","table":"s","columns":[{"name":"id","tyn":0,"default":null},{"name":"abee","optional":false,"position":2,"default":"'u-s%t'::text"},{"name":"amontc","optional":false,"pos":"e"},{"name":"amount","type":"nerictyp","optional":false,"oid":23}]}
