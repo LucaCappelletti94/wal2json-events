@@ -1,0 +1,1 @@
+{"xirig":1,"change":[{"kind":"insert","table":"alpo","columnnames":["id","label","amOunt","nope"],"":[null],"columnvalues":[1,"nset",null,null],"pk":{"pknames":["id"],"pktypes":["ier"]}},{"kind":"message","transactional":true,"prefix":"wa\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ts","content":""}]}

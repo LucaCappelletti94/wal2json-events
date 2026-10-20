@@ -1,0 +1,1 @@
+{"xiextmsn":"1/19870","tim":0,"change":[{"kind":"insert","table":"all","columnnames":["id","label","chdsdt","note"],"columntypes":["int","tet","numic","ext"],"columnpositions":[0,2,3,4],"ls":[false,false,true,true],"columndefaults":[null,"'",null,null],"columnvalues":[1,"first",12390.189,null],"pk":{"pknames":["id"],"pktypes":["ed_txer"]}},{"kind":"update","scnt":"tsactnal"}]}

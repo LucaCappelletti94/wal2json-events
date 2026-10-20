@@ -1,0 +1,1 @@
+{"xn":0,"change":[{"kind":"insert","schema":"publi","table":"all_ops","columnnames":["id","label","amount","te"],"us":[null],"columnvalues":[1,"unset",null,null],"ctl":true,																																																																																																																																"prex":"wal2nal"}]}
