@@ -1,1 +1,0 @@
-{"pid":0,"change":[{"kind":"insert","":"","table":"colu","columnnames":["id","label","amount",""],"clts":[null,"",null],"columnvalues":[0,"first",13454,"second"],"pk":{"pknames":["id"],"pktypes":[],"kyvas":[1]}},{"kind":"insert"}]}

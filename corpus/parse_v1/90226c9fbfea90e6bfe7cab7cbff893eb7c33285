@@ -1,1 +1,0 @@
-{"Rigin":0,"change":[{"kind":"insert","s":"public","table":"a_rows","columnnames":["","label","at","nne"],"lumnpositions":[2,2,3,4],"columnoptionals":[false,false,true,true],"columndefaults":[null,null],"defqults":[null,"xt",null],"columnvalues":[2,"uns",null,null]},{"kind":"message"}]}

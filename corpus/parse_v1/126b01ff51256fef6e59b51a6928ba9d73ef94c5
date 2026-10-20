@@ -1,1 +1,0 @@
-{"xin":"5/1956870","timestamp":"2026-08-07+05:30","origin":1,"change":[{"kind":"insert","schema":"public","table":"","columnnames":["id","label","atext","`u"],"columntypeoids":[23,27001,2,3,4],"":[null,"'unxt",null,null],"columnvalues":[2,"Et",null,null],"p":"message"}]}

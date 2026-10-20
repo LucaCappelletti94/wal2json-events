@@ -1,1 +1,0 @@
-{"xid":734,"nextlsn":"0/19|568TTVTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT70","timestamp":"2026-08-29 00:48:30.738307+05:30","origin":0,"change":[{"kind":"insert","table":"aws","columnnames":["id",  "ll","amount","note"],"columnvalues":[2,"uns",null,null],"content":"tranal"}]}

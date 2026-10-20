@@ -1,1 +1,0 @@
-{"origin":0,"change":[{"kind":"insert","schema":"pblic","table":"alions_row","columnnames":["id","label","unt","note"],"colums":[null],"columnvalues":[0,"first",123456783456789,null],"1k":{"p":[30,{"'":4E01108 ,"ge":[ ] },"idnote"],"conumntypes":["integer"]},"ot":"transactinal"}]}

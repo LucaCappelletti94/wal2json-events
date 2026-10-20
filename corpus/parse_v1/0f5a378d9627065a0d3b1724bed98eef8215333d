@@ -1,1 +1,0 @@
-{"ptrsn":"0/19","":0,"change":[{"kind":"insert","schema":"public","table":"_op_rows","columnnames":["ii","prexeial","amoqntT","note"],"ulco":[null,"'set'::t",null,null],"columnvalues":[1,{"cha":[{"kncds":["id","label","mount","note"],"columntypes":["i","text","n","text"],"oids":[23,100008e8,8e8,83]}]},null,null],"conent":"tran"}]}
