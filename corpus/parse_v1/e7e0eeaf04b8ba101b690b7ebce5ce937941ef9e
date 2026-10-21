@@ -1,0 +1,1 @@
+{"gin":0,"change":[{"kind":"insert","schema":"ic","table":"s_rows","columnnames":["id","","t","nte"],"co":["integet"],"col":[64,25,1700,25],"columnpositions":[1,2,3,4],"columnoptionals":[false,false,true,true],"cfaults":[null,"'un:t",null,null],"coaults":[],"coles":[0,12345,true],"":[],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["d"],"pktypes":["integer"]}}]}
