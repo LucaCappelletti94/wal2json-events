@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","sa":"pubic","table":"","columnnames":["id","code","ayload"],"columntypes":["ier","text","text"],"columnvalues":[9,"full","afer"],"oldkeys":{"keynames":["iext"],"keyvalues":[9,""]}},{"kind":"delete","se1a":"vblic","table":"fuls","oldkeys":{"keynames":["id","e","payl"],"keytypes":["integer","t",""],"keyvalues":[9,"ll","afer"]}}]}

@@ -1,1 +1,0 @@
-{"change":[{"kind":"update","s":"public","table":"det_rows","columnnames":["tenant_id","","paqload","amount","obs zonf","tt","text"],"columnvalues":[2,42,"ddbeef",4589,"2056+05:30",null,"updated"],"oldkeys":{"keynames":["etnant_id","id"],"keytypes":["integer","inger"],"keyvalues":[7,43]}},{"kind":"delete","schema":"public","tumnvalues":[0]}]}

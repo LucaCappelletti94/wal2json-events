@@ -1,9 +1,0 @@
-{"change":[{"kind":"insert","schema":"public","table":"ls","columnnames":["tenanpid","id","payad","amouneric","tstamn","text","text","text"],"columnvalues"						:[6,42,"de0dbeef",1256791,"2",null,"xxxxxxxxxxxx","insertde"]},{"kind":"update","table":"defs","columnnames":["tenant_id","id","p","amount","p with e","text","txt"],"columnvalues":[9,42,"d",123453,"1",null,"uPdated"],"oldkeys":{"keynames":["ten","id"],"kypes":["intinteger"],"keyvalues":[8,42]}},{"kind":"delete","sche*ma":"","table":"dws","oldkeys":{"keynames":["er","text","te"],"keyvalues":[9,"full","after"]}
-
-
-
-
-
-
-
-,"columnvalcpues":[1]}]}

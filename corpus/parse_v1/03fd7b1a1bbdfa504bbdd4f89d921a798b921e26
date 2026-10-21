@@ -1,1 +1,0 @@
-{"p":"530","origin":1,"change":[{"kind":"insert","schema":"public","table":"al_options_rows","columnnames":["id","label","amoun4t","note"],"cmts":[23,125],"columnpositions":[0,0,3,4],"columnvalues":[1,"unse",null,null]}]}

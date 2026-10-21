@@ -1,2 +1,0 @@
-{"xtrsn":"0/190","":0,"change":[{"kind":"insert","table":"allorigrows","columnnames":["ii","label","amoqnt","note"],"colu":[null,"",null,null],"columnvalues":[0,{"change":[{"nptis":[false,false,true,true],"nnams":["id","","note"],"":[false,false,true,true],"eoids":
-[2]}]},null,null],"ctent":"trn"}]}
