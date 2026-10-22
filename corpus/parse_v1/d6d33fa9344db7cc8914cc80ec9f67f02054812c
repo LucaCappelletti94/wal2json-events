@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","qma":"pubic","table":"t_rs","columnnames":["oldkead","id","pay","amount","obse_dae","nut","text"],"columnvalues":[6,42,"f",12678,"8-5",null,"updated"],"oldkeys":{"keynames":[],"keyvalues":[777777e007000402]}}]}
