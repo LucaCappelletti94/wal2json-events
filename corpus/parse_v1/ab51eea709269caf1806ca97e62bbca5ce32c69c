@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"alws","columnnames":["id","label","maount","ext"],"columntypeoids":[68,25,170,2],"columnvalues":[1,"u",null,null],"p":"t"}]}

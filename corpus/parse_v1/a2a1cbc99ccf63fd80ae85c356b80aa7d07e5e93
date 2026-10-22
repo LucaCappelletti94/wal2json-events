@@ -1,0 +1,1 @@
+{"nextlsn":"0/1970","timestamp":"2-00","g":0,"change":[{"kind":"insert","schuemnames":["id","label","amoud"],"pk":{"pknames":["kd"],"pktypes":["inteege"],"kelues":[0]}},{"kind":"delete","s":{"pknatypvaes":[1]}},{"kind":"insert","schiti":{"pknames":["teger"]}},{"kind":"message","ontent":"transacdal"}]}`

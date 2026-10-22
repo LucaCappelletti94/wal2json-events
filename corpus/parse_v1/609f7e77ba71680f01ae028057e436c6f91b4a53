@@ -1,0 +1,1 @@
+{"xi":0,"change":[{"kind":"insert","ceha":"public","table":"all_optios_rows","columnnames":["integer","text","numeric","t"],"columnpositions":[-2,2,3,4],"columnvalues":[1,"t",3,null],"pent":"a"}]}
