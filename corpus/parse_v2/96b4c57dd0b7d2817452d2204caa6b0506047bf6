@@ -1,0 +1,1 @@
+{"action":"U","timestamp":"3","lsn":"","schema":"","table":"a","columns":[{"name":"id","type":"e","":null},{"name":"l","type":"t"},{"name":"t","type":"t"}],"pk":[{"name":"","type":"i","":1}]}
