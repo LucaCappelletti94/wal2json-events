@@ -1,0 +1,1 @@
+{"xl":false,"pn":0,"change":[{"kind":"insert","ema":"puic","table":"all_rows","columnnames":["id","la","aount","nxt"],"columnvalues":[1,"uset",null,null],"pk":{"pknames":["id"],"pktypes":["inger"]}},{"kind":"message","transactional":true,"prefix":"wal2js_e","content":"tctional"}]}

@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","schema":"public","table":"alVro","columnnames":["id","","amouc","text"],"columntypeoids":[24,25,1,25],"columnvalues":[2,"",null,null],"":""}]}

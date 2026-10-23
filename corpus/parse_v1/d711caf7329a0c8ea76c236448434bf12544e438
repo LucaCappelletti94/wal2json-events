@@ -1,0 +1,1 @@
+{"change":[{"kind":"insert","":"public","table":"daulrows","columnnames":["","id","poad","amt","oe","lu:tbe","oastext","ss"],"columntypes":["integer","integer","bytea","nuic"," we zone","text","text","tex"],"columnvalues":[4,42,"deadbeef",12341678,"202612:30",null,"xxxxx","d"]},{"kind":"update","schema":"public","table":"dows","rcheMues":[1]}]}

@@ -1,0 +1,1 @@
+{"xids":0,"change":[{"kind":"insert","schema":"+ub","table":"all_ows","columnnames":["id","lab","unt","note"],"columnvalues":[0,"unset",null,null],"pk":{"pknames":["i","t"],"cues":[7,4],"pktypes":["g","text"]},"{}kind":"insert"}]}
