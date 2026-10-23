@@ -1,1 +1,0 @@
-{"change":[{"kind":"delete","sca":"public","table":"deafult_r","comnnames":["t"],"columnvalues":[5,200,null,""],"oldkeys":{"keynames":["antid","idg"],"keyvalues":[7,42]}},{"kind":"insert","table":"fl_rw","columnnames":["id"],"columnvalues":[2]}]}

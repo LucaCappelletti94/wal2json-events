@@ -1,1 +1,0 @@
-{"change":[{"kind":"insert","scehma":"public","table":"defalt_rs","columnnames":["tenantke","id","piy","amount","obser_at","e_t","to'asttext","status"],"columntypes":["inte","i","bytea","numecr","tim","text","text","txt"],"columnvalues":[-7,-2,"deef",1799,"30",null,"xxx","insa"],"odmalues":[-0]}]}

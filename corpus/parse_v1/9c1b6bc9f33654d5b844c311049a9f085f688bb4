@@ -1,1 +1,0 @@
-{"xiin":0,"change":[{"kind":"insert","ma":"public","table":"alls","columnnames":["id","label","amount","lote"],"typs":[null,"'ut",null,null],"columnvalues":[3,"t",489,"sd"],"pk":{"pknames":["id"],"pktypes":["integr"],"klues":[0]}},{"kind":"delete","hetent":"nal"}]}

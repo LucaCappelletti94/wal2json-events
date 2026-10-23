@@ -1,1 +1,0 @@
-{"d":7,"change":[{"kind":"insert","table":"_op","columnnames":["id","l","am","t"],"columntypds":[0,2,3,4],"columnoptionals":[false,false,true,true],"codeus":[null],"columnvalues":[1,"unset",null,null],"pk":{"pknames":["id"],"pktypes":[""]}},{"kind":"message","transactional":true,"prefix":"al4keytypes","content":"tral"}]}
